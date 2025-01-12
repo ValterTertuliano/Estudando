@@ -1,0 +1,198 @@
+FONTES:
+------------------------------------------
+LIVRO : lógica de Programação - Unicamp - Centro de Computação
+AUTOR : Paulo Sérgio de Moraes
+PAGINAS : 4, 5
+SEÇÕES: 1.3, 1.4
+
+LIVRO: Escola Estadual de Educação Profissional Ensino Médio Integrado a Educação Profissional PDF DO CURSO DE INFORMÁTICA | LÓGICA DE PROGRAMAÇÃO
+
+AUTOR: Governo do Estado do Ceará - Secretaria da Educação
+PAGINAS: 9 a 15
+SEÇÕES:  Capitulo 2
+
+LIVRO: lógica de Programação e Algoritmos com JavaScript
+AUTOR: Edécio Fernando lepsen
+PAGINAS:
+SEÇÕES:
+
+--------------------------------------------
+
+                Instruções
+
+Na linguagem comum, entende-se por instruções “um conjunto de regras ou normas definidas para a realização ou emprego de algo”.
+Em informática, porém, instrução é a informação que indica a um computador uma ação elementar a executar.
+Convém ressaltar que uma ordem isolada não permite realizar o processo completo, para isso 
+é necessário um conjunto de instruções colocadas em ordem 
+seqüencial lógica.
+Por exemplo, se quisermos fazer uma omelete de batatas, 
+precisaremos colocar em prática 
+uma série de instruções: descascar as batatas, bater os ovos, 
+fritar as batatas, etc...
+É evidente que essas instruções tem que ser executadas em uma ordem adequada 
+– não se pode descascar as batatas depois de fritá-las.
+Dessa maneira, uma instrução tomada em separado não tem muito sentido; para obtermos o 
+resultado, precisamos colocar em prática o conjunto de todas 
+as instruções, na ordem correta
+
+------------------------------------------------
+
+                Algoritmos
+
+Um algoritmo é formalmente uma seqüência finita de passos que 
+levam a execução de uma 
+tarefa. Podemos pensar em algoritmo como uma receita, uma 
+seqüência de instruções que dão
+cabo de uma meta específica. Estas tarefas não podem ser 
+redundantes nem subjetivas na sua 
+definição, devem ser claras e precisas.
+
+Aqui está o texto corrigido apenas no espaçamento:  
+
+---
+
+Uma analogia geralmente realizada pelos autores de livros de 
+Algoritmos e Lógica de Programação é a de que criar um
+algoritmo pode ser comparado com o processo da criação de uma 
+receita de bolo. Esse exemplo é muito interessante. 
+Na montagem de uma receita de bolo, temos os ingredientes 
+(como os dados de entrada), as ações a serem realizadas sobre 
+os ingredientes (processamento) e o resultado esperado, que 
+é o bolo em si (como os dados de saída). Esquecer algum 
+ingrediente ou o detalhe de alguma ação certamente fará com
+que o bolo não fique conforme o planejado.  
+
+Na construção de algoritmos vale a mesma regra. Vamos imaginar uma tarefa simples a ser convertida em um algoritmo: acender um palito de fósforo. Quais etapas são necessárias para realizar essa tarefa? Vamos pensar, agora avançando um pouco além do que foi visto no item 1.1.3:  
+
+1. Pegar uma caixa de fósforo.  
+2. Abrir a caixa de fósforo.  
+3. Verificar se tem palito. Se Sim:  
+   3.1 Retirar um palito.  
+   3.2 Fechar a caixa.  
+   3.3 Riscar o palito.  
+   3.4 Verificar se acendeu. Se Sim:  
+       3.4.1 Ok! Processo concluído.  
+   3.5 Se não: Retornar ao passo?  
+4. Se não: Descartar a caixa e retornar ao passo 1.  
+
+Para qual passo o item 3.5 deve retornar? Poderia ser o 3.3? Mas quantas vezes? Talvez o palito estivesse úmido... Isso não pode ser infinito. E, após a ocorrência desse número de repetições, o que fazer? Descartar o palito e voltar ao passo 3.1 para pegar outro palito?  
+
+Cuidado, depois de "Retirar o palito", a caixa foi fechada. 
+Portanto, precisaríamos retornar ao passo 2. Esse exemplo 
+poderia ainda conter muitas outras verificações. Mas, da 
+forma como foi organizado, já nos permite extrair alguns 
+pontos a serem relacionados ao processo de criação de um programa.  
+
+Na montagem de um programa, utilizamos comandos sequenciais, 
+comandos para definição de condições e comandos para criação 
+de estruturas de repetição. Os comandos sequenciais são os 
+mais simples. Uma ação realizada após a outra (passos 1, 2, 3).  
+
+As condições servem para determinar quais comandos serão 
+executados a partir da análise de uma condição. Se a condição 
+retornar verdadeiro, o programa segue por um caminho; se 
+falso, por outro (3. Verificar se tem palito? ou 3.4, Verificar se acendeu?).  
+
+Já as estruturas de repetições indicam que uma ação ou 
+conjunto de ações devem ocorrer várias vezes (retornar ao 
+passo 2 e retornar ao passo 1). Nessas estruturas, é preciso 
+indicar quantas vezes a repetição vai ocorrer ou criar algum ponto de saída no laço.  
+
+
+Outro aspecto importante que pode ser observado no exemplo é 
+que os passos (comandos) estão formatados na sua margem 
+esquerda. Esse processo se chama indentação do código 
+(relacionada com a palavra inglesa *indentation* - com 
+referência a recuar). Ele serve para facilitar a compreensão 
+do código e é uma prática que deve ser seguida tanto em 
+programas simples quanto em programas maiores e complexos.  
+
+É importante ressaltar que qualquer tarefa que siga determinado padrão pode ser descrita 
+por um algoritmo, como por exemplo: 
+COMO FAZER ARROZ DOCE 
+ou então 
+CALCULAR O SALDO FINANCEIRO DE UM ESTOQUE 
+Entretanto ao montar um algoritmo, precisamos primeiro dividir o problema apresentado em 
+três fases fundamentais. 
+
+Entrada: São os dados necessários para a resolução do problema proposto; 
+
+Processamento: São os processamentos utilizados para chegar ao resultado final; 
+
+Saída: São os dados processados apresentando o resultado para o problema proposto;
+
+No processo de aprendizado de algo novo, é importante memorizar um roteiro de etapas a serem seguidas. 
+Para dar os primeiros passos, esse roteiro nos auxilia a organizar o nosso pensamento. 
+Em lógica de programação, o roteiro para resolver a maioria dos programas iniciais é:
+
+a) Leia os dados de entrada.
+b) Realize o processamento dos dados.
+c) Apresente a saída dos dados.
+
+Em programas maiores, essas etapas vão se intercalar e outras 
+ações serão necessárias, como salvar os dados em um banco de 
+dados. No entanto, depois de concluir o aprendizado inicial, 
+a nossa compreensão terá avançado e estará apta para lidar 
+com essas situações.
+
+A etapa da entrada de dados consiste em solicitar ao usuário 
+alguma informação. Nome, idade, salário - por exemplo. Após, 
+deve ocorrer a etapa do processamento. Calcular o novo 
+salário, calcular um desconto ou verificar a idade são 
+exemplos dessa etapa.
+
+E, por fim, o nosso programa deve apresentar a saída de 
+dados. A exibição do novo salário, do desconto ou se a pessoa 
+é maior ou menor de idade são exemplos de respostas para os 
+dados de um programa.
+
+Para realizar cada uma dessas etapas, as linguagens de 
+programação utilizam comandos. Há um ou vários comandos para 
+realizar a entrada de dados. A sintaxe (palavra e formato) do 
+comando difere de uma linguagem para outra. Mas todas as 
+linguagens dispõem de comandos para realizar essa etapa. Ou 
+seja, o conceito é o mesmo, mas o comando é diferente.
+
+Já a etapa de processamento, no geral, implica trabalhar com 
+variáveis para realizar um cálculo. De igual forma, as 
+linguagens têm sintaxes um pouco diferentes para declarar e 
+realizar a atribuição de dados para uma variável. Em 
+JavaScript, PHP, Java, Python, a atribuição é realizada a 
+partir do símbolo "=". Em Pascal e Delphi, pelos símbolos ":=".
+
+mesmo ocorre para a etapa de saída de dados para o usuário. 
+alert, print e echo são exemplos de comandos utilizados nas 
+linguagens a fim de exibir uma mensagem em um programa.
+
+Para escrever um algoritmo precisamos descrever a sequência de instruções, de maneira simples e objetiva. 
+
+Para isso utilizaremos algumas técnicas: 
+
+ Usar somente um verbo por frase. 
+
+ Imaginar que você está desenvolvendo um algoritmo para pessoas que não 
+trabalham com informática. 
+
+ Usar frases curtas e simples. 
+
+ Ser objetivo. 
+
+ Procurar usar palavras que não tenham sentido dúbio.
+
+Imagine o seguinte problema: Calcular a média final dos alunos da 3ª Série. 
+Os alunos realizarão quatro provas: P1, P2, P3 e P4. 
+
+Onde: 
+P1+P2+P3+P4 
+Média Final = 6 
+Para montar o algoritmo proposto, faremos três perguntas: 
+
+a) Quais são os dados de entrada? 
+R: Os dados de entrada são P1, P2, P3 e P4 
+
+b) Qual será o processamento a ser utilizado? 
+R: O procedimento será somar todos os dados de 
+entrada e dividi-los por 4 (quatro) 
+
+c) Quais serão os dados de saída? 
+R: O dado de saída será a média final

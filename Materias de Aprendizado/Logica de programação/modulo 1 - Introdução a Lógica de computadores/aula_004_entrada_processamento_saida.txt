@@ -1,0 +1,69 @@
+---------------------------------
+FONTES
+---------------------------------
+
+        ----- livro 1 de referencia -----
+
+AUTOR: Edecio Fernando Lepsen
+LIVRO: Lógica de programação e algoritmos com JavaScript 
+"Editora": novatec
+---------------------------------
+
+        ----- livro 2 de referencia -----
+
+AUTOR: André Luiz Villar Forbellone
+LIVRO: Lógica de programação: : a construção de algoritmos e 
+estruturas de dados
+"Editora": Pearson Education
+---------------------------------
+
+No processo de aprendizado de algo novo, é importante memorizar um
+roteiro de etapas a serem seguidas. Para dar os primeiros passos, esse
+roteiro nos auxilia a organizar o nosso pensamento. Em lógica de
+programação, o roteiro para resolver a maioria dos programas iniciais é:
+
+a) Leia os dados de entrada.
+b) Realize o processamento dos dados.
+c) Apresente a saída dos dados.
+
+Em programas maiores, essas etapas vão se intercalar e outras ações 
+serão necessárias, como salvar os dados em um banco de dados. No 
+entanto, depois de concluir o aprendizado inicial, a nossa compreensão 
+terá avançado e estará apta para lidar com essas situações.
+
+A etapa da entrada de dados consiste em solicitar ao usuário alguma
+informação. Nome, idade, salário – por exemplo. Após, deve acorrer a
+etapa do processamento. Calcular o novo salário, calcular um desconto 
+ou verificar a idade são exemplos dessa etapa. E, por fim, o nosso 
+programa deve apresentar a saída de dados. A exibição do novo salário, 
+do desconto ou se a pessoa é maior ou menor de idade são exemplos de 
+respostas para os dados de um programa.
+
+Para realizar cada uma dessas etapas, as linguagens de programação
+utilizam comandos. Há um ou vários comandos para realizar a entrada de
+dados. A sintaxe (palavra e formato) do comando difere de uma
+linguagem para outra. Mas todas as linguagens dispõem de comandos
+para realizar essa etapa. Ou seja, o conceito é o mesmo, mas o comando é diferente.
+
+Já a etapa de processamento, no geral, implica trabalhar com variáveis
+para realizar um cálculo. De igual forma, as linguagens têm sintaxes um
+pouco diferentes para declarar e realizar a atribuição de dados para uma variável. Em JavaScript, PHP, Java, Python, a atribuição é 
+realizada a partir do símbolo "=". Em Pascal e Delphi, pelos símbolos " := ".
+
+O mesmo ocorre para a etapa de saída de dados para o usuário. alert,
+print e echo são exemplos de comandos utilizados nas linguagens a fim
+de exibir uma mensagem em um programa.
+
+o processo respiratório, inspiramos os diversos gases que compõem a a
+tmosfera; realizamos uma entrada de substâncias externas que agora 
+serão processadas pelo organismo, sendo que, depois de devidamente 
+aplicadas por ele, serão devolvidas, alteradas, ao meio, como saída de 
+substâncias para o meio externo.
+Da mesma forma funciona o ‘organismo’ do computador, só que no lugar 
+de substâncias atmosféricas entram e saem dados. Outra analogia 
+interessante é proveniente da culinária doméstica. Para fazer um bolo 
+também seguimos o mandamento da informática; como entrada, temos os 
+ingredientes que serão processados segundo um algoritmo, a receita, e 
+finalizarão tendo por saída o bolo pronto. Notemos que nem os 
+ingredientes nem o bolo pertencem à receita, pois são provenientes do 
+meio externo à receita.

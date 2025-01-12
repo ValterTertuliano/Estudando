@@ -1,0 +1,133 @@
+Aqui está o texto corrigido e formatado:
+
+---
+
+**Tautologias:**  
+Uma tautologia é uma fórmula lógica (FBF) que é sempre verdadeira,  
+independentemente dos valores lógicos das proposições que a compõem. Pense  
+em uma tautologia como uma afirmação que é verdadeira por sua própria  
+estrutura lógica.  
+
+**Exemplo Simples:**  
+A ∨ ¬A (A ou não A). Traduzindo para a linguagem comum: "Hoje chove ou  
+hoje não chove". Essa afirmação é sempre verdadeira.  
+
+**Exemplo do texto:**  
+A FBF do item (d) do Problema Prático 7 (que é (A → B) ↔ (¬B → ¬A))  
+também é uma tautologia.  
+
+---
+
+**Contradições:**  
+Uma contradição é o oposto de uma tautologia. É uma FBF que é sempre  
+falsa, independentemente dos valores lógicos das proposições que a  
+compoêm.  
+
+**Exemplo Simples:**  
+A ∧ ¬A (A e não A). Traduzindo: "Hoje chove e hoje não chove". Essa  
+afirmação é sempre falsa.  
+
+**Exemplo do texto:**  
+A FBF do item (b) do Problema Prático 7 é uma contradição.  
+
+---
+
+**Equivalências Lógicas:**  
+Duas FBFs, P e Q, são equivalentes se a FBF P ↔ Q (P se e somente se Q)  
+for uma tautologia. Isso significa que P e Q sempre têm o mesmo valor  
+lógico. Usamos o símbolo ⇔ para denotar equivalência lógica (P ⇔ Q).  
+
+**Exemplo:**  
+O texto mostra que (A → B) ⇔ (¬B → ¬A). Isso significa que as FBFs  
+(A → B) e (¬B → ¬A) sempre terão o mesmo valor lógico.  
+
+---
+
+**Equivalências Tautológicas Importantes (Com Explicações):**  
+O texto lista algumas equivalências importantes, que são como "regras"  
+que podemos usar para simplificar ou transformar expressões lógicas.  
+Vamos detalhar algumas delas:  
+
+**Comutatividade:**  
+A ∨ B ⇔ B ∨ A (A ou B é o mesmo que B ou A)  
+A ∧ B ⇔ B ∧ A (A e B é o mesmo que B e A)  
+
+**Associatividade:**  
+(A ∨ B) ∨ C ⇔ A ∨ (B ∨ C) (A ordem em que agrupamos as disjunções não  
+importa)  
+(A ∧ B) ∧ C ⇔ A ∧ (B ∧ C) (A ordem em que agrupamos as conjunções não  
+importa)  
+
+**Distributividade:**  
+A ∨ (B ∧ C) ⇔ (A ∨ B) ∧ (A ∨ C) (O "ou" se distribui sobre o "e")  
+A ∧ (B ∨ C) ⇔ (A ∧ B) ∨ (A ∧ C) (O "e" se distribui sobre o "ou")  
+
+**Elementos Neutros:**  
+A ∨ Falso ⇔ A (Falso não altera o valor do "ou")  
+A ∧ Verdadeiro ⇔ A (Verdadeiro não altera o valor do "e")  
+
+**Complementares:**  
+A ∨ ¬A ⇔ Verdadeiro (Uma proposição ou sua negação é sempre verdadeira)  
+A ∧ ¬A ⇔ Falso (Uma proposição e sua negação nunca podem ser ambas  
+verdadeiras)  
+
+**Leis de De Morgan:**  
+Essas leis são cruciais para negar expressões compostas:  
+¬(A ∨ B) ⇔ ¬A ∧ ¬B (A negação de "A ou B" é equivalente a "não A e não B")  
+¬(A ∧ B) ⇔ ¬A ∨ ¬B (A negação de "A e B" é equivalente a "não A ou não B")  
+
+**Substituição em Equivalências:**  
+Se P ⇔ Q, então podemos substituir P por Q em qualquer FBF sem alterar o  
+valor lógico da FBF maior.  
+
+---
+
+**Conectivos Lógicos em Buscas na Internet e Programação:**  
+O texto menciona o uso de conectivos lógicos em buscas na internet (AND,  
+OR, NOT) e em linguagens de programação. Em programação, eles são usados  
+para controlar o fluxo de execução do programa (ex: if (condição1 AND NOT  
+condição2) then ...).  
+
+---
+
+**Algoritmo para Testar Tautologias (TestaTautologia):**  
+O texto apresenta um algoritmo para verificar se uma FBF da forma P → Q  
+é uma tautologia. A ideia central é:  
+Assumir que P → Q não é uma tautologia.  
+Isso significa que P deve ser verdadeiro e Q deve ser falso (pois essa é a  
+única maneira de um condicional ser falso).  
+Tentar atribuir valores lógicos às proposições atômicas de P e Q de forma  
+que essa condição seja satisfeita.  
+Se durante esse processo chegarmos a uma contradição (ex: uma mesma proposição  
+ter que ser verdadeira e falsa ao mesmo tempo), então nossa suposição inicial  
+estava errada, e P → Q é, na verdade, uma tautologia.  
+Se conseguirmos atribuir valores sem contradição, então P → Q não é uma  
+tautologia.  
+
+**Exemplo do Algoritmo (do texto):**  
+(A → B) → (¬B → ¬A)  
+Assumimos que (A → B) → (¬B → ¬A) é falso.  
+Então, A → B deve ser verdadeiro e ¬B → ¬A deve ser falso.  
+Para ¬B → ¬A ser falso, ¬B deve ser verdadeiro (então B é falso) e ¬A  
+deve ser falso (então A é verdadeiro).  
+Agora temos A verdadeiro e B falso.  
+Como A é verdadeiro e B é falso, A → B é falso.  
+Temos uma contradição: A → B deve ser verdadeiro (passo 2) e falso  
+(passos 5).  
+Portanto, nossa suposição inicial estava errada, e (A → B) → (¬B → ¬A)  
+é uma tautologia.  
+
+---
+
+**Tabela-Verdade vs. Algoritmo TestaTautologia:**  
+A tabela-verdade é um método geral que funciona para qualquer FBF.  
+O algoritmo TestaTautologia é mais eficiente (mais rápido) para FBFs da  
+forma P → Q, mas não funciona para outras formas de FBFs diretamente.
+
+Em resumo, tautologias são verdades lógicas, contradições são falsidades  
+lógicas, e equivalências mostram que duas FBFs têm o mesmo significado lógico.  
+O algoritmo TestaTautologia oferece um método alternativo para verificar  
+tautologias em condicionais, sendo mais eficiente em alguns casos do que a  
+construção completa da tabela-verdade.
+
+---

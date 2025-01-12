@@ -1,0 +1,161 @@
+---------------------------------
+FONTES
+---------------------------------
+
+        ----- livro 1 de referencia -----
+
+AUTOR: Edecio Fernando Lepsen
+LIVRO: Lógica de programação e algoritmos com JavaScript 
+"Editora": novatec
+
+        ----- livro 2 de referencia -----
+
+AUTOR: André Luiz Villar Forbellone
+LIVRO: Lógica de programação: : a construção de algoritmos e 
+estruturas de dados
+"Editora": Pearson Education
+        
+        ----- livro 3 de referencia -----
+
+AUTOR: Marco, marcelo, marcio, ricardo
+LIVRO: Algoritmos e Lógica de programação: um texto introdutorio para 
+a engenharia
+"Editora": CENGAGE
+---------------------------------
+
+-----   ---  -- - informação
+Informação é a matéria-prima que faz com que seja necessária a 
+existência dos computadores, pois eles são capazes de manipular e 
+armazenar um grande volume de dados com alta performance, liberando o 
+homem para outras tarefas nas quais seu conhecimento é indispensável. 
+Devemos observar que existe uma tênue diferença entre dado e 
+informação. Por exemplo, ao citarmos uma data, como 21 de setembro, 
+estamos apresentando um dado; ao dizermos que esse é o Dia da Árvore, 
+estamos agregando valor ao dado data, apresentando uma informação.
+Aproximando-nos da maneira pela qual o computador manipula as 
+informações, vamos dividi-las em quatro tipos primitivos, que serão os 
+tipos básicos que usaremos na construção de algoritmos
+
+Inteiro: toda e qualquer informação numérica que pertença ao conjunto 
+dos números inteiros relativos (negativa, nula ou positiva)
+
+Exemplos
+Vejamos algumas proposições declarativas comuns em que é usado o tipo 
+inteiro:
+
+a. Ele tem 15 irmãos.
+b. A escada possui 8 degraus.
+c. Meu vizinho comprou 2 carros novos.
+
+Enfatizando o conceito de dado, vale observar, por exemplo, o item b: 
+8 é um dado do tipo inteiro e a informação é associar que 8 é o número 
+de degraus da escada.
+
+Real: toda e qualquer informação numérica que pertença ao conjunto dos 
+números reais (negativa, nula ou positiva).
+
+Exemplos
+a. Ela tem 1,73 metro de altura.
+b. Meu saldo bancário é de $ 215,20.
+c. No momento estou pesando 82,5 kg
+
+Caracter: toda e qualquer informação composta de um conjunto de 
+caracteres alfanuméricos: numéricos (0...9), alfabéticos (A...Z, a...
+z) e especiais (por exemplo, #, ?, !, @).
+
+Exemplos
+a. Constava na prova: “Use somente caneta!”.
+b. O parque municipal estava repleto de placas: “Não pise na grama”.
+c. O nome do vencedor é Felisberto Laranjeira
+
+Lógico: toda e qualquer informação que pode assumir apenas duas 
+situações (biestável).
+
+Exemplos
+a. A porta pode estar aberta ou fechada.
+b. A lâmpada pode estar acesa ou apagada
+
+
+-----   ---  -- - Tipos de Comando
+
+Os tipos de comandos de um algoritmo são também denominados 
+estruturas de programação. Existem apenas três tipos de estruturas 
+que podem ser utilizadas para escrever qualquer programa: estruturas 
+sequenciais, de decisão e de repetição. 
+As expressões que são escritas em estruturas de programação envolvem 
+a utilização de dados. 
+
+em um computador são números binários, isto é, sequências de Os e 1s, 
+e são armazenados em sua memória. Não é prático trabalhar diretamente 
+com essa representação, e, então, convencionou-se que os dados 
+manipulados por um programa são categorizados em tipos de dados, que 
+torna simples seu uso para o programador, mas que na realidade, para a 
+máquina, são traduzidos em valores binários. Assim é possível 
+manipular diversos tipos de dados em um algoritmo: números inteiros e 
+reais, valores lógicos, textos etc. 
+
+-----   ---  -- - Variaveis e Constantes
+
+A manipulação desses dados é feita por meio de variáveis e valores 
+constantes, que representam no texto do algoritmo os dados que serão 
+armazenados na memória do computador. O significado de variável é 
+similar à áquele empregado na matemática: representar um valor, porém 
+com um significado físico por trás; esse valor será armazenado na 
+memória de um computador. Um valor constante representa um valor que 
+não pode ser alterado, como o número 25, o nome “Márcio' e assim por 
+diante. 
+
+Um exemplo para ilustrar a diferença entre valores constantes e 
+variáveis seria a construção de um algoritmo para calcular o valor da 
+área de uma circunferência. Naturalmente, teríamos de usar a fórmula 
+que expressa que área é igual a πr2, na qual π tem valor constante
+de 3,1416..., independente de qual seja a circunferência (vale para 
+todas as ocasiões em que calcularmos a área); já o valor de r, que 
+representa o raio, é dependente da circunferência que estamos 
+calculando, logo é variável a cada execução do algoritmo.
+
+-----   ---  -- - Declaração de variáveis
+
+No ambiente computacional, as informações variáveis são guardadas em 
+dispositivos eletrônicos analogamente chamados de memória. Podemos 
+imaginar essa ‘memória’ como sendo um armário repleto de gavetas, no 
+qual as gavetas seriam os locais físicos responsáveis por armazenar 
+objetos; os objetos (que podem ser substituídos) seriam os dados e as 
+gavetas, as variáveis.
+
+Visto que na memória (armário) existem inúmeras variáveis (gavetas), 
+precisamos diferenciá-las, o que é feito por meio de identifi cadores 
+(etiquetas ou rótulos). Cada variável (gaveta), no entanto, pode 
+guardar apenas um dado (objeto) de cada vez, sendo sempre de mesmo 
+tipo primitivo (material).
+
+Portanto, precisamos definir nomes para determinadas gavetas 
+especificando qual o material dos objetos que lá podem ser 
+armazenados; em outras palavras, declarar as variáveis que serão 
+usadas para identificar os dados
+
+>>---sintaxe---> 
+tipo(inteiro, real, caracter, logico) indentificador
+
+Exemplos
+inteiro: X;
+caracter: Nome, Endereço, Data;
+real: ABC, XPTO, Peso, Dólar;
+lógico: Resposta, H286;
+
+No exemplo, Resposta é o nome de um local de memória que só pode 
+conter valores do tipo lógico, ou seja, por convenção, verdade (V) ou 
+falsidade (F). 
+
+Já o identificador X é o nome de um local de memória 
+que só pode conter valores do tipo inteiro, qualquer um deles
+
+Não devemos permitir que mais de uma variável (gaveta) possua o mesmo 
+identificador (etiqueta), já que fi caríamos sem saber que variável 
+utilizar (que gaveta abrir). Só podemos guardar dados (objetos) em 
+variáveis (gavetas) do mesmo material (tipo primitivo), ou seja, uma 
+variável do tipo primitivo inteiro só pode armazenar números inteiros, 
+uma variável lógica, somente verdade (V) ou falsidade (F), e assim por 
+diante. Outra restrição importante é que as variáveis (gavetas) podem 
+receber apenas um dado (objeto) de cada vez
+

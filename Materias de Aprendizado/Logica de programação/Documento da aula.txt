@@ -1,0 +1,209 @@
+Estrutura do Curso de Lógica de Programação (52 Aulas x 2 Horas)
+
+O curso será estruturado em módulos, cada um abordando um tema específico, progredindo dos conceitos mais básicos até os mais avançados. A ideia é que o aluno construa um conhecimento sólido e prático, capaz de aplicar a lógica em diferentes contextos de programação [1-3].
+
+Módulo 1: Introdução à Lógica de Programação e Algoritmos (8 aulas)
+
+Aula 1: O que é Lógica de Programação? [4, 5]
+Conceito de lógica e sua aplicação na programação [5].
+A importância da lógica para o desenvolvimento de sistemas e programas [5-7].
+Raciocínio lógico e pensamento sistêmico [8].
+
+Aula 2: Algoritmos: A Base da Programação [9, 10]
+Definição de algoritmo e suas características [10, 11].
+Algoritmos como receitas ou roteiros para tarefas [9, 11].
+Exemplos de algoritmos do dia a dia [9, 10].
+
+Aula 3: Representação de Algoritmos [12]
+Pseudocódigo e suas vantagens [13, 14].
+Fluxogramas como representação gráfica [12, 15].
+A importância de uma pseudolinguagem para facilitar o aprendizado [13, 14].
+
+Aula 4: Ambiente de Desenvolvimento e Primeiros Programas
+Apresentação de ferramentas como o Visualg e Lazarus [2, 16].
+Criação dos primeiros programas simples [2, 17, 18].
+Conceitos básicos: entrada, processamento e saída [3, 19].
+
+Aula 5: Variáveis e Constantes [16, 20, 21]
+Conceitos e identificação de variáveis e constantes [16, 20].
+Tipos de dados: inteiros, reais, caracteres [19, 22, 23].
+Declaração e atribuição de valores [23].
+
+Aula 6: Operadores [24]
+Operadores aritméticos, relacionais e lógicos [24].
+Expressões e precedência de operadores [24].
+Prática com exercícios [25].
+
+Aula 7: Estrutura Sequencial
+Conceito de estrutura sequencial.
+Exemplos de programas com estruturas sequenciais [19, 26, 27].
+Exercícios práticos.
+
+Aula 8: Exercícios e Revisão do Módulo
+Resolução de exercícios sobre os temas do módulo.
+Revisão dos conceitos principais.
+
+Módulo 2: Estruturas de Controle (12 aulas)
+
+Aula 9: Estruturas Condicionais: SE (IF) [28, 29]
+O comando SE e sua sintaxe [28, 29].
+Exemplos de uso do SE para tomada de decisão [30, 31].
+Implementação de programas com SE.
+
+Aula 10: Estruturas Condicionais: SE-SENÃO (IF-ELSE) [30, 32]
+O comando SE-SENÃO e sua sintaxe [30, 32].
+Exemplos de uso do SE-SENÃO [30, 32].
+Exercícios práticos.
+
+Aula 11: Estruturas Condicionais: ESCOLHA-CASO (SWITCH-CASE) [33]
+O comando ESCOLHA-CASO e sua sintaxe [33].
+Implementação do ESCOLHA-CASO.
+Aplicações para simplificar estruturas de SE aninhados [33].
+
+Aula 12: Estruturas de Repetição: ENQUANTO (WHILE) [34, 35]
+O comando ENQUANTO e sua sintaxe [34, 35].
+Exemplos de uso do ENQUANTO para repetição de tarefas [35].
+Implementação de programas com ENQUANTO.
+
+Aula 13: Estruturas de Repetição: PARA (FOR) [34, 36]
+O comando PARA e sua sintaxe [34, 36].
+Exemplos de uso do PARA para repetições controladas [36].
+Implementação de programas com PARA.
+
+Aula 14: Estruturas de Repetição: REPITA-ATÉ (REPEAT-UNTIL) [34]
+O comando REPITA-ATÉ e sua sintaxe [34].
+Exemplos de uso do REPITA-ATÉ.
+Comparação entre ENQUANTO, PARA e REPITA-ATÉ.
+
+Aula 15: Loops Aninhados
+Conceito e utilização de loops aninhados.
+Exemplos práticos de loops aninhados.
+Exercícios.
+
+Aula 16: Controle de Fluxo em Loops
+Comandos break e continue.
+Exemplos de aplicação.
+
+Exercícios.
+Aula 17: Exercícios com Estruturas Condicionais e de Repetição
+Resolução de exercícios combinando estruturas condicionais e de repetição.
+Implementação de algoritmos mais complexos.
+
+Aulas 18 a 20: Projetos Práticos
+Desenvolvimento de projetos que utilizam as estruturas de controle.
+Exemplos: Calculadora, jogo de adivinhação, etc [37-39].
+
+Módulo 3: Modularização e Funções (10 aulas)
+
+Aula 21: Modularização de Programas [40, 41]
+O conceito de modularidade [40, 41].
+Vantagens da modularização para organização e manutenção do código [42].
+Desenvolvimento de programas com estruturas modulares [40, 41].
+
+Aula 22: Procedimentos [40, 43]
+O que são procedimentos e como criá-los [40, 43].
+A sintaxe de procedimentos [43].
+Exemplos de utilização de procedimentos.
+
+Aula 23: Funções [21, 31, 44]
+O conceito de função [21, 31, 44].
+A sintaxe e a declaração de funções [31, 44].
+Retorno de valores e tipos de retorno [44].
+
+Aula 24: Parâmetros em Funções [22, 45]
+Tipos de parâmetros: por valor e por referência [22].
+Passagem de parâmetros para funções [22, 45].
+Uso de parâmetros *args e **kwargs [46].
+
+Aulas 25-27: Criação de funções e procedimentos
+Criação de funções e procedimentos personalizados.
+Exemplos de funções para operações matemáticas, manipulação de strings, etc.
+Reutilização de código.
+
+Aula 28: Recursividade [47]
+Conceito de recursividade e funções recursivas [47].
+Exemplos de aplicações recursivas [47].
+Cuidados ao usar recursão.
+
+Aulas 29-30: Exercícios e Revisão do Módulo
+Resolução de exercícios que envolvam o uso de modularização e funções.
+Revisão e consolidação dos conceitos aprendidos.
+Módulo 4: Estruturas de Dados (12 aulas)
+
+Aula 31: Vetores (Arrays) [48, 49]
+Definição e utilização de vetores [48, 49].
+Declaração e acesso aos elementos de um vetor [48, 49].
+Aplicações práticas de vetores.
+
+Aula 32: Matrizes [43, 48]
+Definição e utilização de matrizes [43, 48].
+Declaração e acesso aos elementos de uma matriz [43, 48].
+Operações com matrizes [43].
+
+Aula 33: Strings
+Manipulação de strings.
+Funções de string (concatenação, comparação, busca, etc.).
+Aplicações com strings.
+
+Aula 34-35: Pilhas [50]
+Conceito de pilhas (stacks).
+Implementação de pilhas utilizando arrays e estruturas autorreferenciadas [50].
+Operações básicas em pilhas (push, pop, etc.) [50].
+Aplicações práticas de pilhas.
+
+Aulas 36-37: Filas
+Conceito de filas (queues).
+Implementação de filas utilizando arrays e estruturas autorreferenciadas.
+Operações básicas em filas (enqueue, dequeue, etc.).
+Aplicações práticas de filas.
+
+Aula 38: Listas Encadeadas
+Conceito de listas encadeadas.
+Implementação de listas encadeadas.
+Operações em listas encadeadas (inserção, remoção, etc.).
+
+Aula 39: Dicionários e Hash Tables
+Conceito de dicionários (hash tables).
+Implementação de dicionários.
+Aplicações de dicionários.
+
+Aulas 40-42: Exercícios e Projetos Práticos
+Desenvolvimento de exercícios e projetos com o uso de estruturas de dados.
+Resolução de problemas que exijam a escolha da estrutura de dados mais adequada.
+
+Módulo 5: Tópicos Avançados e Práticas de Programação (10 aulas)
+
+Aula 43: Arquivos [38]
+Manipulação de arquivos [38].
+Leitura e escrita em arquivos de texto [38].
+Aplicações com arquivos.
+
+Aula 44: Boas Práticas de Programação [51, 52]
+Importância de escrever código limpo e eficiente [52, 53].
+Estilo de código e documentação [54].
+Técnicas de refatoração [55].
+
+Aula 45: Testes e Depuração [56]
+Importância de testar o código [56].
+Técnicas de depuração [56].
+Testes unitários e desenvolvimento guiado por testes (TDD) [57].
+
+Aula 46: Introdução à Programação Orientada a Objetos (POO) [58-60]
+Conceitos básicos de POO: classes, objetos, herança, polimorfismo [58-60].
+Introdução ao paradigma orientado a objetos [58-60].
+Exemplos simples em uma linguagem como Python [45, 59-61].
+
+Aula 47: Escolhendo a Linguagem de Programação [62]
+Considerações sobre a escolha de uma linguagem de programação [62].
+Panorama das linguagens mais utilizadas [7, 62].
+Como aprender uma nova linguagem [63, 64].
+
+Aula 48: Conceitos de Complexidade de Algoritmos
+Introdução à análise de complexidade de algoritmos.
+Notação Big-O.
+Comparação de algoritmos com diferentes complexidades.
+
+Aulas 49-52: Projetos Finais e Revisão Geral
+Desenvolvimento de projetos práticos mais complexos [65, 66].
+Revisão dos conceitos mais importantes do curso [25].
+Preparação para a continuidade dos estudos em programação [67].

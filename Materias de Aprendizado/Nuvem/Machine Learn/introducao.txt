@@ -1,0 +1,65 @@
+MACHINE LEARNING
+
+O que são modelos de machine learning?
+
+Modelos de machine learning são algoritmos projetados para analisar 
+dados e realizar estimativas ou tomar decisões com base nos padrões 
+encontrados. Eles funcionam como uma "fórmula inteligente" que aprende 
+relações e padrões nos dados, tornando-se cada vez mais eficaz na 
+tarefa à medida que recebem mais informações.
+
+Diferença em relação aos algoritmos tradicionais
+
+Algoritmos tradicionais:
+
+O programador define um conjunto fixo de regras e instruções para o 
+programa executar.
+Exemplo: Para classificar e-mails como spam, seria necessário criar 
+manualmente condições como "Se o assunto contiver 'promoção', marcar 
+como spam".
+Qualquer atualização ou melhoria precisa ser feita manualmente por uma 
+pessoa.
+
+Machine learning:
+
+O programador não precisa definir todas as regras manualmente. Em vez 
+disso, ele fornece dados para que o modelo aprenda os padrões 
+automaticamente.
+O modelo ajusta seus parâmetros baseado nos dados fornecidos, 
+aprendendo por conta própria as regras para desempenhar a tarefa.
+
+Como os modelos de machine learning funcionam?
+
+Treinamento:
+
+O algoritmo é alimentado com dados históricos (dados de entrada e os 
+resultados esperados).
+Ele analisa esses dados e ajusta seus parâmetros para aprender os 
+padrões que conectam as entradas aos resultados.
+
+Aprimoramento contínuo:
+
+Quanto mais dados o modelo processa, mais ele se adapta, melhorando 
+sua precisão e eficiência.
+Isso depende de os dados serem relevantes e representativos da tarefa.
+
+Exemplo prático: Identificar e-mails de spam
+
+Com programação tradicional:
+
+O programador criaria regras fixas como:
+
+"Se o e-mail contiver a palavra 'promoção', classificar como spam."
+Essas regras seriam estáticas e precisariam ser atualizadas 
+manualmente para acompanhar novos padrões.
+
+Com machine learning:
+
+O programador fornece um conjunto de e-mails previamente classificados 
+como spam ou não spam.
+
+O modelo aprende automaticamente quais características (como palavras, 
+remetentes ou formato) estão associadas a e-mails de spam.
+O modelo pode se ajustar sozinho a novos padrões à medida que recebe 
+novos dados.
+

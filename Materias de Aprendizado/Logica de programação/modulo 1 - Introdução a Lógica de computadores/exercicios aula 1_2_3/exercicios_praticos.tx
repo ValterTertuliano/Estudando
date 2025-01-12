@@ -1,0 +1,179 @@
+Com base no conteúdo extraído dos três documentos sobre lógica, algoritmos e representações de algoritmos, aqui estão 20 exercícios práticos para fortalecer o aprendizado:
+
+        **Parte 1: Lógica e Raciocínio**
+
+1. Identifique as premissas e conclua:
+   - Todos os gatos são mamíferos.
+   - Alguns mamíferos são pretos.
+   - Qual a conclusão lógica possível?
+
+R: Todos os gatos são mamiferos e alguns deles podem ser pretos.
+   
+2. Resolva:
+   - Um carro está na garagem ou na rua.
+   - O carro não está na rua.
+   - Onde está o carro?
+
+R: O carro está na garagem.
+
+3. Enumere os passos necessários para preparar um sanduíche simples, considerando que os ingredientes estão na geladeira.
+
+    1 - abrir geladeira
+    2 - pegar todos os ingredientes para o sanduiche
+    3 - fazer o sanduiche
+
+4. Imagine que você precisa somar as idades de três amigos e descobrir quem são os dois mais velhos. Desenvolva uma lógica para resolver o problema.
+
+    1 - perguntar quem é o mais novo
+    2 - somar a idade dos dois mais velhos
+
+        **Parte 2: Algoritmos**
+
+6. Escreva um algoritmo em pseudocódigo para calcular a média final de um aluno que fez 4 provas. A saída deve indicar se o aluno foi aprovado (média >= 7).
+
+inicio
+    variavel real p1, p2, p3, p4, media
+    const int NOTA_MINIMA <- 7
+
+    escrever ("Informe a nota da primeira prova: ")
+    ler p1
+
+    escrever ("Informe a nota da segunda prova: ")
+    ler p2
+
+    escrever ("Informe a nota da terceira prova: ")
+    ler p3
+
+    escrever ("Informe a nota da quarta prova: ")
+    ler p4
+
+    media <- (p1 + p2 + p3 + p4) / 4
+
+    se (media >= NOTA_MINIMA) entao 
+        escrever ("Aprovado")
+        escrever ("Nota final: ", media)
+    senao 
+        escrever ("Reprovado")
+        escrever ("Nota final: ", media)
+    fim se
+fim
+
+7. Crie um algoritmo para verificar se um número digitado pelo usuário é par ou ímpar.
+
+inicio
+    variavel int num
+
+    escrever (" Digite um Número para verificar paridade: ")
+    ler num
+
+    se ( num mod 2 = 0) entao
+        escrever (" O número é par.")
+    senao
+        escrever (" O número é impar." )
+    fim se
+fim
+
+8. Desenvolva um algoritmo que leia o nome e a idade de três pessoas e exiba o nome da mais velha.
+
+inicio
+    variavel texto nome1, nome2, nome3, mais_velho
+    variavel int idade1, idade2, idade3
+
+    escrever ("Informe o nome da 1° pessoa: )
+    ler nome1
+    escrever ("Informe a idade de ", nome1)
+    ler idade1
+
+    escrever ("Informe o nome da 2° pessoa: )
+    ler nome2
+    escrever ("Informe a idade de ", nome2)
+    ler idade2
+
+    escrever ("Informe o nome da 3° pessoa: )
+    ler nome3
+    escrever ("Informe a idade de ", nome3)
+    ler idade3
+
+    se (idade1 >= idade2 e idade1 >= idade3) entao
+        mais_velho <- nome1
+    senao
+        se (idade2 >= idade3) entao
+            mais_velho <- nome2
+        senao
+            mais_velho <- nome3
+        fim se
+    fim se
+
+    escrever (" A pessoa com mais experiencia de vida é: ", mais_velho.")
+
+9. Construa um algoritmo que leia dois números e informe qual deles é o maior.
+
+inicio
+    variavel int num1, num2
+
+    escrever ("Digite um numero: ")
+    ler num1
+
+    escrever ("Digite um outro numero: ")
+    ler num2
+
+    se (num1 > num2) entao
+        escrever ("O primeiro Numero digitado é o maior.")
+    senao
+        se (num2 == num1) entao
+            escrever (" Os dois Numeros são iguais")
+        senao
+            escrever ("O segundo Numero digitado é maior.")
+        fim se
+    fim se
+fim
+
+10. Imagine que você precisa calcular o preço total de uma lista de compras. Crie um algoritmo para isso, considerando que os preços são inseridos um a um.
+
+inicio
+    variavel real preco_total <- 0, preco_compra
+    variavel texto entrada
+
+    enquanto (verdadeiro) faca
+        
+        escrever ("Digite 'sair' para encerrar e obter o valor total das compras.")
+        escrever ("Informe o valor da compra:")
+        ler entrada 
+
+        se (entrada = "sair") entao
+            escrever ("A lista de compras acabou com: ", preco_total)
+            interromper
+        senao
+            preco_compra <- converter_para_real(entrada)
+            preco_total <- preco_total + preco_compra
+        fim se
+
+        escrever ("A lista de compras até o momento está em: ", preco_total)
+    fim enquanto
+fim
+
+        **Parte 3: Representação de Algoritmos**
+
+11. Converta o algoritmo de calcular a média final (exercício 6) para um fluxograma.
+
+12. Elabore um pseudocódigo para verificar se uma senha digitada pelo usuário é válida (exemplo: a senha correta é "1234").
+
+13. Crie um fluxograma que descreva o processo de ligar uma lâmpada com um interruptor.
+
+14. Escreva um pseudocódigo para um caixa eletrônico que aceita saques somente em múltiplos de R$ 10.
+
+15. Converta o algoritmo de verificar número par ou ímpar (exercício 7) em um fluxograma.
+
+        **Parte 4: Aplicações Práticas**
+
+16. Desenvolva um algoritmo em pseudocódigo para calcular o saldo final de uma conta bancária, considerando depósitos e saques.
+
+17. Crie um fluxograma para representar o processo de fazer login em um sistema, considerando validação de usuário e senha.
+
+18. Escreva um pseudocódigo para um programa que verifica se um ano é bissexto.
+
+19. Faça um fluxograma para uma máquina que vende refrigerantes e devolve troco.
+
+20. Desenvolva um algoritmo que recebe três notas e calcula a média ponderada, considerando pesos diferentes para cada nota.
+
+Esses exercícios abrangem conceitos de lógica, algoritmos e representação para promover prática e entendimento progressivos. Se precisar de explicações ou exemplos detalhados, é só pedir!

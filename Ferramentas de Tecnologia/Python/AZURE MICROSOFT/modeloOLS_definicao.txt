@@ -1,0 +1,50 @@
+O modelo OLS (Ordinary Least Squares) é uma técnica amplamente 
+utilizada para ajustar uma linha reta aos dados, em um processo de regressão linear
+
+O Método dos Mínimos Quadrados (MMQ), ou Mínimos Quadrados Ordinários (MQO) 
+ou OLS (do inglês Ordinary Least Squares) é uma técnica de otimização 
+matemática que procura encontrar o melhor ajuste para um conjunto de 
+dados tentando minimizar a soma dos quadrados das diferenças entre o 
+valor estimado e os dados observados
+
+Como o OLS é um método de regressão linear, um das principais 
+suposições é que o modelo deve ser linear. Um gráfico de dispersão ou 
+matriz do gráfico de dispersão pode ser utilizado para avaliar a 
+linearidade entre a variável dependente e as variáveis explanatórias.
+
+ O objetivo do modelo é encontrar os melhores parâmetros que minimizem a soma dos quadrados dos resíduos (diferenças entre os valores reais e os valores previstos).
+
+O modelo de regressão linear simples tem a forma:
+
+Y é igual a Beta_zero mais beta_um + erro( residuo - A diferença real entre o Y e o valor predito)
+
+Y é a variável dependente (o que você quer prever ou explicar).
+X é a variável independente (a variável que você usa para prever).
+Beta_zero é o intercepto (chamado também de deslocamento ou termo 
+constante). 
+beta_um é o coeficiente angular ( chamado de inclinação ou pendente).
+erro é a diferença entre o valor real de y e o valor predito
+
+A razão de ter dois parâmetros (inclinação e deslocamento) é porque, para ajustar uma linha reta aos dados, você precisa de dois elementos básicos para definir essa reta:
+
+Inclinação: Define o "grau de sensibilidade" de 
+𝑌
+Y em relação a 
+𝑋
+X, ou seja, como 
+𝑌
+Y varia à medida que 
+𝑋
+X muda.
+Deslocamento: Define onde a reta começa (quando 
+𝑋
+=
+0
+X=0) e garante que a reta passe pelo ponto adequado no gráfico.
+Sem esses dois parâmetros, a reta seria indefinida, ou seja, não saberíamos como a variável 
+𝑌
+Y depende de 
+𝑋
+X e em que ponto a reta começaria no gráfico.
+
+Esses dois parâmetros tornam o modelo OLS flexível o suficiente para ajustar uma ampla variedade de relações lineares entre as variáveis. O processo de mínimos quadrados é justamente uma forma de encontrar os melhores valores de beta_um e Beta_zero que minimizam a soma dos erros quadrados.

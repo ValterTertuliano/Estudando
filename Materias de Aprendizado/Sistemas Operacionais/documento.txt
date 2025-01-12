@@ -1,0 +1,166 @@
+Documento de Confirmação de Conhecimento em Ciência da Computação
+Este documento descreve um roteiro de estudos abrangente em Ciência da Computação, totalizando 104 horas, desenvolvido com o objetivo de fornecer uma base sólida e fundamental na área. O roteiro foi elaborado com base em livros de referência reconhecidos e progride de conceitos básicos a tópicos avançados.
+Livros de Referência:
+SISTEMAS OPERACIONAIS MODERNOS - 4ª EDIÇÃO - ANDREW S. TANENBAUM
+Sistemas Operacionais: Conceitos e Mecanismos - Prof. Carlos A. Maziero
+Fundamentos matemáticos para a ciência da computação : matemática discreta e suas aplicações / Judith L. Gersting
+Organização estruturada de computadores - Andrew S. Tanenbaum
+Teoria Computacional de Grafos (Fonte a ser especificada)
+Apostila de Computação Quântica (Fonte a ser especificada)
+Processamento Digital de Imagens (Fonte a ser especificada)
+Estrutura do Curso (104 horas, blocos de 2 horas):
+O curso é dividido em quatro módulos principais, além de tópicos adicionais, com progressão gradual de dificuldade. Cada bloco de 2 horas inclui teoria, exemplos e discussões. Materiais complementares dos livros (exercícios, exemplos, tutoriais) podem ser utilizados para aprofundamento.
+
+Módulo 1: Fundamentos Matemáticos e Lógicos (24 horas)
+Este módulo estabelece a base matemática essencial para a Ciência da Computação.
+
+Bloco 1-2 (Horas 1-4): Lógica Formal e Demonstrações:
+Introdução à Lógica Proposicional e de Predicados (Fonte: "Fundamentos matemáticos para a ciência da computação", Capítulos 1 e 2)
+Regras de Dedução (Fonte: "Fundamentos matemáticos para a ciência da computação", Seção 9.5)
+Técnicas de Demonstração: Direta, Contraposição, Absurdo (Fonte: "Fundamentos matemáticos para a ciência da computação", Objetivo do Capítulo 2)
+
+Bloco 3-4 (Horas 5-8): Indução e Teoria dos Números:
+Princípios de Indução Matemática (Fonte: "Fundamentos matemáticos para a ciência da computação", Objetivo do Capítulo 2)
+Conceitos Básicos de Teoria dos Números: Fatoração em Primos, MDC, Função Fi de Euler (Fonte: "Fundamentos matemáticos para a ciência da computação", Objetivo do Capítulo 2)
+
+Bloco 5-6 (Horas 9-12): Recursividade e Relações de Recorrência:
+Definições Recorrentes de Sequências e Objetos (Fonte: "Fundamentos matemáticos para a ciência da computação", Objetivo do Capítulo 3)
+Algoritmos Recursivos (Fonte: "Fundamentos matemáticos para a ciência da computação", Objetivo do Capítulo 3)
+Solução de Relações de Recorrência (Fonte: "Fundamentos matemáticos para a ciência da computação", Objetivo do Capítulo 3)
+
+Bloco 7-8 (Horas 13-16): Conjuntos, Combinatória e Probabilidade:
+Conceitos Básicos de Conjuntos e Operações (Fonte: "Fundamentos matemáticos para a ciência da computação", Capítulo 4)
+Princípios de Contagem e Combinatória (Fonte: "Fundamentos matemáticos para a ciência da computação", Capítulo 4)
+Introdução à Probabilidade (Fonte: "Fundamentos matemáticos para a ciência da computação", Seção nova no Capítulo 4)
+Teorema de Bayes e Distribuição Binomial (Fonte: "Fundamentos matemáticos para a ciência da computação", Seção nova no Capítulo 4)
+
+Bloco 9-10 (Horas 17-20): Relações, Funções e Matrizes:
+Relações Binárias e suas Propriedades: Reflexiva, Simétrica, Transitiva, Antissimétrica (Fonte: "Fundamentos matemáticos para a ciência da computação", Objetivo do Capítulo 5)
+Relações de Equivalência e Ordens Parciais (Fonte: "Fundamentos matemáticos para a ciência da computação", Objetivo do Capítulo 5)
+Conceito de Função, Injetora, Sobrejetora, Composta e Inversa (Fonte: "Fundamentos matemáticos para a ciência da computação", Objetivo do Capítulo 5)
+Operações com Matrizes (Fonte: "Fundamentos matemáticos para a ciência da computação", Seção nova no Capítulo 4)
+
+Bloco 11-12 (Horas 21-24): Análise de Algoritmos:
+Notação de Somatório e Produtório (Fonte: "Fundamentos matemáticos para a ciência da computação", Seção 9.5)
+Função Logaritmo (Fonte: "Fundamentos matemáticos para a ciência da computação", Seção 9.5)
+Análise de Complexidade de Algoritmos (Fonte: "Fundamentos matemáticos para a ciência da computação", Seção 3.3 e Objetivo do Capítulo 3)
+Ordem de Grandeza e Teorema Principal (Fonte: "Fundamentos matemáticos para a ciência da computação", Seção nova no Capítulo 3)
+
+Módulo 2: Arquitetura e Organização de Computadores (16 horas)
+Este módulo aborda a estrutura e o funcionamento dos computadores.
+
+Bloco 13-14 (Horas 25-28): Níveis de um Computador:
+Níveis de Abstração em Computadores (Fonte: "Organização estruturada de computadores", Seção 1.1.2)
+Hardware (Nível 0), Linguagem de Máquina (Nível 1) (Fonte: "Organização estruturada de computadores", Seção 1.1.2)
+Microarquitetura (Nível 2) e Sistema Operacional (Nível 3) (Fonte: "Organização estruturada de computadores", Figura 1.2 e Seção 1.1.2)
+Linguagens de Alto Nível (Nível 4) (Fonte: "Organização estruturada de computadores", Figura 1.2)
+
+Bloco 15-16 (Horas 29-32): Nível Lógico Digital:
+Portas Lógicas e Circuitos Digitais (Fonte: "Organização estruturada de computadores", Capítulo 3)
+Álgebra Booleana (Fonte: "Organização estruturada de computadores", Capítulo 3)
+Barramentos de Computador (Fonte: "Organização estruturada de computadores", Capítulo 3)
+
+Bloco 17-18 (Horas 33-36): Microarquitetura e Controle:
+Interpretação de Instruções (Fonte: "Organização estruturada de computadores", Capítulo 4)
+Ciclo de Busca, Decodificação e Execução (Fonte: "Organização estruturada de computadores", Seção 4.5)
+Unidade Lógica Aritmética (ULA) (Fonte: "Organização estruturada de computadores", Seção 4.5.2)
+Microinstruções e Microprogramação (Fonte: "Organização estruturada de computadores", Seção 4.4)
+
+Bloco 19-20 (Horas 37-40): Desempenho e Paralelismo:
+Princípios de Arquitetura de Computadores: Conjunto de Instruções (Fonte: "Organização estruturada de computadores", Seção 2.1.4)
+Caches de Memória (Fonte: "Organização estruturada de computadores", Seção 2.1.4, 4.5.3 e 4.5.4)
+Pipeline (Fonte: "Organização estruturada de computadores", Seção 4.5.2)
+Execução especulativa (Fonte: "Organização estruturada de computadores", Seção 4.5.4)
+
+Módulo 3: Sistemas Operacionais (24 horas) (Continuação)
+Este módulo explora os princípios e o funcionamento dos sistemas operacionais.
+
+Bloco 21-22 (Horas 41-44): Introdução aos Sistemas Operacionais:
+Conceitos Básicos: Processos, Espaços de Endereçamento, Arquivos (Fonte: "Sistemas Operacionais Modernos", Seção 1.5)
+Chamadas de Sistema (Fonte: "Sistemas Operacionais Modernos", Seção 1.7 e 1.8)
+Abstração e Gerenciamento de Recursos (Fonte: "Sistemas Operacionais: Conceitos e Mecanismos", Capítulo 1)
+
+Bloco 23-24 (Horas 45-48): Processos e Threads:
+Conceito de Processo (Fonte: "Sistemas Operacionais Modernos", Capítulo 2)
+Ciclo de Vida de Tarefas (Fonte: "Sistemas Operacionais: Conceitos e Mecanismos", Capítulo 4)
+Comunicação entre Processos (Fonte: "Sistemas Operacionais Modernos", Capítulo 2)
+Threads (Fonte: "Sistemas Operacionais Modernos", Capítulo 2)
+
+Bloco 25-26 (Horas 49-52): Gerenciamento de Memória:
+Hierarquia de Memória (Fonte: "Sistemas Operacionais Modernos", Capítulo 3)
+Memória Virtual, Paginação e Segmentação (Fonte: "Sistemas Operacionais Modernos", Seção 3.2 e 3.3)
+Algoritmos de Paginação (Fonte: "Sistemas Operacionais Modernos", Seção 3.3)
+
+Bloco 27-28 (Horas 53-56): Sistemas de Arquivos:
+Abstração de Arquivo (Fonte: "Sistemas Operacionais Modernos", Capítulo 4)
+Operações sobre Arquivos (Fonte: "Sistemas Operacionais: Conceitos e Mecanismos", Capítulo 22)
+Organização e Gerenciamento de Sistemas de Arquivos (Fonte: "Sistemas Operacionais Modernos", Capítulo 4)
+Atributos de um arquivo (Fonte: "Sistemas Operacionais: Conceitos e Mecanismos", Capítulo 22)
+
+Bloco 29-30 (Horas 57-60): Entrada/Saída (E/S):
+Gerenciamento de E/S (Fonte: "Sistemas Operacionais Modernos")
+Dispositivos de E/S e Controladores (Fonte: "Sistemas Operacionais Modernos")
+
+Bloco 31-32 (Horas 61-64): Tópicos Avançados em Sistemas Operacionais:
+Pesquisa em Sistemas Operacionais (Fonte: "Sistemas Operacionais Modernos", Seção 1.9 e 2.6)
+Virtualização (Fonte: "Sistemas Operacionais: Conceitos e Mecanismos", introdução)
+Segurança em Sistemas Operacionais (Fonte: "Sistemas Operacionais: Conceitos e Mecanismos", introdução)
+
+Módulo 4: Algoritmos e Estruturas de Dados (28 horas)
+Este módulo foca em algoritmos e estruturas de dados, com ênfase em grafos.
+
+Bloco 33-34 (Horas 65-68): Introdução a Algoritmos e Grafos:
+Conceitos Básicos de Algoritmos (Fonte: "Teoria Computacional de Grafos", Capítulo 1)
+Notação e Pseudocódigo (Fonte: "Teoria Computacional de Grafos", Capítulo 1)
+Introdução à Teoria dos Grafos: Conceitos e Notação (Fonte: "Teoria Computacional de Grafos", Capítulo 2)
+
+Bloco 35-36 (Horas 69-72): Técnicas Básicas em Grafos:
+Representação de Grafos (Fonte: "Teoria Computacional de Grafos", Seção 2.9)
+Adjacências e Ordenação de Vértices/Arestas (Fonte: "Teoria Computacional de Grafos", Seções 3.3 e 3.4)
+Coloração Aproximada e Ordenação Topológica (Fonte: "Teoria Computacional de Grafos", Seções 3.5 e 3.6)
+
+Bloco 37-38 (Horas 73-76): Busca em Grafos:
+Busca em Profundidade e Busca em Largura (Fonte: "Teoria Computacional de Grafos", Capítulo 4)
+Aplicações de Busca em Grafos (Fonte: "Teoria Computacional de Grafos", Capítulo 4)
+
+Bloco 39-40 (Horas 77-80): Otimização Combinatória:
+Técnicas em Otimização Combinatória (Fonte: "Teoria Computacional de Grafos", Capítulo 5)
+Problemas Clássicos de Otimização em Grafos (Fonte: "Teoria Computacional de Grafos", Capítulo 5)
+
+Bloco 41-42 (Horas 81-84): Fluxo Máximo:
+Problema do Fluxo Máximo (Fonte: "Teoria Computacional de Grafos", Capítulo 6)
+Algoritmos para Fluxo Máximo (Fonte: "Teoria Computacional de Grafos", Capítulo 6)
+
+Bloco 43-44 (Horas 85-88): Caminhos Mínimos:
+Problema dos Caminhos Mínimos (Fonte: "Teoria Computacional de Grafos", Capítulo 7)
+Algoritmos de Dijkstra e outros (Fonte: "Teoria Computacional de Grafos", Capítulo 7)
+
+Bloco 45-46 (Horas 89-92): Emparelhamento em Grafos:
+Problema do Emparelhamento Máximo (Fonte: "Teoria Computacional de Grafos", Capítulo 8)
+Algoritmos para Emparelhamento (Fonte: "Teoria Computacional de Grafos", Capítulo 8)
+
+Bloco 47-48 (Horas 93-96): NP-Completude:
+Introdução à Teoria da NP-Completude (Fonte: "Teoria Computacional de Grafos", Capítulo 9)
+Problemas NP-Completos em Grafos (Fonte: "Teoria Computacional de Grafos", Capítulo 9)
+
+Tópicos Adicionais (8 horas)
+Este módulo aborda tópicos mais avançados.
+
+Bloco 49-50 (Horas 97-100): Computação Quântica:
+Introdução à Computação Quântica (Fonte: "Apostila de Computação Quântica", Prefácio)
+Comparação entre Computadores Clássicos e Quânticos (Fonte: "Apostila de Computação Quântica", Seção 1.1)
+Conceitos Básicos de Computação Quântica (Fonte: "Apostila de Computação Quântica", Seção 1.2)
+Circuitos Quânticos (Fonte: "Apostila de Computação Quântica", Capítulo 2)
+
+Bloco 51-52 (Horas 101-104): Processamento de Imagens:
+Introdução ao Processamento Digital de Imagens (Fonte: "Processamento Digital de Imagens", Seção 1.1 e 1.4)
+Fundamentos da Imagem Digital (Fonte: "Processamento Digital de Imagens", Capítulo 2)
+Filtragem Espacial e no Domínio da Frequência (Fonte: "Processamento Digital de Imagens", Capítulos 3 e 4)
+Reconhecimento de Padrões (Fonte: "Processamento Digital de Imagens", Capítulo 12)
+
+Observações:
+A ordem dos blocos é progressiva, partindo dos conceitos matemáticos e lógicos básicos até áreas mais avançadas como computação quântica e processamento de imagens.
+Os materiais complementares dos livros podem ser usados para aprofundamento (ex: exercícios, exemplos, tutoriais).
+Cada bloco de 2 horas deve incluir teoria, exemplos e discussões.
+Este curso de 104 horas proporciona uma base sólida em Ciência da Computação, abrangendo seus principais fundamentos e áreas de aplicação.
+

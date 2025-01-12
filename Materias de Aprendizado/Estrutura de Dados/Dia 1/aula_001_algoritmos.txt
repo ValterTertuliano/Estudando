@@ -1,0 +1,90 @@
+Resumo e entendimento do livro - Algoritmos - teoria e prática - 
+Thomas H. Cormen,  Charles E. Leiserson etc.
+
+Capitulo 1 
+
+- Algoritmos
+
+Informalmente, um algoritmo é qualquer procedimento computacional bem definido que toma algum valor ou conjunto de valores como entrada e 
+produz algum valor ou conjunto de valores como saída. Portanto, um 
+algoritmo é uma sequência de etapas computacionais que transformam a 
+entrada na saída
+
+O enunciado do problema especifica em termos gerais a relação desejada 
+entre entrada e saída. O algoritmo descreve um procedimento 
+computacional específico para se conseguir essa relação entre entrada 
+e saída.
+
+Por exemplo, dada a sequência de entrada 〈31, 41, 59, 26, 41, 58〉, um 
+algoritmo de ordenação devolve como saída a sequência 〈26, 31, 41, 41, 
+58, 59〉. Tal sequência de entrada é denominada instância do problema de
+ordenação. Em geral, uma instância de um problema consiste na entrada 
+(que satisfaz quaisquer restrições impostas no enunciado do problema) 
+necessária para calcular uma solução para o problema.
+
+Diz-se que um algoritmo é correto se, para toda instância de entrada, 
+ele parar com a saída correta. Dizemos que um algoritmo correto 
+resolve o problema computacional dado
+
+Ao contrário do que se poderia esperar, às vezes os algoritmos 
+incorretos podem ser úteis, se pudermos controlar sua taxa de erros
+
+Nem todo problema resolvido por algoritmos tem um conjunto de soluções 
+candidatas fáceis de identificar. Por exemplo, suponha que temos um 
+conjunto de valores numéricos que representam amostras de um sinal e 
+que queremos calcular a transformada discreta de Fourier dessas 
+amostras. A transformada discreta de Fourier converte o domínio do
+tempo para o domínio da frequência, produzindo um conjunto de 
+coeficientes numéricos, de modo que podemos determinar a força de 
+várias frequências no sinal amostrado. Além de estarem no cerne do 
+processamento de sinais, as transformadas discretas de Fourier também 
+se aplicam à compressão de dados e à multiplicação de grandes polinômios e inteiros
+
+- Estrutura de Dados
+
+Uma estrutura de dados é um modo de armazenar e organizar dados com o 
+objetivo de facilitar acesso e modificações. Nenhuma estrutura de 
+dados única funciona bem para todas as finalidades e, por isso, é 
+importante conhecer os pontos fortes e as limitações de várias delas
+
+Algoritmos diferentes criados para resolver o mesmo problema muitas 
+vezes são muito diferentes em termos de eficiência. Essas diferenças 
+podem ser muito mais significativas que as diferenças relativas a 
+hardware e software
+
+vamos comparar um computador mais rápido (computador A) que executa a 
+ordenação por inserção com um computador mais lento (computador B) que 
+executa a ordenação por intercalação. Cada um deve ordenar um arranjo 
+de dez milhões de números. (Embora 10 milhões de números possa parecer 
+muito, se os números forem inteiros de oito bytes, a entrada ocupará 
+cerca de 80 megabytes e caberá com grande folga até mesmo na memória 
+de um laptop barato.) Suponha que o computador A execute dez bilhões 
+de instruções por segundo (mais rapidamente do que qualquer computador 
+sequencial existente na época da redação deste livro) e que o 
+computador B execute apenas dez milhões de instruções por segundo 
+assim, o computador A será 1.000 vezes mais rápido que o computador B 
+em capacidade bruta de computação. Para tornar a diferença ainda mais 
+drástica, suponha que o programador mais astucioso do mundo codifique 
+a ordenação por inserção em linguagem de máquina para o computador A e 
+que o código resultante exija 2n2 instruções para ordenar n números. 
+Suponha ainda que um programador médio implemente a ordenação por 
+intercalação utilizando uma linguagem de alto nível com um compilador 
+ineficiente, sendo que o código resultante totaliza 50n lg n 
+instruções. Para ordenar 10 milhões de números, o computador A leva:
+
+# N instruções # instruções por segundo = # tempo de execução
+2 * (10**7)² / 10**7 = 20 mil segundo
+
+por outro lado, o computador B leva:
+
+50 * (10**7) log (10**7) / 10**7
+
+Usando um algoritmo cujo tempo de execução cresce mais lentamente, até 
+mesmo com um compilador fraco, o computador B funciona mais de 17 
+vezes mais rapidamente que o computador A
+
+O exemplo anterior mostra que os algoritmos, como o hardware de 
+computadores, devem ser considerados como uma tecnologia. O desempenho 
+total do sistema depende da escolha de algoritmos eficientes tanto 
+quanto da escolha de hardware rápido
+

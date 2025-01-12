@@ -1,0 +1,8 @@
+:
+Fontes:
+ "Fundamentos matemáticos para a ciência da computação", Capítulos 1 e 2
+https://pt.wikipedia.org/wiki/Conectivo_l%C3%B3gico
+https://www.youtube.com/watch?v=THieoMyTrLs&list=PLxI8Can9yAHcXBgFryV0AV7LYdLR1skuF&index=2
+https://www.youtube.com/watch?v=a_PDPUmCZSI&list=PLxI8Can9yAHcXBgFryV0AV7LYdLR1skuF&index=3
+
+

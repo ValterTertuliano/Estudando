@@ -1,0 +1,329 @@
+FONTES:
+---------------------------------------------------------
+Escola Estadual de Educação Profissional Ensino Médio Integrado 
+à Educação Profissional 
+
+PDF DO CURSO DE INFORMÁTICA | LÓGICA DE PROGRAMAÇÃO
+Governo do Estado do Ceará - Secretaria da Educação
+
+Lógica de Programação e Algoritmos com JavaScript
+Edécio Fernando Iepsen - Novatec
+
+Algoritmos e Estruturas de Dados 1
+Marcos Castilho, Fabiano Silva, Daniel Weingaertner 
+Universidade Federal do Paraná
+-----------------------------------------------------------
+
+Lógica trata da correção do pensamento. Como filosofia, ela procura saber 
+por que pensamos assim e não de outro jeito. Como arte ou técnica, ela nos 
+ensina a usar corretamente as leis do pensamento. 
+
+O filósofo grego Aristóteles é considerado o criador da lógica. Em sua época, 
+denominava-se razão. Posteriormente, a palavra lógica passou a ser utilizada, 
+e tem origem no grego "logos", que significa linguagem racional. 
+
+Pode-se dizer que a lógica é a arte de pensar corretamente. Como a forma mais 
+complexa do pensamento é o raciocínio, a lógica estuda ou visa a correção do 
+raciocínio. Ela também busca ordenar a razão, pois esta pode funcionar de forma 
+desordenada. Assim, a lógica ensina a colocar ordem no pensamento. 
+
+Desordem: “E se eu escolher aquilo?” ou “É, mas eu não tinha pensado nisso.” 
+Enfim, lógica é a ciência que faz a mente funcionar corretamente. 
+
+Para chegarmos à conclusão de algo, utilizamos premissas, que são conhecimentos 
+prévios. Organizando o pensamento, podemos concluir se algo é verdadeiro ou 
+falso. 
+
+Utilizamos a lógica de forma natural no dia a dia. Por exemplo:
+
+a) Sei que o livro está no armário.  
+Sei que o armário está fechado.  
+
+Logo, concluo que tenho de abrir o armário para pegar o livro.  
+
+Neste exemplo:  
+1ª. (premissa) Sei que o A está no B.  
+2ª. (premissa) Sei que o B está fechado.  
+3ª. (conclusão) Logo, concluo que tenho de abrir o armário para pegar o livro.  
+
+b) Sei que sou mais velho que João. (premissa)  
+Sei que João é mais velho que José. (premissa)  
+
+Então, concluo que sou mais velho que José. (conclusão)  
+
+Outro exemplo:  
+• Todos os filhos de José são mais altos do que Maria.  
+• Antônio é filho de José.  
+
+Então, o que podemos concluir logicamente?
+
+• Pedro é aluno da EEEP.  
+• Para ser aprovado, um aluno da EEEP precisa obter nota maior ou igual a 6,0 
+  e comparecer a mais de 75% das aulas.  
+• Pedro compareceu a todas as aulas e obteve nota igual a 8,0.  
+
+Então, o que podemos concluir?
+
+-----------------------------------------------------------
+Exercício Prático:
+
+1 - Através das premissas, assinale as sentenças que correspondem à conclusão 
+correta:
+
+Se o semáforo com a luz vermelha é para o motorista parar e o verde para seguir, 
+estando eu a pé para atravessar a rua, concluo que:  
+
+a) Posso atravessar a rua com a luz vermelha. - RESPOSTA CORRETA  
+b) O semáforo tem duas luzes.  
+c) Só devo atravessar a rua com a luz verde.  
+
+2 - Patos são animais. Patos têm duas patas. Logo:  
+
+a) Todo o animal tem duas patas.  
+b) Patos têm duas patas. - RESPOSTA CORRETA  
+c) Patos têm bico.  
+
+3 - Desafio dos nove pontos: trace quatro linhas retas passando por todos os 
+nove pontos, sem tirar o lápis do papel. 
+
+RESPOSTA CORRETA  
+1 | 2 | 3  
+---------  
+4 | 5 | 6  
+---------  
+7 | 8 | 9  
+
+-----------------------------------------------------------
+Organizar o pensamento e colocar as coisas em ordem são tarefas de lógica que 
+necessitamos para resolver problemas com o uso do computador. 
+
+Para fazer com que um problema seja resolvido corretamente por um sistema 
+computacional, deve-se dar atenção especial a diversos aspectos, muitos deles 
+relacionados às questões de lógica.
+
+-----------------------------------------------------------
+COMPREENDER O PROBLEMA:
+
+Nas aulas iniciais de Algoritmos e Lógica de Programação, muitos alunos ficam 
+ansiosos para resolver os exercícios rapidamente. Escrevem o programa e testam 
+os resultados para ver se correspondem ao enunciado. 
+
+Porém, se não entenderem bem o que o exercício pede, não conseguirão chegar à 
+resposta certa. Alguns pedem ajuda ao professor; outros, mais tímidos, não o 
+fazem. Isso pode levar à frustração e contribuir para a evasão nos cursos. 
+
+Por isso, é essencial compreender o problema antes de tentar resolvê-lo. Dedique 
+tempo à leitura cuidadosa do enunciado, evitando retrabalho.
+
+-----------------------------------------------------------
+DEDUÇÕES NA CONSTRUÇÃO DE PROGRAMAS:
+
+Na construção das soluções de exercícios, faz-se necessário realizar deduções. 
+Por exemplo:  
+
+1. O carro está na garagem ou na frente da casa.  
+2. O carro não está na frente da casa.  
+Logo, o carro está na garagem.  
+
+Outro exemplo:  
+1. Se chover, Silvana irá ao cinema.  
+2. Choveu.  
+Logo, Silvana foi ao cinema.  
+
+Essas deduções ajudam a raciocinar como sistemas funcionam, aperfeiçoando a 
+lógica para solucionar problemas.
+
+-----------------------------------------------------------
+ENUMERAR AS ETAPAS:
+
+Algumas ações em um programa seguem uma lógica sequencial. Por exemplo:  
+1. Abrir a porta do carro.  
+2. Entrar no carro.  
+3. Ligar o carro.  
+4. Abrir o portão da garagem.  
+5. Engatar a marcha ré.  
+6. Sair com o carro da garagem.  
+7. Fechar o portão.  
+8. Engatar a primeira marcha.  
+9. Dirigir ao destino.  
+
+Se o carro não ligar, seria necessário incluir condições, abordadas mais adiante.
+
+-----------------------------------------------------------
+ANALISAR OUTRAS POSSIBILIDADES DE SOLUÇÃO:
+
+Você tem 3 amigos e precisa somar as idades dos 2 mais velhos.  
+
+Compreender o problema:  
+1. Entender o objetivo: somar as idades dos dois amigos mais velhos.  
+2. Entender a necessidade: conhecer as idades dos amigos.  
+3. Resolver: descobrir as idades dos 3 amigos.  
+
+Soluções:  
+1. Perguntar as idades, comparar e somar as duas maiores.  
+2. Perguntar quem tem a menor idade e somar as outras duas.
+''' 
+Apenas por humor:
+ 1 - peça para um dos amigos fazer a soma 
+'''
+
+Esses passos resolvem o problema, e talvez até com um esforço menor, quando tiver um problema que esteja dificil de resolver de uma forma, respire um pouco, pense se pode existir outra forma de solucioná-lo
+--------------------------------------------------------------
+Sobre problemas e soluções
+
+Vamos iniciar nosso estudo com uma breve discussão sobre problemas e soluções. O 
+objetivo é deixar claro desde o início que:
+
+• não existe, em geral, uma única solução para um mesmo problema;
+• algumas soluções são melhores do que outras, sob algum critério;
+• problemas e instâncias de problemas são conceitos diferentes;
+• nosso foco é em resolver problemas.
+
+Apresentaremos um problema real e discutiremos a existência de diversas soluções 
+para ele. Daremos ênfase nas diferenças entre as soluções e também sobre até que 
+ponto deve-se ficar satisfeito com a primeira solução obtida ou se ela pode ser 
+generalizada para problemas similares.
+
+2.1 Contando o número de presentes em um evento
+No primeiro dia letivo do primeiro semestre de 2009, um dos autores deste material 
+colocou o seguinte problema aos novos alunos: queríamos saber quantos estudantes 
+estavam presentes na sala de aula naquele momento. A sala tinha capacidade 
+aproximada de 100 lugares e naquele momento estava razoavelmente cheia. Os 
+estudantes discutiram várias possibilidades. Apresentamos todas elas a seguir.
+
+Primeira solução
+A primeira solução parecia tão óbvia que levou algum tempo até algum aluno 
+verbalizar: o professor conta os alunos um por um, tomando o cuidado de não 
+contar alguém duas vezes e também de não esquecer de contar alguém. Quais são 
+as vantagens deste método? Trata-se de uma solução simples, fácil de executar e 
+produz o resultado correto. É uma solução perfeita para salas de aula com poucos 
+alunos, digamos, 20 ou 30. Outro aspecto considerado foi o fato de que este método 
+não exige nenhum conhecimento prévio de quem vai executar a operação, a não ser 
+saber contar. Também não exige nenhum equipamento adicional.
+
+Quais as desvantagens? Se o número de alunos na sala for grande, o tempo 
+necessário para o término da operação pode ser insatisfatório. Para piorar, quanto 
+maior o número, maior a chance de aparecerem erros na contagem. Foi discutida a 
+adequação desta solução para se contar os presentes em um comício ou manifestação 
+popular numa praça pública. Concluiu-se pela inviabilidade do método nestes casos.
+
+Neste momento ficou clara a diferença entre um problema e uma instância do 
+problema. No nosso caso, o problema é contar os elementos de um conjunto. A 
+instância do problema que estamos resolvendo é contar as pessoas presentes naquela 
+sala de aula, naquele semestre. Outras instâncias são contar os presentes em um 
+comício específico. Outra é contar os presentes em um estádio de futebol em um 
+certo dia de jogo.
+
+Executamos a contagem em aproximadamente 1 minuto. Dois alunos também 
+fizeram a contagem e, após conferência, obtivemos o resultado correto, que serviu 
+para análise das outras soluções.
+
+Segunda solução
+Pensando no problema de se contar na ordem de 100 alunos, um estudante sugeriu 
+que se fizesse a contagem das carteiras vazias e em seguida uma subtração com 
+relação ao número total de carteiras na sala.
+
+A solução também é muito simples e funciona perfeitamente bem, mas exige um 
+conhecimento prévio: deve-se saber antecipadamente o total de carteiras na sala.
+
+Esta maneira de contar é cada vez melhor quanto maior for o número de presentes, 
+pois o número de carteiras vazias é menor do que o das ocupadas. Por outro lado, se 
+a sala estiver com pouca gente, o método anterior é mais eficiente. Os alunos 
+observaram também que a solução não se aplica para os casos de contagem de 
+presentes a um comício numa praça pública, pois não há carteiras na rua.
+
+Terceira solução
+Para resolver o problema do comício, outro estudante sugeriu que se fizesse uma 
+estimativa baseada na metragem total da praça, multiplicada pelo número estimado 
+de pessoas por metro quadrado.
+
+Solução elegante, na prática é o que a organização do comício e a polícia usam. Mas 
+deve-se saber de antemão a metragem da praça e estimar a taxa de pessoas por metro 
+quadrado. O método é tão bom quanto melhor for a estimativa. Também é melhor se 
+a população estiver uniformemente distribuída.
+
+Concluiu-se que é um bom método, mas que não é preciso. Isto é, a chance do 
+número estimado ser exatamente o número de presentes é baixa. Os métodos 
+anteriores são exatos, isto é, nos dão o número correto de presentes. Este método 
+também serve razoavelmente bem para o número de alunos na sala de aula. De fato, 
+nesta aula, o professor conseguiu o número com aproximação 80% correta (tinha 
+feito isso antes da contagem da primeira solução). A questão que restou é se o erro 
+de 20% é aceitável ou não. Isto depende do motivo pelo qual se quer contar os 
+presentes.
+
+Quarta solução
+Para resolver o problema da precisão, outro estudante sugeriu o uso de roletas. 
+Efetivamente é esta a solução para contar torcedores no estádio ou presentes em um 
+show de rock. Mas também foi considerado que a solução exige uma ou mais 
+catracas, uma barreira para ninguém entrar sem passar pela roleta e etc, para se 
+garantir a exatidão do resultado. No caso do comício não seria viável. No caso da sala 
+de aula foi constatado que não havia roletas e, portanto, o método não se aplicava.
+
+Quinta solução
+Mais uma vez outro estudante apresentou uma boa alternativa: contar o número de 
+filas de carteiras e, dado que todas tenham o mesmo número de estudantes, então 
+bastaria uma simples multiplicação para a determinação do número correto.
+
+De fato esta solução funciona perfeitamente bem em lugares como por exemplo o 
+exército. As filas são rapidamente arrumadas com, digamos, 10 soldados em cada fila. 
+Sabendo-se o número de filas, basta multiplicar por 10, eventualmente tendo-se que 
+contar o número de pessoas em uma fila que não tenha completado 10.
+
+Infelizmente as carteiras estavam bagunçadas na nossa sala e este cálculo não pode 
+ser feito. Também ficaria estranho o professor colocar todos os alunos em filas. Foi 
+também observado que o método fornece a solução exata para o problema.
+
+Sexta solução
+Nova sugestão de outro aluno: cada estudante no início de cada fila conta o número 
+de alunos da sua fila, tomando o cuidado de contar a si próprio também. Depois 
+soma-se todas as contagens de todos os primeiros de fila.
+
+Solução muito boa. Na verdade é a versão em paralelo da primeira solução. 
+Distribuindo-se a tarefa, cada primeiro de fila tem entre 10 e 15 alunos para contar em 
+sua fila. Se a soma foi correta, o número obtido ao final do processo é exato. No caso 
+daquela aula, os estudantes realizaram a operação em poucos segundos, mais algum 
+tempo para as somas (isto demorou mais...). Mas o resultado foi exato.
+
+A solução não exige muito conhecimento prévio, não exige equipamento adicional e 
+é razoavelmente escalável, isto é, funciona para salas de tamanhos diferentes.
+
+Sétima solução
+Para finalizar, o professor apresentou a solução seguinte: todos os estudantes se 
+levantam e se atribuem o número 1. Em seguida, os alunos se organizam em pares. Em 
+cada par, primeiro é somado o número de cada um dos dois; um deles guarda este 
+número e permanece de pé, o outro deve se sentar. Os que ficaram em pé repetem 
+este processo até que só exista um único aluno em pé. Ele tem o número exato de 
+estudantes na sala.
+
+Como se divide a sala em pares, após a primeira rodada metade da sala deve ter o 
+número 2 e a outra metade está sentada, considerando que a sala tem o número de 
+alunos par. Se for ímpar, um deles terá ainda o número 1. Após a segunda rodada, um 
+quarto dos alunos deverá ter o número 4 e três quartos estarão sentados, 
+eventualmente um deles terá um número ímpar. É fácil perceber que o resultado sai 
+em tempo proporcional ao logaritmo do número total de alunos, o que é bem rápido. 
+De fato, para mil pessoas o processo termina em 10 passos e para um milhão de 
+pessoas termina em 20 passos.
+
+Parece um bom algoritmo, ele dá resultado exato, não exige conhecimento prévio, é 
+escalável, isto é, funciona muito bem para um grande número de pessoas, mas exige 
+organização dos presentes.
+
+Infelizmente aquela turma não se organizou direito e o resultado veio com um erro 
+de 40%... Mas após duas rodadas de treinamento, na terceira conseguimos obter o 
+resultado correto.
+
+2.2 Conclusão
+Mesmo para um problema simples existem diversas soluções. A escolha da melhor 
+depende de vários fatores. Por exemplo, se a resposta deve ser exata ou não, ou se os 
+conhecimentos prévios necessários estão disponíveis, e assim por diante.
+
+É importante notar que somente após uma série de considerações é possível escolher 
+a melhor técnica e somente em seguida executar a tarefa.
+
+É importante perceber a diferença entre problema e instância de problema. Por 
+exemplo, somar 2 mais 2 é uma instância do problema de somar dois números. 
+Multiplicar uma matriz por outra é um problema que tem como instância, por 
+exemplo, multiplicar duas matrizes 3 por 3 específicas. Em geral, na ciência da 
+computação, estamos interessados em resolver problemas, ou melhor dizendo, em 
+estudar problemas, e não somente resolver instâncias dele. Saber que 2 + 2 = 4 não 
+interessa. Interessa saber como é o processo de obtenção da soma de dois números.

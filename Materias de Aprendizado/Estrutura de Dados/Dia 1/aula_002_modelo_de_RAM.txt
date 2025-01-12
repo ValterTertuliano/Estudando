@@ -1,0 +1,144 @@
+Resumo e entendimento do livro - Algoritmos - teoria e prática - 
+Thomas H. Cormen,  Charles E. Leiserson etc.
+
+Capitulo 2 parte 2
+
+-----   ---  - Analise de algoritmos
+
+Analisar um algoritmo significa prever os recursos de que o algoritmo 
+necessita. Ocasionalmente, recursos como memória, largura de banda de 
+comunicação ou hardware de computador são a principal preocupação, 
+porém mais frequentemente é o tempo de computação que desejamos medir. 
+
+Em geral, pela análise de vários algoritmos candidatos para um problema, pode-se identificar facilmente um que seja o mais eficiente. 
+
+Essa análise pode indicar mais de um candidato viável, porém, em geral, podemos descartar vários algoritmos de qualidade inferior no 
+processo.
+
+Antes de podermos analisar um algoritmo, devemos ter um modelo da 
+tecnologia de implementação que será usada, inclusive um modelo para 
+os recursos dessa tecnologia e seus custos. Na maior parte deste 
+livro, consideraremos um modelo de computação genérico de máquina de 
+acesso aleatório (random-access machine, RAM) com um único processador 
+como nossa tecnologia de implementação e entenderemos que nossos 
+algoritmos serão implementados como programas de computador. No modelo 
+de RAM, as instruções são executadas uma após outra, sem operações
+oncorrentes.
+
+No sentido estrito, deveríamos definir com precisão as instruções do 
+modelo de RAM e seus custos. Porém, isso seria tedioso e nos daria 
+pouca percepção do projeto e da análise de algoritmos. Não obstante, 
+devemos ter cuidado para não abusar do modelo de RAM. Por exemplo, e 
+se uma RAM tivesse uma instrução de ordenação? Então, poderíamos 
+ordenar com apenas uma instrução. Tal RAM seria irreal, visto que os 
+computadores reais não têm tais instruções. Portanto, nosso guia é o 
+modo como os computadores reais são projetados. O modelo de RAM contém
+instruções comumente encontradas em computadores reais: instruções 
+aritméticas (como soma, subtração, multiplicação, divisão, resto, 
+piso, teto), de movimentação de dados (carregar, armazenar, copiar) e 
+de controle (desvio condicional e incondicional, chamada e retorno de 
+sub-rotinas). Cada uma dessas instruções demora uma quantidade de
+tempo constante.
+
+Os tipos de dados no modelo de RAM são inteiros e de ponto flutuante 
+(para armazenar números reais). Embora normalmente não nos preocupemos 
+com a precisão neste livro, em algumas aplicações a precisão é 
+crucial. Também consideramos um limite para o tamanho de cada palavra 
+de dados. Por exemplo, ao trabalharmos com entradas de tamanho n, em 
+geral consideramos que os inteiros são representados por c lg n bits 
+para alguma constante c ≥ 1
+
+Exigimos c ≥ 1 para que cada palavra possa conter o valor de n, o que 
+nos permite indexar os elementos individuais da entrada, e c terá de 
+ser obrigatoriamente uma constante para que o tamanho da palavra não 
+cresça arbitrariamente. (Se o tamanho da palavra pudesse crescer 
+arbitrariamente, seria possível armazenar enorme quantidade de dados 
+em uma única palavra e executar operações com tudo isso em tempo 
+constante — claramente um cenário irreal.)
+
+Computadores reais contêm instruções que não citamos, e tais 
+instruções representam uma área cinzenta no modelo de RAM. Por 
+exemplo, a exponenciação é uma instrução de tempo constante? No caso 
+geral, não; são necessárias várias instruções para calcular xy quando 
+x e y são números reais. Porém, em situações restritas, a 
+exponenciação é uma operação de tempo constante. Muitos computadores 
+têm uma instrução “deslocar para a esquerda” (shift left) que desloca 
+em tempo constante os bits de um inteiro k posições para a esquerda. 
+
+Na maioria dos computadores, deslocar os bits de um inteiro uma 
+posição para a esquerda equivale a multiplicar por 2; assim,
+deslocar os bits k posições para a esquerda equivale a multiplicar por 
+2k. Portanto, tais computadores podem calcular 2k em uma única 
+instrução de tempo constante deslocando o inteiro 1 k posições para a 
+esquerda, desde que k não seja maior que o número de bits em uma 
+palavra de computador. Procuraremos evitar essas áreas cinzentas no 
+modelo de RAM, mas trataremos o cálculo de 2k como uma operação de 
+tempo constante quando k for um inteiro positivo
+suficientemente pequeno.
+
+No modelo de RAM, não tentamos modelar a hierarquia da memória que é 
+comum em computadores contemporâneos. Isto é, não modelamos caches ou 
+memória virtual. Vários modelos computacionais tentam levar em
+conta os efeitos da hierarquia de memória, que às vezes são 
+significativos em programas reais em máquinas reais.
+Alguns problemas neste livro examinam os efeitos da hierarquia de 
+memória mas, em sua maioria, as análises neste livro não os 
+considerarão. 
+
+Os modelos que incluem a hierarquia de memória são bem mais complexos 
+que o modelo de RAM, portanto pode ser difícil utilizá-los. Além 
+disso, as análises do modelo de RAM em geral permitem previsões 
+excelentes do desempenho em máquinas reais.
+
+Até mesmo a análise de um algoritmo simples no modelo de RAM pode ser 
+um desafio. As ferramentas matemáticas exigidas podem incluir análise 
+combinatória, teoria das probabilidades, destreza em álgebra e a 
+capacidade de identificar os termos mais significativos em uma 
+fórmula. 
+
+Tendo em vista que o comportamento de um algoritmo pode ser diferente 
+para cada entrada possível, precisamos de um meio para resumir esse 
+comportamento em fórmulas simples, de fácil compreensão. Embora 
+normalmente selecionemos apenas um único modelo de máquina para 
+analisar determinado algoritmo, ainda estaremos diante de muitas 
+opções na hora de decidir como expressar nossa análise.
+
+Gostaríamos de dispor de um meio de expressão que seja simples de 
+escrever e manipular, que mostre as
+características importantes de requisitos de recursos de um algoritmo 
+e que suprima os detalhes tediosos.
+
+O tempo despendido pelo procedimento Insertion-Sort depende da 
+entrada: ordenar mil números demora mais que ordenar três números. 
+Além disso, Insertion-Sort pode demorar quantidades de tempo 
+diferentes para ordenar duas sequências de entrada do mesmo tamanho, 
+dependendo do quanto elas já estejam ordenadas. Em geral, o tempo 
+gasto por um algoritmo cresce com o tamanho da entrada; assim, é 
+tradicional descrever o tempo de execução de um programa em função do 
+tamanho de sua entrada. Para isso, precisamos definir os termos “tempo 
+de execução” e “tamanho da entrada” com mais cuidado.
+
+A melhor noção para tamanho da entrada depende do problema que está 
+sendo estudado. No caso de muitos problemas, como a ordenação ou o 
+cálculo de transformações discretas de Fourier, a medida mais natural 
+é o número de itens na entrada — por exemplo, o tamanho n do arranjo 
+para ordenação. Para muitos outros problemas, como a multiplicação de 
+dois inteiros, a melhor medida do tamanho da entrada é o número total 
+de bits necessários para representar a entrada em notação binária 
+comum. Às vezes, é mais apropriado descrever o tamanho da entrada com
+dois números em vez de um. Por exemplo, se a entrada para um algoritmo 
+é um grafo, o tamanho da entrada pode ser descrito pelos números de 
+vértices e arestas no grafo. Indicaremos qual medida de tamanho da 
+entrada está sendo usada com cada problema que estudarmos
+
+O tempo de execução de um algoritmo em determinada entrada é o número 
+de operações primitivas ou “passos” executados. É conveniente definir 
+a noção de passo de modo que ela seja tão independente de máquina 
+quanto possível. Por enquanto, vamos adotar a visão a seguir. Uma 
+quantidade de tempo constante é exigida para executar cada linha do 
+nosso pseudo código. Uma linha pode demorar uma quantidade de tempo 
+diferente de outra linha, mas consideraremos que cada execução da 
+i-ésima linha leva um tempo ci, onde ci é uma constante. Esse ponto de 
+vista está de acordo com o modelo de RAM e também reflete o modo como 
+o pseudo-código seria implementado na maioria dos
+computadores reais.

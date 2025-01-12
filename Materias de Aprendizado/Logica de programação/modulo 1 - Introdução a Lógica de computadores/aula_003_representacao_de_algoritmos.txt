@@ -1,0 +1,123 @@
+---------------------------------
+FONTES
+---------------------------------
+
+        ----- livro 1 de referencia -----
+
+AUTOR: Adolfo José Gonçalves Stavaux Baudson, Francisco César Rodrigues de Araújo
+LIVRO: Algoritmos e Programação 
+"Editora": rede e- Tec Brasil - Instituto Federal de Educação, ciência e Tecnologia - MINAS GERAIS - Campus Ouro Preto - 2013
+
+        ----- livro 2 de referencia -----
+
+AUTOR: Paulo Sérgio de Moraes
+LIVRO:
+"Editora": Unicamp - Centro de COmputação - DSC
+
+        ----- livro 3 de referencia -----
+
+AUTOR: Fabricio Ferrari, Cristian Cechinel
+LIVRO: Introdução a Algoritmos e Programação
+"Editora": não informado
+
+        ----- livro 4 de referencia -----
+
+AUTOR: Bruno Jefferson de Souza, José Jorge Lima Dias Júnior, Andrei de Araújo Formiga
+LIVRO: Introdução a Programação
+"Editora": Editora da UFPB - João Pessoa - 2014
+
+
+------------------------------------------
+AULA: REPRESENTAÇÃO DE ALGORITMOS
+------------------------------------------
+
+Pseudolinguagem: é um conjunto de técnicas e comandos construidos na lingua portugues com o objetivo de facilitar a 
+programação, algoritmos desenvolvidos em uma pseudolinguagem não são executados diretamente pelo computador, precisam ser 
+transcritos para uma linguagem de programação(PASCAL, C, Ruby, Python, etc.)
+
+Pseudocódigo: Os algoritmos sao descritos em uma linguagem chamada pseudocodigo. Este nome e
+uma alusão à posterior implementacao em uma linguagem de programaçao, ou seja, quando
+formos programar em uma linguagem, por exemplo Visual Basic, estaremos gerando codigo em
+Visual Basic. Por isso os algoritmos sao independentes das linguagens de programaçao. Ao
+contrario de uma linguagem de programacao nao existe um formalismo rigido de como deve ser
+escrito o algoritmo.
+
+O algoritmo deve ser fácil de se interpretar e fácil de codificar. Ou seja, ele deve ser o
+intermediário entre a linguagem falada e a linguagem de programação.
+
+Fluxograma: Consiste em usar formas geometricas padronizadas para descrever os passos a serem executados pelos algoritmos,
+a vantagem de se fazer uso deles está na facilidade de compreendê-los. Os fluxogramas possuem um padrão mundial em sua simbologia
+
+Descrição narrativa: Os algoritmos são expressos em linguagem natural (português, inglês, francês, espanhol, etc.). Sua
+principal desvantagem se encontra no fato da linguagem natural estar bem distante da linguagem
+utilizada pelos computadores. Logo, a tradução de uma para a outra se torna uma atividade bastante
+dispendiosa. Além disso, linguagens naturais são mais propensas a ambiguidades. Muitas vezes uma
+palavra pode ter vários significados, dependendo do contexto no qual são utilizadas. Em contrapartida,
+é bem mais fácil elaborar um algoritmo por meio de uma linguagem com a qual já temos uma certa
+familiaridade, do que através de linguagens que não são utilizadas com frequência no dia a dia.
+
+Linguagem Algortimica: A linguagem que o computador é capaz de compreender tem grande influência na elaboração de
+algoritmos projetados para ele. Seus passos não podem conter instruções desconhecidas ou fazer
+referência a símbolos ou expressões que os computadores não conseguem decifrar. as linguagens de programação, se baseia em conceitos e em arquiteturas de hardware que
+determinam o funcionamento básico de um computador. Dentre as existentes, a mais utilizada nos
+computadores atuais é a arquitetura de von Neumann. Seu autor, John Von Neumann,
+propôs um modelo em que as instruções e os dados ficam juntos na memória
+
+O processador busca as instruções na memória e as executa uma de cada vez, segundo o seguinte ciclo
+de execução:
+1. Busca instrução;
+2. Decodifica instrução;
+3. Executa instrução;
+4. Volta para o passo 1 para buscar a instrução seguinte na memória
+
+Para esclarecer como funciona a execução de um algoritmo baseado no ciclo de execução mencionado, considere uma memória com 32 posições para armazenamento
+
+Nas três primeiras células constam as instruções
+que serão executadas e, da oitava à décima, constam valores armazenados nas posições de memória
+nomeadas por x, y e z, respectivamente.
+
+Supondo que a execução do algoritmo em questão inicia-se com a busca da instrução no endereço 0
+(zero), o ciclo de execução continua com a decodificação da instrução x = 2, que, após sua realização,
+resulta no armazenamento do valor 2 na posição de memória de número 8, nomeada de x. O passo
+4 então é executado, dando início à busca da próxima instrução. Com isso, a instrução y = 3 é
+encontrada e decodificada, gerando como resultado o armazenamento do valor 3 na posição de número
+9, nomeada de y. O mesmo ocorre com a instrução z = x.y, que, após sua decodificação, armazena
+o valor 6 (produto de x por y) na posição de endereço 10 e rotulada de z. O algoritmo em descrição
+narrativa para a execução das instruções anteriores encontra-se logo abaixo:
+1. Escreva 2 na posição de memória nomeada de x.
+2. Escreva 3 na posição de memória nomeada de y.
+3. Multiplique x e y e o resultado escreva em z
+
+Modelos como o mencionado anteriormente não apenas definem a forma como os dados são processados pelo computador, mas também a linguagem que eles são capazes de compreender. Assim sendo,
+a linguagem utilizada pelos computadores está restrita a um conjunto limitado de instruções, cujo
+funcionamento depende de sua arquitetura de hardware. As linguagens de programação imperativas
+(Pascal, C, Cobol etc), por exemplo, foram criadas em função da arquitetura de von Neumman
+
+A linguagem algorítmica, também chamada de pseudocódigo ou pseudo-linguagem, por sua vez,
+consiste no emprego de uma linguagem intermediária entre a linguagem natural e uma linguagem de
+programação. Esse meio termo resulta em uma linguagem que se aproxima das construções de uma
+linguagem de programação, sem exigir, no entanto, rigidez na definição das regras para utilização de
+suas instruções
+. Geralmente, essa forma de representação de algoritmos é uma versão reduzida de
+linguagens de alto nível como C e Pascal
+
+Exemplo de Pseudocódigo:
+1 ALGORITMO
+    2 DECLARE nota1, nota2, M : NUMÉRICO
+    3 LEIA nota1
+    4 LEIA nota2
+    5 M ← (nota1 + nota2) / 2
+    6 SE M >= 7.0 ENTÃO
+        7 ESCREVA “Aprovado”
+    8 SENÃO
+        9 ESCREVA “Reprovado”
+    10 FIM-SE
+    11 FIM_ALGORITMO.
+
+As palavras em letras maiúsculas correspondem a palavras reservadas que fazem parte do conjunto
+de regras que a linguagem algorítmica deve seguir.
+
+A principal vantagem da forma de representação em linguagem algorítmica está na facilidade com
+a qual um pseudocódigo pode ser transcrito para uma linguagem de programação. Assim como os 
+fluxogramas, a desvantagem fica por conta da limitação do seu poder de expressão, devido às regras
+impostas para a elaboração das instruções.
