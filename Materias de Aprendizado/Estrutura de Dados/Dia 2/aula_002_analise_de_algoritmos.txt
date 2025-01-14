@@ -10,9 +10,11 @@ necessita. Ocasionalmente, recursos como memória, largura de banda de
 comunicação ou hardware de computador são a principal preocupação, 
 porém mais frequentemente é o tempo de computação que desejamos medir. 
 
-Em geral, pela análise de vários algoritmos candidatos para um problema, pode-se identificar facilmente um que seja o mais eficiente. 
+Em geral, pela análise de vários algoritmos candidatos para um 
+problema, pode-se identificar facilmente um que seja o mais eficiente. 
 
-Essa análise pode indicar mais de um candidato viável, porém, em geral, podemos descartar vários algoritmos de qualidade inferior no 
+Essa análise pode indicar mais de um candidato viável, porém, em 
+geral, podemos descartar vários algoritmos de qualidade inferior no 
 processo.
 
 Antes de podermos analisar um algoritmo, devemos ter um modelo da 
@@ -23,7 +25,7 @@ acesso aleatório (random-access machine, RAM) com um único processador
 como nossa tecnologia de implementação e entenderemos que nossos 
 algoritmos serão implementados como programas de computador. No modelo 
 de RAM, as instruções são executadas uma após outra, sem operações
-oncorrentes.
+concorrentes.
 
 No sentido estrito, deveríamos definir com precisão as instruções do 
 modelo de RAM e seus custos. Porém, isso seria tedioso e nos daria 
@@ -104,9 +106,9 @@ analisar determinado algoritmo, ainda estaremos diante de muitas
 opções na hora de decidir como expressar nossa análise.
 
 Gostaríamos de dispor de um meio de expressão que seja simples de 
-escrever e manipular, que mostre as
-características importantes de requisitos de recursos de um algoritmo 
-e que suprima os detalhes tediosos.
+escrever e manipular, que mostre as características importantes de 
+requisitos de recursos de um algoritmo e que suprima os detalhes 
+tediosos.
 
 O tempo despendido pelo procedimento Insertion-Sort depende da 
 entrada: ordenar mil números demora mais que ordenar três números. 
@@ -142,3 +144,44 @@ i-ésima linha leva um tempo ci, onde ci é uma constante. Esse ponto de
 vista está de acordo com o modelo de RAM e também reflete o modo como 
 o pseudo-código seria implementado na maioria dos
 computadores reais.
+
+O tempo de execução do algoritmo é a soma dos tempos de execução para 
+cada instrução executada; uma instrução que demanda c.i passos para 
+ser executada e é executada n vezes contribuirá com c.i.n para o tempo 
+de execução total
+
+Usamos algumas abstrações simplificadoras para facilitar nossa análise 
+do procedimento.
+
+Primeiro, ignoramos o custo real de cada instrução, usando as 
+constantes c.i para representar esses custos. Então, observamos que  
+até mesmo essas constantes nos dão mais detalhes do que realmente 
+necessitamos: 
+
+Expressamos o tempo de execução do pior caso como an2 + bn + c para 
+algumas constantes a, b e c que dependem dos custos de instrução c.i. 
+Desse modo, ignoramos não apenas os custos reais de instrução, mas 
+também os custos abstratos c.i.
+
+A taxa de crescimento, ou ordem de crescimento, do tempo de execução 
+que realmente nos interessa. Portanto, consideramos apenas o termo 
+inicial de uma fórmula (por exemplo, an2), já que os termos de ordem 
+mais baixa são relativamente insignificantes para grandes valores de n.
+Também ignoramos o coeficiente constante do termo inicial, visto que 
+fatores constantes são menos significativos que a taxa de crescimento 
+na determinação da eficiência computacional para grandes entradas
+
+quando ignoramos os termos de ordem mais baixa e o coeficiente 
+constante do termo inicial, resta apenas o fator de n2 do termo 
+inicial. Afirmamos que a ordenação por inserção tem um tempo de 
+execução do pior caso igual a Θ(n2) (lido como “teta de n ao quadrado”)
+
+Em geral, consideramos que um algoritmo é mais eficiente que outro se 
+seu tempo de execução do pior caso apresentar uma ordem de crescimento 
+mais baixa. Devido a fatores constantes e termos de ordem mais baixa, 
+um algoritmo cujo tempo de execução tenha uma ordem de crescimento 
+mais alta pode demorar menos tempo para pequenas entradas do que um 
+algoritmo cuja ordem de crescimento seja mais baixa. Porém, para 
+entradas suficientemente grandes, um algoritmo Θ(n2), por exemplo, 
+será executado mais rapidamente no pior caso que um algoritmo Θ(n3).
+

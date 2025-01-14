@@ -1,166 +1,312 @@
-Documento de Confirmação de Conhecimento em Ciência da Computação
-Este documento descreve um roteiro de estudos abrangente em Ciência da Computação, totalizando 104 horas, desenvolvido com o objetivo de fornecer uma base sólida e fundamental na área. O roteiro foi elaborado com base em livros de referência reconhecidos e progride de conceitos básicos a tópicos avançados.
-Livros de Referência:
-SISTEMAS OPERACIONAIS MODERNOS - 4ª EDIÇÃO - ANDREW S. TANENBAUM
-Sistemas Operacionais: Conceitos e Mecanismos - Prof. Carlos A. Maziero
-Fundamentos matemáticos para a ciência da computação : matemática discreta e suas aplicações / Judith L. Gersting
-Organização estruturada de computadores - Andrew S. Tanenbaum
-Teoria Computacional de Grafos (Fonte a ser especificada)
-Apostila de Computação Quântica (Fonte a ser especificada)
-Processamento Digital de Imagens (Fonte a ser especificada)
-Estrutura do Curso (104 horas, blocos de 2 horas):
-O curso é dividido em quatro módulos principais, além de tópicos adicionais, com progressão gradual de dificuldade. Cada bloco de 2 horas inclui teoria, exemplos e discussões. Materiais complementares dos livros (exercícios, exemplos, tutoriais) podem ser utilizados para aprofundamento.
-
-Módulo 1: Fundamentos Matemáticos e Lógicos (24 horas)
-Este módulo estabelece a base matemática essencial para a Ciência da Computação.
-
-Bloco 1-2 (Horas 1-4): Lógica Formal e Demonstrações:
-Introdução à Lógica Proposicional e de Predicados (Fonte: "Fundamentos matemáticos para a ciência da computação", Capítulos 1 e 2)
-Regras de Dedução (Fonte: "Fundamentos matemáticos para a ciência da computação", Seção 9.5)
-Técnicas de Demonstração: Direta, Contraposição, Absurdo (Fonte: "Fundamentos matemáticos para a ciência da computação", Objetivo do Capítulo 2)
-
-Bloco 3-4 (Horas 5-8): Indução e Teoria dos Números:
-Princípios de Indução Matemática (Fonte: "Fundamentos matemáticos para a ciência da computação", Objetivo do Capítulo 2)
-Conceitos Básicos de Teoria dos Números: Fatoração em Primos, MDC, Função Fi de Euler (Fonte: "Fundamentos matemáticos para a ciência da computação", Objetivo do Capítulo 2)
-
-Bloco 5-6 (Horas 9-12): Recursividade e Relações de Recorrência:
-Definições Recorrentes de Sequências e Objetos (Fonte: "Fundamentos matemáticos para a ciência da computação", Objetivo do Capítulo 3)
-Algoritmos Recursivos (Fonte: "Fundamentos matemáticos para a ciência da computação", Objetivo do Capítulo 3)
-Solução de Relações de Recorrência (Fonte: "Fundamentos matemáticos para a ciência da computação", Objetivo do Capítulo 3)
-
-Bloco 7-8 (Horas 13-16): Conjuntos, Combinatória e Probabilidade:
-Conceitos Básicos de Conjuntos e Operações (Fonte: "Fundamentos matemáticos para a ciência da computação", Capítulo 4)
-Princípios de Contagem e Combinatória (Fonte: "Fundamentos matemáticos para a ciência da computação", Capítulo 4)
-Introdução à Probabilidade (Fonte: "Fundamentos matemáticos para a ciência da computação", Seção nova no Capítulo 4)
-Teorema de Bayes e Distribuição Binomial (Fonte: "Fundamentos matemáticos para a ciência da computação", Seção nova no Capítulo 4)
-
-Bloco 9-10 (Horas 17-20): Relações, Funções e Matrizes:
-Relações Binárias e suas Propriedades: Reflexiva, Simétrica, Transitiva, Antissimétrica (Fonte: "Fundamentos matemáticos para a ciência da computação", Objetivo do Capítulo 5)
-Relações de Equivalência e Ordens Parciais (Fonte: "Fundamentos matemáticos para a ciência da computação", Objetivo do Capítulo 5)
-Conceito de Função, Injetora, Sobrejetora, Composta e Inversa (Fonte: "Fundamentos matemáticos para a ciência da computação", Objetivo do Capítulo 5)
-Operações com Matrizes (Fonte: "Fundamentos matemáticos para a ciência da computação", Seção nova no Capítulo 4)
-
-Bloco 11-12 (Horas 21-24): Análise de Algoritmos:
-Notação de Somatório e Produtório (Fonte: "Fundamentos matemáticos para a ciência da computação", Seção 9.5)
-Função Logaritmo (Fonte: "Fundamentos matemáticos para a ciência da computação", Seção 9.5)
-Análise de Complexidade de Algoritmos (Fonte: "Fundamentos matemáticos para a ciência da computação", Seção 3.3 e Objetivo do Capítulo 3)
-Ordem de Grandeza e Teorema Principal (Fonte: "Fundamentos matemáticos para a ciência da computação", Seção nova no Capítulo 3)
-
-Módulo 2: Arquitetura e Organização de Computadores (16 horas)
-Este módulo aborda a estrutura e o funcionamento dos computadores.
-
-Bloco 13-14 (Horas 25-28): Níveis de um Computador:
-Níveis de Abstração em Computadores (Fonte: "Organização estruturada de computadores", Seção 1.1.2)
-Hardware (Nível 0), Linguagem de Máquina (Nível 1) (Fonte: "Organização estruturada de computadores", Seção 1.1.2)
-Microarquitetura (Nível 2) e Sistema Operacional (Nível 3) (Fonte: "Organização estruturada de computadores", Figura 1.2 e Seção 1.1.2)
-Linguagens de Alto Nível (Nível 4) (Fonte: "Organização estruturada de computadores", Figura 1.2)
-
-Bloco 15-16 (Horas 29-32): Nível Lógico Digital:
-Portas Lógicas e Circuitos Digitais (Fonte: "Organização estruturada de computadores", Capítulo 3)
-Álgebra Booleana (Fonte: "Organização estruturada de computadores", Capítulo 3)
-Barramentos de Computador (Fonte: "Organização estruturada de computadores", Capítulo 3)
-
-Bloco 17-18 (Horas 33-36): Microarquitetura e Controle:
-Interpretação de Instruções (Fonte: "Organização estruturada de computadores", Capítulo 4)
-Ciclo de Busca, Decodificação e Execução (Fonte: "Organização estruturada de computadores", Seção 4.5)
-Unidade Lógica Aritmética (ULA) (Fonte: "Organização estruturada de computadores", Seção 4.5.2)
-Microinstruções e Microprogramação (Fonte: "Organização estruturada de computadores", Seção 4.4)
-
-Bloco 19-20 (Horas 37-40): Desempenho e Paralelismo:
-Princípios de Arquitetura de Computadores: Conjunto de Instruções (Fonte: "Organização estruturada de computadores", Seção 2.1.4)
-Caches de Memória (Fonte: "Organização estruturada de computadores", Seção 2.1.4, 4.5.3 e 4.5.4)
-Pipeline (Fonte: "Organização estruturada de computadores", Seção 4.5.2)
-Execução especulativa (Fonte: "Organização estruturada de computadores", Seção 4.5.4)
-
-Módulo 3: Sistemas Operacionais (24 horas) (Continuação)
-Este módulo explora os princípios e o funcionamento dos sistemas operacionais.
-
-Bloco 21-22 (Horas 41-44): Introdução aos Sistemas Operacionais:
-Conceitos Básicos: Processos, Espaços de Endereçamento, Arquivos (Fonte: "Sistemas Operacionais Modernos", Seção 1.5)
-Chamadas de Sistema (Fonte: "Sistemas Operacionais Modernos", Seção 1.7 e 1.8)
-Abstração e Gerenciamento de Recursos (Fonte: "Sistemas Operacionais: Conceitos e Mecanismos", Capítulo 1)
-
-Bloco 23-24 (Horas 45-48): Processos e Threads:
-Conceito de Processo (Fonte: "Sistemas Operacionais Modernos", Capítulo 2)
-Ciclo de Vida de Tarefas (Fonte: "Sistemas Operacionais: Conceitos e Mecanismos", Capítulo 4)
-Comunicação entre Processos (Fonte: "Sistemas Operacionais Modernos", Capítulo 2)
-Threads (Fonte: "Sistemas Operacionais Modernos", Capítulo 2)
-
-Bloco 25-26 (Horas 49-52): Gerenciamento de Memória:
-Hierarquia de Memória (Fonte: "Sistemas Operacionais Modernos", Capítulo 3)
-Memória Virtual, Paginação e Segmentação (Fonte: "Sistemas Operacionais Modernos", Seção 3.2 e 3.3)
-Algoritmos de Paginação (Fonte: "Sistemas Operacionais Modernos", Seção 3.3)
-
-Bloco 27-28 (Horas 53-56): Sistemas de Arquivos:
-Abstração de Arquivo (Fonte: "Sistemas Operacionais Modernos", Capítulo 4)
-Operações sobre Arquivos (Fonte: "Sistemas Operacionais: Conceitos e Mecanismos", Capítulo 22)
-Organização e Gerenciamento de Sistemas de Arquivos (Fonte: "Sistemas Operacionais Modernos", Capítulo 4)
-Atributos de um arquivo (Fonte: "Sistemas Operacionais: Conceitos e Mecanismos", Capítulo 22)
-
-Bloco 29-30 (Horas 57-60): Entrada/Saída (E/S):
-Gerenciamento de E/S (Fonte: "Sistemas Operacionais Modernos")
-Dispositivos de E/S e Controladores (Fonte: "Sistemas Operacionais Modernos")
-
-Bloco 31-32 (Horas 61-64): Tópicos Avançados em Sistemas Operacionais:
-Pesquisa em Sistemas Operacionais (Fonte: "Sistemas Operacionais Modernos", Seção 1.9 e 2.6)
-Virtualização (Fonte: "Sistemas Operacionais: Conceitos e Mecanismos", introdução)
-Segurança em Sistemas Operacionais (Fonte: "Sistemas Operacionais: Conceitos e Mecanismos", introdução)
-
-Módulo 4: Algoritmos e Estruturas de Dados (28 horas)
-Este módulo foca em algoritmos e estruturas de dados, com ênfase em grafos.
-
-Bloco 33-34 (Horas 65-68): Introdução a Algoritmos e Grafos:
-Conceitos Básicos de Algoritmos (Fonte: "Teoria Computacional de Grafos", Capítulo 1)
-Notação e Pseudocódigo (Fonte: "Teoria Computacional de Grafos", Capítulo 1)
-Introdução à Teoria dos Grafos: Conceitos e Notação (Fonte: "Teoria Computacional de Grafos", Capítulo 2)
-
-Bloco 35-36 (Horas 69-72): Técnicas Básicas em Grafos:
-Representação de Grafos (Fonte: "Teoria Computacional de Grafos", Seção 2.9)
-Adjacências e Ordenação de Vértices/Arestas (Fonte: "Teoria Computacional de Grafos", Seções 3.3 e 3.4)
-Coloração Aproximada e Ordenação Topológica (Fonte: "Teoria Computacional de Grafos", Seções 3.5 e 3.6)
-
-Bloco 37-38 (Horas 73-76): Busca em Grafos:
-Busca em Profundidade e Busca em Largura (Fonte: "Teoria Computacional de Grafos", Capítulo 4)
-Aplicações de Busca em Grafos (Fonte: "Teoria Computacional de Grafos", Capítulo 4)
-
-Bloco 39-40 (Horas 77-80): Otimização Combinatória:
-Técnicas em Otimização Combinatória (Fonte: "Teoria Computacional de Grafos", Capítulo 5)
-Problemas Clássicos de Otimização em Grafos (Fonte: "Teoria Computacional de Grafos", Capítulo 5)
-
-Bloco 41-42 (Horas 81-84): Fluxo Máximo:
-Problema do Fluxo Máximo (Fonte: "Teoria Computacional de Grafos", Capítulo 6)
-Algoritmos para Fluxo Máximo (Fonte: "Teoria Computacional de Grafos", Capítulo 6)
-
-Bloco 43-44 (Horas 85-88): Caminhos Mínimos:
-Problema dos Caminhos Mínimos (Fonte: "Teoria Computacional de Grafos", Capítulo 7)
-Algoritmos de Dijkstra e outros (Fonte: "Teoria Computacional de Grafos", Capítulo 7)
-
-Bloco 45-46 (Horas 89-92): Emparelhamento em Grafos:
-Problema do Emparelhamento Máximo (Fonte: "Teoria Computacional de Grafos", Capítulo 8)
-Algoritmos para Emparelhamento (Fonte: "Teoria Computacional de Grafos", Capítulo 8)
-
-Bloco 47-48 (Horas 93-96): NP-Completude:
-Introdução à Teoria da NP-Completude (Fonte: "Teoria Computacional de Grafos", Capítulo 9)
-Problemas NP-Completos em Grafos (Fonte: "Teoria Computacional de Grafos", Capítulo 9)
-
-Tópicos Adicionais (8 horas)
-Este módulo aborda tópicos mais avançados.
-
-Bloco 49-50 (Horas 97-100): Computação Quântica:
-Introdução à Computação Quântica (Fonte: "Apostila de Computação Quântica", Prefácio)
-Comparação entre Computadores Clássicos e Quânticos (Fonte: "Apostila de Computação Quântica", Seção 1.1)
-Conceitos Básicos de Computação Quântica (Fonte: "Apostila de Computação Quântica", Seção 1.2)
-Circuitos Quânticos (Fonte: "Apostila de Computação Quântica", Capítulo 2)
-
-Bloco 51-52 (Horas 101-104): Processamento de Imagens:
-Introdução ao Processamento Digital de Imagens (Fonte: "Processamento Digital de Imagens", Seção 1.1 e 1.4)
-Fundamentos da Imagem Digital (Fonte: "Processamento Digital de Imagens", Capítulo 2)
-Filtragem Espacial e no Domínio da Frequência (Fonte: "Processamento Digital de Imagens", Capítulos 3 e 4)
-Reconhecimento de Padrões (Fonte: "Processamento Digital de Imagens", Capítulo 12)
-
-Observações:
-A ordem dos blocos é progressiva, partindo dos conceitos matemáticos e lógicos básicos até áreas mais avançadas como computação quântica e processamento de imagens.
-Os materiais complementares dos livros podem ser usados para aprofundamento (ex: exercícios, exemplos, tutoriais).
-Cada bloco de 2 horas deve incluir teoria, exemplos e discussões.
-Este curso de 104 horas proporciona uma base sólida em Ciência da Computação, abrangendo seus principais fundamentos e áreas de aplicação.
-
+•
+Dia 1: Introdução aos Sistemas Operacionais.
+◦
+Conceitos básicos: O que é um sistema operacional, seus objetivos (abstração e gerenciamento de recursos), funcionalidades, e categorias.
+◦
+Referência: "Livro de Sistemas Operacionais1.pdf", capítulo 1, "livro-sistema-operacional-universidade-federal-parana.pdf", capítulo 1, parágrafos iniciais.
+•
+Dia 2: História dos Sistemas Operacionais.
+◦
+Evolução dos SOs: sistemas batch, multiprogramação, sistemas de tempo compartilhado, sistemas operacionais modernos.
+◦
+Referência: "Livro de Sistemas Operacionais1.pdf", Seção 1.2, parágrafos introdutórios, "livro-sistema-operacional-universidade-federal-parana.pdf", capítulo 1, parágrafos introdutórios.
+•
+Dia 3: Arquitetura de Computadores e sua relação com SOs.
+◦
+Modelo de Von Neumann, barramento do sistema, componentes básicos de um computador.
+◦
+Referência: "arquitetura_computadores.pdf", Aula 1, seção 1.2 e 1.3, parágrafos introdutórios.
+•
+Dia 4: Modos de Operação: Kernel vs. Usuário.
+◦
+Diferença entre modo núcleo e modo usuário. Como os dois modos auxiliam no projeto do SO.
+◦
+Referência: "Livro de Sistemas Operacionais1.pdf", Seção 1.3, parágrafos introdutórios.
+•
+Dia 5: Chamadas de Sistema.
+◦
+Como funcionam as chamadas de sistema, a transição do modo usuário para o modo kernel. Chamadas de sistema como um tipo especial de chamada de rotina.
+◦
+Referência: "Livro de Sistemas Operacionais1.pdf", Seção 1.4, parágrafos introdutórios, Seção 1.4, parágrafos sobre chamadas de sistema.
+•
+Dia 6: Introdução à Linguagem C.
+◦
+Importância da linguagem C para o desenvolvimento de SOs. Estrutura de programas em C.
+◦
+Referência: "Livro de Sistemas Operacionais1.pdf", Seção 1.8, parágrafos introdutórios.
+•
+Dia 7: Conceito de Processos.
+◦
+O que são processos, espaço de endereçamento, recursos associados a processos, processos como abstração.
+◦
+Referência: "Livro de Sistemas Operacionais1.pdf", Seção 1.5, parágrafo introdutório, e Capítulo 2, parágrafos introdutórios, "livro-sistema-operacional-universidade-federal-parana.pdf", Capítulo 4, parágrafos introdutórios.
+•
+Dia 8: Threads.
+◦
+Conceito de threads, como se comunicam, e suas diferenças em relação a processos.
+◦
+Referência: "Livro de Sistemas Operacionais1.pdf", Capítulo 2, parágrafos introdutórios.
+•
+Dia 9: Escalonamento de Processos.
+◦
+Objetivos do escalonamento, exemplos de algoritmos de escalonamento.
+◦
+Referência: "Livro de Sistemas Operacionais1.pdf", Seção 1.5, parágrafos sobre processos.
+•
+Dia 10: Sincronização de Processos.
+◦
+Problemas de concorrência, regiões críticas, semáforos.
+◦
+Referência: "Livro de Sistemas Operacionais1.pdf", Capítulo 2, parágrafos sobre sincronização.
+Módulo 2: Gerenciamento de Memória (Dias 11-20)
+•
+Dia 11: Conceitos básicos de gerenciamento de memória.
+◦
+Funções do gerenciador de memória, hierarquia de memórias.
+◦
+Referência: "Livro de Sistemas Operacionais1.pdf", Capítulo 3, parágrafos introdutórios.
+•
+Dia 12: Memória Virtual.
+◦
+Como funciona a memória virtual, paginação e segmentação.
+◦
+Referência: "Livro de Sistemas Operacionais1.pdf", Capítulo 3, parágrafos introdutórios, "Organização estruturada de computadores - Tanenbaum.pdf", Capítulo 6, parágrafos introdutórios e seção 6.1.
+•
+Dia 13: Algoritmos de Substituição de Página.
+◦
+Algoritmos LRU e WSClock, outras questões de projeto para sistemas de paginação.
+◦
+Referência: "Livro de Sistemas Operacionais1.pdf", Seção 3.4, parágrafos sobre algoritmos de substituição de páginas.
+•
+Dia 14: TLB (Translation Lookaside Buffer).
+◦
+Como o TLB afeta o acesso à memória.
+◦
+Referência: "Livro de Sistemas Operacionais1.pdf", Seção 3.3.3, parágrafos sobre TLB.
+•
+Dia 15: Espaços de Endereçamento.
+◦
+Como os sistemas operacionais desacoplam espaços de endereçamento da memória física.
+◦
+Referência: "Livro de Sistemas Operacionais1.pdf", Seção 1.5, parágrafos sobre espaços de endereçamento.
+•
+Dia 16: Organização de Memória.
+◦
+Segmentos de texto, dados e pilha.
+◦
+Referência: "Organização estruturada de computadores - Tanenbaum.pdf", Capítulo 6, parágrafos introdutórios.
+•
+Dia 17: Gerenciamento de Discos.
+◦
+Gerenciamento de espaço em disco.
+◦
+Referência: "Organização estruturada de computadores - Tanenbaum.pdf", Seção 2.2, parágrafos sobre organização de discos, seção 3.1.1, parágrafos sobre organização de discos.
+•
+Dia 18: Sistemas de Arquivos.
+◦
+Hierarquia de arquivos e diretórios, diretório de trabalho, descritores de arquivo.
+◦
+Referência: "Livro de Sistemas Operacionais1.pdf", Capítulo 4, parágrafos introdutórios, seção 1.5, parágrafos sobre arquivos e diretórios.
+•
+Dia 19: Implementação de Sistemas de Arquivos.
+◦
+Detalhes práticos do funcionamento de sistemas de arquivos.
+◦
+Referência: "Livro de Sistemas Operacionais1.pdf", Capítulo 4, parágrafos sobre implementação de arquivos.
+•
+Dia 20: Dispositivos de E/S.
+◦
+Drivers de disco, como os drivers interagem com o SO, diferentes maneiras de realizar E/S.
+◦
+Referência: "Livro de Sistemas Operacionais1.pdf", Seção 1.1.1, parágrafos sobre drivers, Seção 1.3, parágrafos sobre E/S.
+Módulo 3: Tópicos Avançados (Dias 21-35)
+•
+Dia 21: Entrada e Saída (E/S).
+◦
+Modos de E/S: espera ocupada, interrupções e DMA.
+◦
+Referência: "Livro de Sistemas Operacionais1.pdf", Seção 1.3, parágrafos sobre modos de E/S.
+•
+Dia 22: O conceito de "arquivo especial de bloco" e "arquivo especial de caractere".
+◦
+Referência: "Livro de Sistemas Operacionais1.pdf", exercício 25.
+•
+Dia 23: Relógios e Temporizadores.
+◦
+Como o SO mantém o tempo, uso de temporizadores.
+◦
+Referência: "Livro de Sistemas Operacionais1.pdf", exercício 57 e parágrafos sobre temporizadores.
+•
+Dia 24: Impasses (Deadlocks).
+◦
+O problema do jantar dos filósofos, como evitar impasses.
+◦
+Referência: "Livro de Sistemas Operacionais1.pdf", Seção 2.4.4, e exercício 27.
+•
+Dia 25: Máquinas Virtuais e Hipervisores.
+◦
+Paravirtualização, tradução binária dinâmica, micronúcleos.
+◦
+Referência: "Livro de Sistemas Operacionais1.pdf", Seção 9.6, parágrafos sobre virtualização, "livro-sistema-operacional-universidade-federal-parana.pdf", Capítulo 32, parágrafos sobre virtualização.
+•
+Dia 26: Segurança em Sistemas Operacionais.
+◦
+Mecanismos de segurança, vírus, ataques de buffer overflow.
+◦
+Referência: "Livro de Sistemas Operacionais2.pdf", Seção 9.7, parágrafos sobre vírus e segurança.
+•
+Dia 27: Aprofundamento em drivers.
+◦
+Implementação de drivers, interfaces de drivers.
+◦
+Referência: "Livro de Sistemas Operacionais1.pdf", Seção 5.3, parágrafos sobre drivers.
+•
+Dia 28: Sistemas Operacionais Distribuídos.
+◦
+Conceitos e desafios de sistemas distribuídos.
+◦
+Referência: Complementar com material externo.
+•
+Dia 29: Balanceamento de Carga.
+◦
+Algoritmos de balanceamento de carga.
+◦
+Referência: "Livro de Sistemas Operacionais2.pdf", Seção 8.2, exercício 37 e parágrafos sobre balanceamento de carga.
+•
+Dia 30: RPC (Remote Procedure Call).
+◦
+Como funcionam as chamadas de procedimento remoto.
+◦
+Referência: "Livro de Sistemas Operacionais2.pdf", Seção 8.1, exercício 36 e parágrafos sobre RPC.
+•
+Dia 31: Estudo de Caso: UNIX.
+◦
+História e características do UNIX.
+◦
+Referência: "Livro de Sistemas Operacionais1.pdf", Seção 1.2, parágrafos sobre UNIX, Seção 10.1.6, parágrafos sobre MINIX.
+•
+Dia 32: Estudo de Caso: Linux.
+◦
+Características e funcionamento do kernel Linux, estrutura do sistema de arquivos.
+◦
+Referência: "Livro de Sistemas Operacionais1.pdf", Seção 1.2, parágrafos sobre Linux, Seção 10.1.7, parágrafos sobre Linux.
+•
+Dia 33: Estudo de Caso: MINIX.
+◦
+Características e importância do MINIX.
+◦
+Referência: "Livro de Sistemas Operacionais2.pdf", Seção 10.1.6, parágrafos sobre MINIX.
+•
+Dia 34: Projeto de Sistemas Operacionais.
+◦
+Objetivos de projeto de SOs, princípios norteadores, estrutura de sistemas.
+◦
+Referência: "Livro de Sistemas Operacionais2.pdf", Capítulo 12, seções 12.1, 12.2, parágrafos sobre projeto de SOs.
+•
+Dia 35: Implementação de Sistemas Operacionais.
+◦
+Estratégias de implementação, o papel da experiência, processo de desenvolvimento.
+◦
+Referência: "Livro de Sistemas Operacionais2.pdf", Capítulo 12, seções 12.3 e parágrafos sobre implementação de SOs.
+Módulo 4: Arquitetura de Computadores (Dias 36-45)
+•
+Dia 36: Componentes básicos de um computador.
+◦
+Processador, memória, unidades de E/S, barramentos.
+◦
+Referência: "Organização estruturada de computadores - Tanenbaum.pdf", Capítulo 2, parágrafos introdutórios.
+•
+Dia 37: Transistores e Portas Lógicas.
+◦
+Como funcionam os transistores, portas AND, OR, NOT.
+◦
+Referência: "Organização estruturada de computadores - Tanenbaum.pdf", Capítulo 3, parágrafos sobre transistores e portas lógicas.
+•
+Dia 38: Níveis de Máquina.
+◦
+Nível lógico digital, microarquitetura, arquitetura do conjunto de instruções (ISA).
+◦
+Referência: "Organização estruturada de computadores - Tanenbaum.pdf", Capítulo 1, seção 1.1.2.
+•
+Dia 39: Conjunto de Instruções.
+◦
+O que é o nível ISA, modelos de memória, registradores e instruções.
+◦
+Referência: "Organização estruturada de computadores - Tanenbaum.pdf", Capítulo 5, seção 5.1, parágrafos sobre nível ISA.
+•
+Dia 40: Formatos de Instrução.
+◦
+Critérios de projeto para formatos de instrução, comprimento de instrução e de palavra.
+◦
+Referência: "Organização estruturada de computadores - Tanenbaum.pdf", Capítulo 5, seção 5.3, parágrafos sobre formatos de instrução.
+•
+Dia 41: Ciclo de Busca-Decodificação-Execução.
+◦
+Como a CPU executa instruções, o conceito de pipeline.
+◦
+Referência: "Organização estruturada de computadores - Tanenbaum.pdf", Capítulo 2, seção 2.1.2, e parágrafos sobre ciclo de busca-decodificação-execução.
+•
+Dia 42: Paralelismo no Nível da Instrução.
+◦
+Processadores superescalares e VLIM.
+◦
+Referência: "Organização estruturada de computadores - Tanenbaum.pdf", Seção 8.1.1, parágrafos sobre paralelismo no nível da instrução.
+•
+Dia 43: Caches.
+◦
+Como funcionam as caches, caches de instrução, caches de dados.
+◦
+Referência: "Organização estruturada de computadores - Tanenbaum.pdf", Seção 4.5.4 e parágrafos sobre caches.
+•
+Dia 44: Linguagem de Montagem.
+◦
+Introdução à linguagem de montagem do 8088, uso de um assembler e simulador.
+◦
+Referência: "Organização estruturada de computadores - Tanenbaum.pdf", Apêndice C, parágrafos introdutórios.
+•
+Dia 45: Microinstruções.
+◦
+Microinstruções e notação, como o controle é feito ciclo a ciclo.
+◦
+Referência: "Organização estruturada de computadores - Tanenbaum.pdf", Seção 4.3.1, e parágrafos sobre microinstruções.
+Módulo 5: Tópicos Complementares (Dias 46-52)
+•
+Dia 46: Algoritmos em Grafos e sua relação com SOs.
+◦
+Conceitos básicos de grafos, algoritmos de grafos.
+◦
+Referência: "Teoria Computacional de Grafos - Jayme Luiz Szwarcfiter.pdf", Capítulo 2, parágrafos introdutórios.
+•
+Dia 47: Implementações de Algoritmos em Python.
+◦
+Utilização de Python para implementar algoritmos, simulação e teste de algoritmos.
+◦
+Referência: "Teoria Computacional de Grafos - Jayme Luiz Szwarcfiter.pdf", Capítulo 1, seção 1.6, e parágrafos introdutórios.
+•
+Dia 48: A complexidade de algoritmos.
+◦
+Conceitos de complexidade local e temporal de algoritmos.
+◦
+Referência: "Teoria Computacional de Grafos - Jayme Luiz Szwarcfiter.pdf", Capítulo 1, seção 1.5, parágrafos sobre complexidade de algoritmos.
+•
+Dia 49: Ferramentas de Desenvolvimento de SOs.
+◦
+Compiladores, debuggers, emuladores.
+◦
+Referência: Material complementar externo.
+•
+Dia 50: Tendências em Sistemas Operacionais.
+◦
+Sistemas operacionais para dispositivos móveis, computação em nuvem e Internet das Coisas (IoT).
+◦
+Referência: Material complementar externo.
+•
+Dia 51: Tópicos de Pesquisa em Sistemas Operacionais.
+◦
+Artigos e conferências relevantes na área.
+◦
+Referência: "Livro de Sistemas Operacionais2.pdf", Capítulo 13, parágrafos introdutórios e seções sobre referências.
+•
+Dia 52: Revisão e Considerações Finais.
+◦
+Revisão geral dos conceitos e discussão sobre a carreira de um especialista em SOs.
