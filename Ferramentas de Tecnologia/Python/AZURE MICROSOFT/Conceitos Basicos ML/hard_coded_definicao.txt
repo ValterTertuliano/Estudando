@@ -1,0 +1,40 @@
+Hard-coded refere-se a valores, configurações ou lógica que são fixos 
+diretamente no código-fonte de um programa, em vez de serem 
+parametrizados ou configuráveis. Isso significa que qualquer alteração 
+nesses valores exige a modificação e a recompilação do código.
+
+Exemplos:
+Exemplo de hard-coded (ruim):
+
+desconto = 0.10  # Valor do desconto fixo no código
+preco_final = preco * (1 - desconto)
+Neste caso, o desconto de 10% está diretamente no código. Se precisar 
+ser alterado, o código terá que ser editado e atualizado.
+
+Exemplo de parametrizado (bom):
+
+desconto = obter_desconto()  # O valor é configurado externamente
+preco_final = preco * (1 - desconto)
+Aqui, o desconto pode ser alterado sem modificar o código, bastando 
+mudar a configuração externa.
+
+Por que evitar hard-coded?
+Falta de flexibilidade: Mudanças requerem edições manuais no código.
+Risco de erros: Alterações frequentes no código podem introduzir bugs.
+Difícil manutenção: Valores fixos são difíceis de identificar e 
+modificar em códigos grandes.
+Impossibilidade de reutilização: O código não pode ser facilmente 
+adaptado a outros contextos.
+
+Quando usar hard-coded?
+Embora geralmente seja desaconselhado, pode ser aceitável em situações 
+como:
+
+Prototipagem rápida: Quando o objetivo é testar ideias rapidamente.
+Valores universais: Constantes que nunca mudam, como o valor de π (3.
+14159) ou a velocidade da luz.
+Usar hard-coded de forma indiscriminada compromete a qualidade do 
+software, tornando-o menos adaptável e mais difícil de escalar ou 
+manter. É uma prática recomendada substituí-lo por configurações 
+externas, variáveis, ou constantes claramente definidas.
+

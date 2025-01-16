@@ -10,7 +10,6 @@ Diferente de regras manuais, o modelo aprende padrões diretamente dos
 dados fornecidos. O objetivo principal é criar um modelo que funcione 
 de forma eficiente e precisa para a tarefa desejada.
 
-
      ----- Exemplos de aplicações práticas
 
 Estimar a idade de uma pessoa com base em uma foto:
@@ -61,7 +60,9 @@ dispositivos automatizados
 
      ----- Como pensar sobre os modelos
 
-Pense em um modelo como uma função que aceita dados de entrada e produz uma saída. Mais especificamente, um modelo usa dados de entrada para estimar outra coisa.
+Pense em um modelo como uma função que aceita dados de entrada e 
+produz uma saída. Mais especificamente, um modelo usa dados de entrada 
+para estimar outra coisa.
 Um modelo de machine learning pode ser imaginado como uma função 
 matemática que realiza o seguinte:
 
@@ -147,7 +148,8 @@ Exemplos: Regressão linear, árvore de decisão simples.
 
 Características:
 Fáceis de entender e interpretar.
-Menos propensos a erros por overfitting (quando o modelo se ajusta demais aos dados de treinamento e perde generalização).
+Menos propensos a erros por overfitting (quando o modelo se ajusta 
+demais aos dados de treinamento e perde generalização).
 
 Usos comuns:
 Áreas como medicina, onde a interpretação é fundamental e a 
@@ -204,7 +206,8 @@ ajustados automaticamente durante o treinamento do modelo.
 Como os parâmetros são ajustados?
 
 Estimativa inicial:
-Quando o treinamento começa, os parâmetros do modelo são inicializados com valores padrões (geralmente números aleatórios ou pequenos).
+Quando o treinamento começa, os parâmetros do modelo são inicializados 
+com valores padrões (geralmente números aleatórios ou pequenos).
 
 Processo de treinamento:
 O modelo é alimentado com dados de entrada e as saídas desejadas 

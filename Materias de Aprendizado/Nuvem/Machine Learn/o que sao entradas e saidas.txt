@@ -1,0 +1,82 @@
+          -----   O que são entradas e saídas?
+
+As entradas são os dados fornecidos ao modelo para que ele aprenda ou 
+faça previsões. Por exemplo, uma entrada pode ser uma imagem, um 
+texto, ou uma tabela com números.
+
+As saídas são os resultados gerados pelo modelo. Por exemplo, uma 
+saída pode ser a classificação de uma imagem como "gato" ou 
+"cachorro", ou a previsão de um valor futuro com base nos dados.
+
+A meta do treinamento é melhorar o modelo para que ele gere saídas de 
+alta qualidade, ajustando-se aos dados fornecidos. Depois de treinado, 
+o modelo pode ser utilizado como software em aplicações reais.
+
+Modelos não se treinam sozinhos. Eles são ajustados usando três 
+componentes principais: os dados, a função de objetivo e o otimizador. 
+Estes elementos trabalham juntos para transformar o modelo em algo
+útil para o problema que estamos resolvendo.
+
+          -----   O objetivo
+
+O objetivo é o que queremos que o modelo seja capaz de fazer, como 
+reconhecer rostos, traduzir textos ou prever preços. Para que o 
+computador compreenda o objetivo, ele precisa ser descrito de forma 
+precisa.
+
+Usamos uma função de objetivo (também chamada de função de custo) para 
+traduzir o objetivo em código. Essa função avalia o desempenho do 
+modelo, indicando se ele está se aproximando ou se afastando da meta.
+
+A função de objetivo compara as saídas do modelo com as respostas 
+corretas e calcula um valor de erro. Se o erro for alto, o modelo 
+precisa melhorar; se for baixo, o modelo está no caminho certo.
+
+A escolha da função de objetivo é fundamental. Por exemplo, em 
+problemas de classificação, usamos funções como entropia cruzada; para 
+regressão, utilizamos erros quadráticos médios.
+
+          -----   Os Dados
+
+Os dados são as informações que alimentam o modelo, como imagens, 
+textos, números ou sons. Eles são essenciais para que o modelo aprenda 
+padrões e relacione entradas às saídas.
+
+Os dados precisam estar organizados e limpos. Qualquer ruído ou erro 
+pode confundir o modelo e comprometer o treinamento. Dividimos os 
+dados em três partes:
+
+Treinamento: Para ajustar os parâmetros do modelo.
+
+Validação: Para medir o desempenho durante o treinamento.
+
+Teste: Para avaliar a qualidade final do modelo após o treinamento.
+
+A qualidade dos dados é tão importante quanto a escolha do modelo. 
+Dados mal preparados podem levar a resultados ruins, mesmo com modelos 
+sofisticados.
+
+     -----  O otimizador
+
+Após cada previsão do modelo, a função de objetivo calcula um valor de 
+erro. O otimizador é um algoritmo que ajusta os parâmetros do modelo 
+para minimizar esse erro.
+
+O otimizador altera os parâmetros usando técnicas como gradiente 
+descendente, que calcula como cada parâmetro deve ser ajustado para 
+melhorar o desempenho.
+
+Não precisamos escrever nossos próprios otimizadores, pois bibliotecas 
+de código aberto como TensorFlow e PyTorch fornecem otimizadores 
+prontos, como SGD (Stochastic Gradient Descent) e Adam.
+
+É importante lembrar que:
+
+O otimizador, a função de objetivo e os dados são usados apenas 
+durante o treinamento.
+
+Após o treinamento, o modelo é um conjunto de parâmetros ajustados e 
+pode ser utilizado sozinho.
+
+O treinamento altera os valores internos do modelo, mas não sua 
+estrutura básica.
