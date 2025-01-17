@@ -1,0 +1,95 @@
+---------------------------------
+FONTES
+---------------------------------
+        
+        ----- livro 1 de referencia -----
+
+AUTOR: Marco, marcelo, marcio, ricardo
+LIVRO: Algoritmos e Lógica de programação: um texto introdutorio para 
+a engenharia
+"Editora": CENGAGE
+
+        ----- livro 2 de referencia -----
+
+AUTOR: André Luiz Villar Forbellone
+LIVRO: Lógica de programação: : a construção de algoritmos e 
+estruturas de dados
+"Editora": Pearson Education
+
+        ----- livro 3 de referencia -----
+        
+AUTOR: Marcos Castilho, Fabiano Silva, Daniel Weingaertner 
+LIVRO: Algoritmos e Estruturas de Dados 1
+Universidade Federal do Paraná
+------------------------------------------------
+
+-----   ---  -- - Atribuições
+
+Atribuição é a operação que permite armazenar um valor em uma 
+variávell, isto é, em um endereço de memória Para essa operação, será 
+utilizado o símbolo <- (seta para a esquerda).
+
+O comando de atribuição tem na verdade três componentes: o próprio 
+símbolo de atribuição definido pela linguagem, o lado esquerdo e o 
+lado direito.
+
+O lado esquerdo é obrigatoriamente o nome de uma única variável. O 
+lado direito é uma expressão (uma sequência de operações) que deve 
+resultar em um valor do mesmo tipo da variável que está do lado 
+esquerdo. Esta expressão pode ser de dois tipos: ou é uma expressão 
+aritmética ou é uma expressão booleana.
+
+o computador deve realizar o cálculo da expressão aritmética do lado
+direito do símbolo de atribuição e somente depois armazenar o valor 
+resultante na variável que aparece do lado esquerdo.
+
+-----   ---  -- - Operadores aritméticos
+
+Chamamos de operadores aritméticos o conjunto de símbolos que 
+representa as operações básicas da matemática
+
+------------------------------------
+        ----- Operadores -----
+------------------------------------
+operador | Função        | exemplo
+------------------------------------
++        | Adição        | 1 + 1
+-        | subtração     | 2 - 1
+*        | multiplicação | 5 * 5
+/        | divisão       | 4 / 2
+-------------------------------------
+
+Existem também operações matemáticas não-convencionais, porém úteis
+na construção de algoritmos.
+
+Divisão inteira (//)
+
+Retorna a parte inteira do resultado de uma divisão simples. Pode ser 
+entendida, também, como um arredondamento para baixo.
+
+EXEMPLOS;
+10 // 2 = 5 (resultado exato)
+7  // 3 = 2 (resultado truncado o valor da divisão seria 2.333)
+
+
+Módulo (%)
+
+Retorna o resto de uma divisão inteira. Pode ser entendido, também, 
+como o que sobra depois de realizar uma divisão inteira.
+
+Dado dois números 'a' (dividendo) e 'b' (divisor), o módulo (𝑎 % 𝑏)
+ retorna o valor 'r', que é o resto da divisão inteira.
+
+Fórmula do módulo:
+
+𝑎 = 𝑏 ⋅ 𝑞 + 𝑟
+Onde:
+
+𝑞 é o quociente inteiro (𝑎÷𝑏, arredondado para baixo), r é o resto (
+0 ≤ 𝑟 < ∣𝑏∣)
+
+Regras importantes:
+O sinal do resto segue o sinal do divisor (b).
+O valor absoluto do resto é sempre menor que o valor absoluto do 
+divisor (∣𝑟∣ < ∣𝑏∣.)
+
