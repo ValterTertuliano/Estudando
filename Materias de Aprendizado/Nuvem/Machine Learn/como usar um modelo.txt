@@ -1,0 +1,48 @@
+Treinamento vs Uso do modelo
+
+É importante reforçar a distinção entre o treinamento e o uso de um 
+modelo.
+
+Usar um modelo significa fornecer entradas e receber uma estimativa ou 
+uma previsão como saída. Usamos esse processo quando estamos treinando 
+nosso modelo e quando o utilizamos no mundo real
+
+Por outro lado, o treinamento de um modelo é o processo de melhorar o 
+quão bem um modelo funciona. O treinamento exige que usemos o modelo, 
+a função objetiva e o otimizador em um loop especial. O treinamento 
+pode levar minutos ou dias para ser concluído. Normalmente, treinamos 
+um modelo apenas uma vez. Uma vez treinado, podemos usá-lo quantas 
+vezes for necessário sem fazer alterações.
+
+Dados para uso e Dados para treinamento
+
+Lembre-se de que um conjunto de dados é uma coleção de informações 
+sobre objetos ou coisas.
+
+Quando usamos nosso modelo, precisamos apenas das colunas de dados que 
+o modelo aceita como entrada. Essas colunas são chamadas de recursos
+
+Quando usamos nosso modelo, precisamos apenas das colunas de dados que 
+o modelo aceita como entrada. Essas colunas são chamadas de recursos. 
+Em nosso cenário, se nosso modelo aceitar o tamanho do arreio e 
+estimar o tamanho da bota, então nosso recurso será o tamanho do 
+arreio.
+
+Durante o treinamento, a função objetiva geralmente precisa conhecer o 
+resultado do modelo e qual é a resposta correta. Esses valores são 
+chamados de rótulos. No nosso cenário, se o nosso modelo prevê o 
+tamanho da bota, então tamanho da bota é o nosso rótulo.
+
+Portanto, para utilizar um modelo, precisamos apenas de recursos, 
+enquanto durante o treinamento geralmente precisamos de recursos e 
+rótulos. Durante o treinamento em nosso cenário, precisamos tanto do 
+recurso tamanho do cinto quanto do rótulo tamanho da bota. Quando 
+usamos nosso modelo em nosso site, só precisamos saber o recurso de 
+tamanho do arreio; nosso modelo então estima o tamanho da bota que 
+deve ser utilizada.
+
+Depois que o modelo termina o treinamento, você pode salvá-lo em 
+arquivo por si só. Não precisamos mais dos dados originais, da função 
+objetiva ou do otimizador do modelo. Quando quisermos usar o modelo, 
+podemos carregá-lo do disco, fornecer a ele novos dados e obter a 
+previsão desejada.
