@@ -1,0 +1,295 @@
+---------------------------------
+FONTES
+---------------------------------
+        
+        ----- livro 1 de referencia -----
+
+AUTOR: Andrew S. Tanenbaum, Herbert Bos
+LIVRO: Sistemas Operacionais Modernos
+"Editora":  Pearson Education do Brasil
+
+         ----- livro 2 de referencia -----
+
+AUTOR: Andrew S. Tanenbaum, Herbert Bos
+LIVRO: Organização Estruturada de Computadores
+"Editora":  Pearson Education do Brasil
+
+         ----- livro 3 de referencia -----
+AUTOR: Carlos A. Maziero
+LIVRO: Sistemas Operacionais: Conceitos e mecanismos
+"Editora": UFPR
+------------------------------------
+
+-----   ---  -- - Hardware de Computadores
+
+Um sistema operacional está intimamente ligado ao hardware do 
+computador no qual ele é executado. Ele estende o conjunto de 
+instruções do computador e gerencia seus recursos. Para funcionar, ele 
+deve conhecer profundamente o hardware, pelo menos como aparece para o 
+programador
+
+Os componentes são conectados por um barramento, conjunto de fios 
+paralelos que transmitem endereços, dados e sinais de  controle. 
+Barramentos podem ser externos à CPU, conectando-a à memória e aos 
+dispositivos de E/S, mas também podem ser internos
+
+Computadores pessoais modernos têm uma estrutura mais complicada, 
+envolvendo muitos barramentos.
+
+-----   ---  -- - Processadores
+
+A CPU é o "Cerebro" do computador, ela busca intruções da memoria e 
+executa, o ciclo basico de qualquer CPU é buscar a primeira instrução
+da memória, ela decodifica a instrução para determinar o seu tipo e 
+operandos para assim executar a instrução e seguir para as proximas 
+repetindo esse ciclo até o programa terminar, é dessa forma que os 
+programas são executados. 
+
+A CPU é composta por várias partes distintas. A unidade de controle é 
+responsável por buscar instruções na memória principal e determinar 
+seu tipo. A unidade de aritmética e lógica efetua operações como 
+adição e AND (E) booleano para executar as instruções
+
+Cada CPU tem um conjunto específico de instruções que ela consegue 
+executar, sendo assim, um processador x86 não pode executar programas 
+ARM e um processador ARM não consegue executar programas x86.
+
+Como o tempo para acessar a memória para buscar uma instrução ou 
+palavra dos operandos é muito maior do que o tempo para executar uma 
+instrução, todas as CPUs têm alguns REGISTRADORES internos para 
+armazenamento de variáveis e resultados temporários.
+
+Cada um desses registradores possuem determinado tamanho e função. Em 
+geral, todos os registradores têm o mesmo tamanho. Cada um pode conter 
+um número, até algum máximo definido pelo tamanho do registrador. 
+Registradores podem ser lidos e escritos em alta velocidade porque são 
+internos à CPU
+
+Desse modo, o conjunto de instruções geralmente contém instruções para 
+carregar uma palavra da memória para um registrador e armazenar uma 
+palavra de um registrador para a memória.
+
+Outras instruções combinam dois operandos provenientes de 
+registradores, da memória, ou ambos, para produzir um resultado como 
+adicionar duas palavras e armazenar o resultado em um registrador ou 
+na memória
+
+Além dos registradores gerais usados para armazenar variáveis e 
+resultados temporários, a maioria dos computadores tem vários 
+registradores especiais que são visíveis para o programador Um desses 
+é o contador de programa, que contém o endereço de memória da próxima 
+instrução a ser buscada. Após essa instrução ter sido buscada, o 
+contador de programa é atualizado para apontar a próxima instrução. 
+
+O registrador mais importante é o Contador de Programa (PC - Program 
+Counter), que indica a próxima instrução a ser buscada para execução. 
+(O nome “contador de programa” é um tanto enganoso, porque nada tem a 
+ver com contar qualquer coisa; porém, o termo é de uso universal.) 
+Também importante é o Registrador de Instrução (IR - Instruction 
+Register), que mantém a instrução que está sendo executada no momento 
+em questão. A maioria dos computadores também possui diversos outros 
+registradores, alguns de uso geral, outros de uso específico. Outros 
+registradores são usados pelo sistema operacional para controlar o 
+computador.
+
+Outro registrador é o ponteiro de pilha, que aponta para o topo da 
+pilha atual na memória. A pilha contém uma estrutura para cada rotina 
+que foi chamada, mas ainda não encerrada. Uma estrutura de pilha de 
+rotina armazena aqueles parâmetros de entrada, variáveis locais e 
+variáveis temporárias que não são mantidas em registradores. 
+
+Outro registrador ainda é o PSW (Program Status Word — palavra de 
+estado do programa). Esse registrador contém os bits do código de 
+condições, que são estabelecidos por instruções de comparação, a 
+prioridade da CPU, o modo de execução (usuário ou núcleo) e vários 
+outros bits de controle. Programas de usuários normalmente podem ler 
+todo o PSW, mas em geral podem escrever somente parte dos seus campos. 
+O PSW tem um papel importante nas chamadas de sistema e em E/S. 
+
+O sistema operacional precisa saber tudo sobre os registros da CPU. 
+Quando ele divide o tempo de uso da CPU entre vários programas, às 
+vezes ele interrompe o programa que está rodando para começar outro. 
+Sempre que isso acontece, o sistema precisa salvar as informações do 
+programa interrompido, para que ele possa retomar de onde parou quando 
+for executado de novo.
+
+Para melhorar o desempenho, as CPUs modernas não fazem apenas uma 
+tarefa por vez, como buscar, decodificar e executar uma instrução. 
+Elas conseguem fazer várias tarefas ao mesmo tempo. Por exemplo, uma 
+CPU pode estar executando uma instrução enquanto está decodificando a 
+próxima e buscando outra logo em seguida. Esse processo é chamado de 
+"pipeline", que é como uma linha de produção, onde cada etapa é feita 
+de forma separada e paralela. Muitas CPUs têm pipelines com mais de 
+três etapas.
+
+No entanto, isso pode ser complicado para quem projeta programas ou 
+sistemas, porque, se uma instrução mudar o fluxo (como em um desvio 
+condicional), o pipeline precisa continuar executando, o que cria 
+dificuldades para o controle das instruções. Isso exige um cuidado 
+extra para lidar com esses desafios.
+
+Ainda mais avançada que um projeto de pipeline é uma CPU superescalar, 
+Nesse projeto, unidades múltiplas de execução estão presentes. Uma 
+unidade para aritmética de números inteiros, por exemplo, uma unidade 
+para aritmética de ponto flutuante e uma para operações booleanas. 
+Duas ou mais instruções são buscadas ao mesmo tempo, decodificadas e 
+jogadas em um buffer de instrução até que possam ser executadas. Tão 
+logo uma unidade de execução fica disponível, ela procura no buffer 
+de instrução para ver se há uma instrução que ela pode executar e, se 
+assim for, ela remove a instrução do buffer e a executa. Uma 
+implicação desse projeto é que as instruções do programa são muitas 
+vezes executadas fora de ordem. Em geral, cabe ao hardware 
+certificar-se de que o resultado produzido é o mesmo que uma 
+implementação sequencial conseguiria, mas como veremos adiante, uma 
+quantidade incômoda de tarefas complexas é empurrada para o sistema 
+operacional.
+
+------------------------------------------------------------------
+--- com outras palavras para entender melhor ---
+ 
+Uma CPU superescalar é ainda mais avançada que uma CPU com pipeline. 
+Ela possui várias unidades de execução, ou seja, diferentes partes que 
+podem fazer tipos específicos de cálculos, como operações com números 
+inteiros, números decimais (ponto flutuante) e operações lógicas 
+(booleanas).
+
+Nessa CPU, várias instruções podem ser buscadas e preparadas ao mesmo 
+tempo. Elas são colocadas em uma espécie de "fila" (buffer de 
+instruções) até que uma das unidades de execução fique disponível para 
+rodá-las. Quando uma unidade está pronta, ela pega a instrução da fila 
+e a executa.
+
+Uma característica importante desse tipo de CPU é que as instruções 
+podem ser executadas em uma ordem diferente da que estavam no programa 
+original. Isso pode complicar as coisas, pois o hardware precisa 
+garantir que o resultado final seja o mesmo como se as instruções 
+tivessem sido executadas na ordem certa. No entanto, essa tarefa de 
+garantir que tudo aconteça corretamente acaba trazendo desafios para o 
+sistema operacional, que precisa lidar com essas complexidades.
+-------------------------------------------------------------------
+A maioria das CPUs — exceto aquelas muito simples usadas em sistemas 
+embarcados, tem dois modos, núcleo e usuário, como mencionado 
+anteriormente. Em geral, um bit no PSW controla o modo. Quando 
+operando em modo núcleo, a CPU pode executar todas as instruções em 
+seu conjunto de instruções e usar todos os recursos do hardware. Em 
+computadores de mesa e servidores, o sistema operacional normalmente 
+opera em modo núcleo, dando a ele acesso a todo o hardware. Na 
+maioria dos sistemas embarcados, uma parte pequena opera em modo 
+núcleo, com o resto do sistema operacional operando em modo usuários. 
+
+------------------------------------------------------------------
+--- com outras palavras para entender melhor ---
+ 
+A maioria das CPUs, com exceção das mais simples usadas em sistemas 
+menores, tem dois modos: o modo núcleo e o modo usuário. Um bit no PSW 
+(uma parte do sistema que controla o estado da CPU) define em qual 
+modo a CPU está.
+
+No modo núcleo, a CPU pode executar todas as instruções e acessar 
+todos os recursos do computador. É o modo em que o sistema operacional 
+normalmente funciona em computadores de mesa e servidores, porque ele 
+precisa de acesso total ao hardware.
+
+Já nos sistemas embarcados (aqueles usados em dispositivos 
+específicos, como eletrodomésticos ou carros), a maior parte do 
+sistema opera em modo usuário, que tem menos permissões, enquanto 
+apenas uma pequena parte funciona no modo núcleo. Isso ajuda a 
+garantir mais segurança e controle
+-----------------------------------------------------------------------
+Programas de usuários sempre são executados em modo usuário, o que 
+permite que apenas um subconjunto das instruções possa ser executado e 
+um subconjunto dos recursos possa ser acessado. Geralmente, todas as 
+instruções envolvendo E/S e proteção de memória são inacessíveis no 
+modo usuário. Alterar o bit de modo PSW para modo núcleo também é 
+proibido, claro. 
+
+Para obter serviços do sistema operacional, um programa de usuário 
+deve fazer uma chamada de sistema, que, por meio de uma instrução 
+TRAP, chaveia do modo usuário para o modo núcleo e passa o controle 
+para o sistema operacional. Quando o trabalho é finalizado, o controle 
+retorna para o programa do usuário na instrução posterior à chamada de 
+sistema. 
+
+É importante notar que os computadores têm outras "traps" além da 
+instrução usada para fazer uma chamada de sistema. 
+
+A maioria dessas armadilhas é causada pelo hardware para avisar sobre 
+situações especiais, como tentar dividir por 0 ou lidar com um número 
+muito pequeno que não pode ser representado corretamente. Quando isso 
+acontece, o sistema operacional assume o controle e decide o que 
+fazer. Às vezes, o programa precisa ser fechado por causa de um erro. 
+
+Em outros casos, o erro pode ser ignorado (por exemplo, um número
+muito pequeno(underflow) pode ser substituído por 0). E, quando o 
+programa avisa antes que quer lidar com certos tipos de erro, o 
+controle pode ser passado para ele, para que resolva o problema por 
+conta própria
+
+A Lei de Moore diz que o número de transistores em um chip dobra a 
+cada 18 meses. Essa "lei" não é uma lei da física, como a lei da 
+conservação do momento, mas sim uma observação feita por Gordon Moore, 
+cofundador da Intel, sobre a rapidez com que os engenheiros de 
+semicondutores conseguem diminuir o tamanho dos transistores. A Lei de 
+Moore tem se mantido válida por mais de 30 anos e espera-se que 
+continue por pelo menos mais uma década. No entanto, depois disso, o 
+tamanho dos transistores poderá ser tão pequeno que a mecânica 
+quântica começará a interferir, dificultando a redução ainda maior.
+
+Com tantos transistores disponíveis, surge um problema: o que fazer 
+com todos eles? Uma solução já mencionada é usar arquiteturas 
+superescalares, que têm múltiplas unidades funcionais. E, à medida que 
+o número de transistores cresce, novas possibilidades vão surgindo. 
+Uma opção clara é aumentar o tamanho das memórias cache no chip da 
+CPU. Isso já está acontecendo, mas eventualmente, os ganhos serão 
+menores e mais difíceis de alcançar.
+
+O próximo passo óbvio é replicar não apenas as unidades funcionais, 
+mas também parte da lógica de controle. 
+
+O Pentium 4 da Intel introduziu essa propriedade, chamada 
+multithreading ou hyperthreading (o nome da Intel para ela), ao 
+processador x86 e vários outros chips de CPU também o têm — incluindo 
+o SPARC, o Power5, o Intel Xeon e a família Intel Core. 
+
+Para uma primeira aproximação, o que ela faz é permitir que a CPU 
+mantenha o estado de dois threads diferentes e então faça o 
+chaveamento entre um e outro em uma escala de tempo de nanossegundos. 
+Um thread é um tipo de processo leve, o qual, por sua vez, é um 
+programa de execução
+
+Por exemplo, se um dos processos precisa ler uma palavra da memória (o 
+que leva muitos ciclos de relógio), uma CPU multithread pode 
+simplesmente fazer o chaveamento para outro thread. O multithreading 
+não proporciona paralelismo real. Apenas um processo de cada vez é 
+executado, mas o tempo de chaveamento de thread é reduzido para a 
+ordem de um nanossegundo
+
+O multithreading tem implicações para o sistema operacional, pois cada 
+thread aparece para o sistema operacional como uma CPU em separado. 
+Considere um sistema com duas CPUs efetivas, cada uma com dois 
+threads. O sistema operacional verá isso como quatro CPUs. Se há 
+apenas trabalho suficiente para manter duas CPUs ocupadas em um 
+determinado momento no tempo, ele pode escalonar inadvertidamente dois 
+threads para a mesma CPU, com a outra completamente ociosa. Essa 
+escolha é muito menos eficiente do que usar um thread para cada CPU. 
+
+Além do uso de multithreading, muitos processadores de CPU agora 
+possuem quatro, oito ou até mais núcleos, que funcionam como 
+processadores completos dentro de um único chip. Por exemplo, em chips 
+multinúcleo, como mencionado, cada núcleo funciona como uma mini CPU 
+independente. Alguns processadores modernos, como o Intel Xeon Phi e o 
+Tilera TilePro, podem ter mais de 60 núcleos em um único chip. Para 
+aproveitar a capacidade desses chips, é necessário usar um sistema 
+operacional que suporte multiprocessadores.
+
+As GPUs (unidades de processamento gráfico) são outro exemplo de 
+processadores avançados, e, em termos de quantidade de núcleos, 
+superam os processadores tradicionais. Uma GPU pode ter milhares de 
+núcleos pequenos, que são excelentes para realizar muitos cálculos 
+simultâneos, como a renderização de gráficos em 3D. No entanto, elas 
+não são tão eficientes em tarefas feitas em sequência e podem ser 
+difíceis de programar. Apesar de poderem ser úteis para algumas 
+funções do sistema operacional, como codificação ou processamento de 
+dados de rede, não é comum que o sistema operacional em si seja 
+executado diretamente nas GPUs.
+

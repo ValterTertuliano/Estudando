@@ -1,312 +1,276 @@
+Módulo 1: Introdução e Conceitos Fundamentais (8 aulas)
 •
-Dia 1: Introdução aos Sistemas Operacionais.
+Aula 1: Introdução à arquitetura de computadores e sistemas operacionais.
 ◦
-Conceitos básicos: O que é um sistema operacional, seus objetivos (abstração e gerenciamento de recursos), funcionalidades, e categorias.
+Conceitos básicos de hardware e software.
 ◦
-Referência: "Livro de Sistemas Operacionais1.pdf", capítulo 1, "livro-sistema-operacional-universidade-federal-parana.pdf", capítulo 1, parágrafos iniciais.
+O que é um sistema operacional e suas funções.
+◦
+O sistema operacional como máquina estendida e gerenciador de recursos.
+◦
+O modelo de Von Neumann.
 •
-Dia 2: História dos Sistemas Operacionais.
+Aula 2: Histórico dos sistemas operacionais e suas evoluções.
 ◦
-Evolução dos SOs: sistemas batch, multiprogramação, sistemas de tempo compartilhado, sistemas operacionais modernos.
+Sistemas operacionais de primeira, segunda e terceira geração.
 ◦
-Referência: "Livro de Sistemas Operacionais1.pdf", Seção 1.2, parágrafos introdutórios, "livro-sistema-operacional-universidade-federal-parana.pdf", capítulo 1, parágrafos introdutórios.
+Sistemas batch e tempo compartilhado.
+◦
+A evolução para sistemas operacionais modernos.
 •
-Dia 3: Arquitetura de Computadores e sua relação com SOs.
+Aula 3: Tipos de sistemas operacionais.
 ◦
-Modelo de Von Neumann, barramento do sistema, componentes básicos de um computador.
+Sistemas operacionais para computadores pessoais, servidores, dispositivos móveis e embarcados.
 ◦
-Referência: "arquitetura_computadores.pdf", Aula 1, seção 1.2 e 1.3, parágrafos introdutórios.
+Sistemas de tempo real.
 •
-Dia 4: Modos de Operação: Kernel vs. Usuário.
-◦
-Diferença entre modo núcleo e modo usuário. Como os dois modos auxiliam no projeto do SO.
-◦
-Referência: "Livro de Sistemas Operacionais1.pdf", Seção 1.3, parágrafos introdutórios.
+Aula 4: Estrutura de um sistema operacional. * Sistemas monolíticos. * Sistemas em camadas. * Micronúcleos. * Modelo cliente-servidor. * Máquinas virtuais e hipervisores.
 •
-Dia 5: Chamadas de Sistema.
-◦
-Como funcionam as chamadas de sistema, a transição do modo usuário para o modo kernel. Chamadas de sistema como um tipo especial de chamada de rotina.
-◦
-Referência: "Livro de Sistemas Operacionais1.pdf", Seção 1.4, parágrafos introdutórios, Seção 1.4, parágrafos sobre chamadas de sistema.
+Aula 5: Conceitos básicos de hardware para sistemas operacionais. * CPU, memória, barramento e dispositivos de E/S. * Organização da memória.
 •
-Dia 6: Introdução à Linguagem C.
+Aula 6: Chamadas de sistema.
 ◦
-Importância da linguagem C para o desenvolvimento de SOs. Estrutura de programas em C.
-◦
-Referência: "Livro de Sistemas Operacionais1.pdf", Seção 1.8, parágrafos introdutórios.
+O que são e como funcionam as chamadas de sistema. * A relação entre chamadas de biblioteca e chamadas de sistema. * Tipos de chamadas de sistema.
 •
-Dia 7: Conceito de Processos.
-◦
-O que são processos, espaço de endereçamento, recursos associados a processos, processos como abstração.
-◦
-Referência: "Livro de Sistemas Operacionais1.pdf", Seção 1.5, parágrafo introdutório, e Capítulo 2, parágrafos introdutórios, "livro-sistema-operacional-universidade-federal-parana.pdf", Capítulo 4, parágrafos introdutórios.
+Aula 7: Modo núcleo e modo usuário. * A diferença entre os modos de operação da CPU. * Como os modos auxiliam no projeto do SO.
 •
-Dia 8: Threads.
+Aula 8: Objetivos de projeto de um sistema operacional.
 ◦
-Conceito de threads, como se comunicam, e suas diferenças em relação a processos.
+Utilização de recursos, tempo de resposta, robustez.
 ◦
-Referência: "Livro de Sistemas Operacionais1.pdf", Capítulo 2, parágrafos introdutórios.
+Compromissos de projeto (trade-offs).
+Módulo 2: Processos e Threads (10 aulas)
 •
-Dia 9: Escalonamento de Processos.
+Aula 9: O conceito de processo.
 ◦
-Objetivos do escalonamento, exemplos de algoritmos de escalonamento.
+Definição e abstração de um processo.
 ◦
-Referência: "Livro de Sistemas Operacionais1.pdf", Seção 1.5, parágrafos sobre processos.
+Processos como containers de recursos.
+◦
+Estados de um processo.
 •
-Dia 10: Sincronização de Processos.
+Aula 10: Criação e término de processos.
 ◦
-Problemas de concorrência, regiões críticas, semáforos.
+Mecanismos de criação de processos.
 ◦
-Referência: "Livro de Sistemas Operacionais1.pdf", Capítulo 2, parágrafos sobre sincronização.
-Módulo 2: Gerenciamento de Memória (Dias 11-20)
+Término de processos.
 •
-Dia 11: Conceitos básicos de gerenciamento de memória.
+Aula 11: Escalonamento de processos.
 ◦
-Funções do gerenciador de memória, hierarquia de memórias.
+Algoritmos de escalonamento (FIFO, Round Robin, prioridades).
 ◦
-Referência: "Livro de Sistemas Operacionais1.pdf", Capítulo 3, parágrafos introdutórios.
+Quantum de tempo.
 •
-Dia 12: Memória Virtual.
+Aula 12: Threads.
 ◦
-Como funciona a memória virtual, paginação e segmentação.
+Conceito de threads e sua relação com processos.
 ◦
-Referência: "Livro de Sistemas Operacionais1.pdf", Capítulo 3, parágrafos introdutórios, "Organização estruturada de computadores - Tanenbaum.pdf", Capítulo 6, parágrafos introdutórios e seção 6.1.
+Implementação de threads no nível do usuário e do núcleo.
+◦
+Contexto de um thread.
 •
-Dia 13: Algoritmos de Substituição de Página.
+Aula 13: Sincronização de processos e threads.
 ◦
-Algoritmos LRU e WSClock, outras questões de projeto para sistemas de paginação.
+Necessidade de sincronização.
 ◦
-Referência: "Livro de Sistemas Operacionais1.pdf", Seção 3.4, parágrafos sobre algoritmos de substituição de páginas.
+Exclusão mútua e regiões críticas.
+◦
+Problemas clássicos de sincronização (produtor/consumidor, leitores/escritores).
 •
-Dia 14: TLB (Translation Lookaside Buffer).
+Aula 14: Deadlocks.
 ◦
-Como o TLB afeta o acesso à memória.
+O que são deadlocks e como eles acontecem.
 ◦
-Referência: "Livro de Sistemas Operacionais1.pdf", Seção 3.3.3, parágrafos sobre TLB.
+Prevenção e detecção de deadlocks.
 •
-Dia 15: Espaços de Endereçamento.
+Aula 15: Comunicação entre processos.
 ◦
-Como os sistemas operacionais desacoplam espaços de endereçamento da memória física.
+Memória compartilhada.
 ◦
-Referência: "Livro de Sistemas Operacionais1.pdf", Seção 1.5, parágrafos sobre espaços de endereçamento.
+Troca de mensagens.
 •
-Dia 16: Organização de Memória.
-◦
-Segmentos de texto, dados e pilha.
-◦
-Referência: "Organização estruturada de computadores - Tanenbaum.pdf", Capítulo 6, parágrafos introdutórios.
+Aula 16: Pesquisas atuais em processos e threads.
 •
-Dia 17: Gerenciamento de Discos.
+Aula 17: Implementação de processos em um sistema operacional real (Ex: Linux).
+•
+Aula 18: Práticas de programação concorrente.
+Módulo 3: Gerenciamento de Memória (10 aulas)
+•
+Aula 19: Organização da memória e conceitos básicos.
+◦
+Hierarquia de memória (cache, RAM, disco).
+◦
+Memória principal e secundária.
+◦
+Gerenciamento de memória.
+•
+Aula 20: Espaços de endereçamento.
+◦
+O conceito de espaços de endereçamento.
+◦
+Endereços físicos e lógicos.
+•
+Aula 21: Alocação de memória contígua.
+◦
+Partições fixas e variáveis.
+◦
+Fragmentação interna e externa.
+•
+Aula 22: Paginação.
+◦
+Conceitos básicos de paginação.
+◦
+Tabelas de páginas.
+◦
+TLB (Translation Lookaside Buffer).
+•
+Aula 23: Segmentação.
+◦
+O conceito de segmentação.
+◦
+Tabelas de segmentos.
+◦
+Paginação e segmentação combinadas.
+•
+Aula 24: Memória virtual.
+◦
+A necessidade de memória virtual.
+◦
+Paginação sob demanda.
+•
+Aula 25: Algoritmos de substituição de páginas.
+◦
+FIFO, LRU, Ótimo, Relógio.
+•
+Aula 26: Conjunto de trabalho e algoritmos de envelhecimento.
+•
+Aula 27: Questões de projeto para sistemas de paginação.
+◦
+Tamanho da página.
+◦
+Políticas de busca.
+•
+Aula 28: Implementação de gerenciamento de memória em um sistema operacional real.
+Módulo 4: Sistemas de Arquivos (10 aulas)
+•
+Aula 29: Conceitos básicos de sistemas de arquivos.
+◦
+Abstração de arquivos e diretórios.
+◦
+Operações sobre arquivos e diretórios.
+◦
+Sistemas de arquivos hierárquicos.
+•
+Aula 30: Implementação de sistemas de arquivos.
+◦
+Como os arquivos e diretórios são armazenados.
 ◦
 Gerenciamento de espaço em disco.
 ◦
-Referência: "Organização estruturada de computadores - Tanenbaum.pdf", Seção 2.2, parágrafos sobre organização de discos, seção 3.1.1, parágrafos sobre organização de discos.
+Alocação de espaço em disco.
 •
-Dia 18: Sistemas de Arquivos.
+Aula 31: Organização de diretórios.
 ◦
-Hierarquia de arquivos e diretórios, diretório de trabalho, descritores de arquivo.
+Hierarquia de diretórios.
 ◦
-Referência: "Livro de Sistemas Operacionais1.pdf", Capítulo 4, parágrafos introdutórios, seção 1.5, parágrafos sobre arquivos e diretórios.
+Diretório de trabalho.
 •
-Dia 19: Implementação de Sistemas de Arquivos.
+Aula 32: Abertura e fechamento de arquivos.
 ◦
-Detalhes práticos do funcionamento de sistemas de arquivos.
+Descritores de arquivos.
 ◦
-Referência: "Livro de Sistemas Operacionais1.pdf", Capítulo 4, parágrafos sobre implementação de arquivos.
+Permissões de arquivos.
 •
-Dia 20: Dispositivos de E/S.
+Aula 33: Desempenho de sistemas de arquivos.
 ◦
-Drivers de disco, como os drivers interagem com o SO, diferentes maneiras de realizar E/S.
+Acesso a disco.
 ◦
-Referência: "Livro de Sistemas Operacionais1.pdf", Seção 1.1.1, parágrafos sobre drivers, Seção 1.3, parágrafos sobre E/S.
-Módulo 3: Tópicos Avançados (Dias 21-35)
+Escritas pequenas e seus problemas.
 •
-Dia 21: Entrada e Saída (E/S).
+Aula 34: Consistência de sistemas de arquivos.
 ◦
-Modos de E/S: espera ocupada, interrupções e DMA.
-◦
-Referência: "Livro de Sistemas Operacionais1.pdf", Seção 1.3, parágrafos sobre modos de E/S.
+Garantindo a integridade dos dados em caso de falha.
 •
-Dia 22: O conceito de "arquivo especial de bloco" e "arquivo especial de caractere".
-◦
-Referência: "Livro de Sistemas Operacionais1.pdf", exercício 25.
+Aula 35: Arquivos especiais de bloco e caractere.
 •
-Dia 23: Relógios e Temporizadores.
+Aula 36: Sistemas de arquivos em disco e em memória.
 ◦
-Como o SO mantém o tempo, uso de temporizadores.
-◦
-Referência: "Livro de Sistemas Operacionais1.pdf", exercício 57 e parágrafos sobre temporizadores.
+Gerenciamento de espaço em disco.
 •
-Dia 24: Impasses (Deadlocks).
-◦
-O problema do jantar dos filósofos, como evitar impasses.
-◦
-Referência: "Livro de Sistemas Operacionais1.pdf", Seção 2.4.4, e exercício 27.
+Aula 37: RAID (Redundant Array of Inexpensive Disks).
 •
-Dia 25: Máquinas Virtuais e Hipervisores.
-◦
-Paravirtualização, tradução binária dinâmica, micronúcleos.
-◦
-Referência: "Livro de Sistemas Operacionais1.pdf", Seção 9.6, parágrafos sobre virtualização, "livro-sistema-operacional-universidade-federal-parana.pdf", Capítulo 32, parágrafos sobre virtualização.
+Aula 38: Implementação de um sistema de arquivos em um sistema operacional real.
+Módulo 5: Entrada/Saída (E/S) (8 aulas)
 •
-Dia 26: Segurança em Sistemas Operacionais.
+Aula 39: Conceitos básicos de E/S.
 ◦
-Mecanismos de segurança, vírus, ataques de buffer overflow.
+Dispositivos de E/S e seus controladores.
 ◦
-Referência: "Livro de Sistemas Operacionais2.pdf", Seção 9.7, parágrafos sobre vírus e segurança.
+Instruções de E/S no nível do sistema operacional.
 •
-Dia 27: Aprofundamento em drivers.
+Aula 40: Métodos de E/S.
 ◦
-Implementação de drivers, interfaces de drivers.
+E/S programada.
 ◦
-Referência: "Livro de Sistemas Operacionais1.pdf", Seção 5.3, parágrafos sobre drivers.
+E/S por interrupção.
+◦
+DMA (Direct Memory Access).
 •
-Dia 28: Sistemas Operacionais Distribuídos.
+Aula 41: Gerenciamento de dispositivos de E/S.
 ◦
-Conceitos e desafios de sistemas distribuídos.
+Drivers de dispositivo.
 ◦
-Referência: Complementar com material externo.
+Interfaces de dispositivos.
 •
-Dia 29: Balanceamento de Carga.
+Aula 42: Armazenamento em disco.
 ◦
-Algoritmos de balanceamento de carga.
+Organização física do disco.
 ◦
-Referência: "Livro de Sistemas Operacionais2.pdf", Seção 8.2, exercício 37 e parágrafos sobre balanceamento de carga.
+Alocação de setores e trilhas.
+◦
+Escalonamento de disco (algoritmos de busca).
 •
-Dia 30: RPC (Remote Procedure Call).
-◦
-Como funcionam as chamadas de procedimento remoto.
-◦
-Referência: "Livro de Sistemas Operacionais2.pdf", Seção 8.1, exercício 36 e parágrafos sobre RPC.
+Aula 43: Dispositivos de estado sólido (SSD).
 •
-Dia 31: Estudo de Caso: UNIX.
+Aula 44: Redes e E/S.
 ◦
-História e características do UNIX.
+Considerações sobre desempenho.
 ◦
-Referência: "Livro de Sistemas Operacionais1.pdf", Seção 1.2, parágrafos sobre UNIX, Seção 10.1.6, parágrafos sobre MINIX.
+Qualidade de serviço.
 •
-Dia 32: Estudo de Caso: Linux.
-◦
-Características e funcionamento do kernel Linux, estrutura do sistema de arquivos.
-◦
-Referência: "Livro de Sistemas Operacionais1.pdf", Seção 1.2, parágrafos sobre Linux, Seção 10.1.7, parágrafos sobre Linux.
+Aula 45: Implementação de E/S em sistemas operacionais reais.
 •
-Dia 33: Estudo de Caso: MINIX.
-◦
-Características e importância do MINIX.
-◦
-Referência: "Livro de Sistemas Operacionais2.pdf", Seção 10.1.6, parágrafos sobre MINIX.
+Aula 46: Tópicos avançados de E/S (Virtualização de E/S).
+Módulo 6: Tópicos Avançados e Projetos (6 aulas)
 •
-Dia 34: Projeto de Sistemas Operacionais.
+Aula 47: Segurança em sistemas operacionais.
 ◦
-Objetivos de projeto de SOs, princípios norteadores, estrutura de sistemas.
+Modelos de segurança.
 ◦
-Referência: "Livro de Sistemas Operacionais2.pdf", Capítulo 12, seções 12.1, 12.2, parágrafos sobre projeto de SOs.
+Controle de acesso e autenticação.
+◦
+Proteção de dados e privacidade.
 •
-Dia 35: Implementação de Sistemas Operacionais.
-◦
-Estratégias de implementação, o papel da experiência, processo de desenvolvimento.
-◦
-Referência: "Livro de Sistemas Operacionais2.pdf", Capítulo 12, seções 12.3 e parágrafos sobre implementação de SOs.
-Módulo 4: Arquitetura de Computadores (Dias 36-45)
+Aula 48: Sistemas operacionais para multiprocessadores e multinúcleos. * Desafios de escalabilidade e desempenho.
 •
-Dia 36: Componentes básicos de um computador.
-◦
-Processador, memória, unidades de E/S, barramentos.
-◦
-Referência: "Organização estruturada de computadores - Tanenbaum.pdf", Capítulo 2, parágrafos introdutórios.
+Aula 49: Sistemas operacionais distribuídos e em nuvem.
 •
-Dia 37: Transistores e Portas Lógicas.
+Aula 50: Projeto e implementação de sistemas operacionais.
 ◦
-Como funcionam os transistores, portas AND, OR, NOT.
+Considerações de projeto.
 ◦
-Referência: "Organização estruturada de computadores - Tanenbaum.pdf", Capítulo 3, parágrafos sobre transistores e portas lógicas.
+Estrutura do sistema.
+◦
+Implementação e teste.
 •
-Dia 38: Níveis de Máquina.
+Aula 51: Virtualização de sistemas operacionais e hipervisores.
 ◦
-Nível lógico digital, microarquitetura, arquitetura do conjunto de instruções (ISA).
+Técnicas de virtualização.
 ◦
-Referência: "Organização estruturada de computadores - Tanenbaum.pdf", Capítulo 1, seção 1.1.2.
+Hipervisores e sua relação com micronúcleos.
 •
-Dia 39: Conjunto de Instruções.
+Aula 52: Estudo de caso de sistemas operacionais.
 ◦
-O que é o nível ISA, modelos de memória, registradores e instruções.
+Análise comparativa de sistemas operacionais (UNIX, Linux, Windows, Android).
 ◦
-Referência: "Organização estruturada de computadores - Tanenbaum.pdf", Capítulo 5, seção 5.1, parágrafos sobre nível ISA.
-•
-Dia 40: Formatos de Instrução.
-◦
-Critérios de projeto para formatos de instrução, comprimento de instrução e de palavra.
-◦
-Referência: "Organização estruturada de computadores - Tanenbaum.pdf", Capítulo 5, seção 5.3, parágrafos sobre formatos de instrução.
-•
-Dia 41: Ciclo de Busca-Decodificação-Execução.
-◦
-Como a CPU executa instruções, o conceito de pipeline.
-◦
-Referência: "Organização estruturada de computadores - Tanenbaum.pdf", Capítulo 2, seção 2.1.2, e parágrafos sobre ciclo de busca-decodificação-execução.
-•
-Dia 42: Paralelismo no Nível da Instrução.
-◦
-Processadores superescalares e VLIM.
-◦
-Referência: "Organização estruturada de computadores - Tanenbaum.pdf", Seção 8.1.1, parágrafos sobre paralelismo no nível da instrução.
-•
-Dia 43: Caches.
-◦
-Como funcionam as caches, caches de instrução, caches de dados.
-◦
-Referência: "Organização estruturada de computadores - Tanenbaum.pdf", Seção 4.5.4 e parágrafos sobre caches.
-•
-Dia 44: Linguagem de Montagem.
-◦
-Introdução à linguagem de montagem do 8088, uso de um assembler e simulador.
-◦
-Referência: "Organização estruturada de computadores - Tanenbaum.pdf", Apêndice C, parágrafos introdutórios.
-•
-Dia 45: Microinstruções.
-◦
-Microinstruções e notação, como o controle é feito ciclo a ciclo.
-◦
-Referência: "Organização estruturada de computadores - Tanenbaum.pdf", Seção 4.3.1, e parágrafos sobre microinstruções.
-Módulo 5: Tópicos Complementares (Dias 46-52)
-•
-Dia 46: Algoritmos em Grafos e sua relação com SOs.
-◦
-Conceitos básicos de grafos, algoritmos de grafos.
-◦
-Referência: "Teoria Computacional de Grafos - Jayme Luiz Szwarcfiter.pdf", Capítulo 2, parágrafos introdutórios.
-•
-Dia 47: Implementações de Algoritmos em Python.
-◦
-Utilização de Python para implementar algoritmos, simulação e teste de algoritmos.
-◦
-Referência: "Teoria Computacional de Grafos - Jayme Luiz Szwarcfiter.pdf", Capítulo 1, seção 1.6, e parágrafos introdutórios.
-•
-Dia 48: A complexidade de algoritmos.
-◦
-Conceitos de complexidade local e temporal de algoritmos.
-◦
-Referência: "Teoria Computacional de Grafos - Jayme Luiz Szwarcfiter.pdf", Capítulo 1, seção 1.5, parágrafos sobre complexidade de algoritmos.
-•
-Dia 49: Ferramentas de Desenvolvimento de SOs.
-◦
-Compiladores, debuggers, emuladores.
-◦
-Referência: Material complementar externo.
-•
-Dia 50: Tendências em Sistemas Operacionais.
-◦
-Sistemas operacionais para dispositivos móveis, computação em nuvem e Internet das Coisas (IoT).
-◦
-Referência: Material complementar externo.
-•
-Dia 51: Tópicos de Pesquisa em Sistemas Operacionais.
-◦
-Artigos e conferências relevantes na área.
-◦
-Referência: "Livro de Sistemas Operacionais2.pdf", Capítulo 13, parágrafos introdutórios e seções sobre referências.
-•
-Dia 52: Revisão e Considerações Finais.
-◦
-Revisão geral dos conceitos e discussão sobre a carreira de um especialista em SOs.
+Tendências atuais em sistemas operacionais
