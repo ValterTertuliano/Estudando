@@ -1,0 +1,213 @@
+---------------------------------
+FONTES
+---------------------------------
+        
+        ----- livro 1 de referencia -----
+
+AUTOR: Andrew S. Tanenbaum, Herbert Bos
+LIVRO: Sistemas Operacionais Modernos
+"Editora":  Pearson Education do Brasil
+
+         ----- livro 2 de referencia -----
+
+AUTOR: Andrew S. Tanenbaum, Herbert Bos
+LIVRO: Organização Estruturada de Computadores
+"Editora":  Pearson Education do Brasil
+
+         ----- livro 3 de referencia -----
+AUTOR: Carlos A. Maziero
+LIVRO: Sistemas Operacionais: Conceitos e mecanismos
+"Editora": UFPR
+------------------------------------
+
+-----   ---  -- - Hardware de memória
+
+A memória é a parte do computador onde são armazenados programas e 
+dados. Sem uma memória da qual os processadores possam ler e na qual 
+possam gravar, ou escrever, informações, não haveria computadores 
+digitais com programas armazenados
+
+A memória principal do computador é uma área de RAM composta por uma
+grande sequência de bytes, que é a menor unidade de memória usada pelo 
+processador. Cada byte da memória RAM possui um endereço, que é usado 
+para acessá-lo. Um computador convencional atual possui alguns GBytes 
+de memória RAM, usados para conter o sistema operacional e os 
+processos em execução, além de algumas áreas para finalidades 
+específicas, como buffers de dispositivos de entrada/saída. A 
+quantidade de memória RAM disponível em um computador constitui seu 
+espaço de memória física
+
+A memória principal é um componente fundamental em qualquer sistema de 
+computação. Ela constitui o “espaço de trabalho” do sistema, no qual 
+são mantidos os processos, threads e bibliotecas compartilhadas, além 
+do próprio núcleo do sistema operacional, com seu código e suas 
+estruturas de dados. O hardware de memória pode ser bastante complexo, 
+envolvendo diversas estruturas, como memórias RAM, caches, unidade de 
+gerência, barramentos, etc, o que exige um esforço de gerência 
+significativo por parte do sistema operacional.
+
+O segundo principal componente em qualquer computador é a memória. 
+Idealmente, uma memória deve ser rápida ao extremo (mais rápida do que 
+executar uma instrução, de maneira que a CPU não seja atrasada pela 
+memória), abundantemente grande e muito barata. Nenhuma tecnologia 
+atual satisfaz todas essas metas, assim uma abordagem diferente é 
+tomada. O sistema de memória é construído como uma hierarquia de 
+camadas, As camadas superiores têm uma velocidade mais alta,
+capacidade menor e um custo maior por bit do que as inferiores, muitas 
+vezes por fatores de um bilhão ou mais. 
+
+Existem diversos tipos de memória em um sistema de computação, cada
+um com suas próprias características e particularidades, mas todos com 
+um mesmo objetivo: armazenar informação. Observando um sistema 
+computacional típico, pode-se identificar vários locais onde dados são 
+armazenados: os registradores e o cache interno do processador 
+(denominado cache L1), o cache externo da placa mãe (cache L2) e a 
+memória principal (RAM). Além disso, discos e unidades de 
+armazenamento externas (pendrives, CD-ROMs, DVD-ROMs, fitas 
+magnéticas, etc.) também podem ser considerados memória em um sentido 
+mais amplo, pois também têm como função o armazenamento de informação
+
+Esses componentes de hardware são construídos usando diversas 
+tecnologias e por isso têm características distintas, como a 
+capacidade de armazenamento, a velocidade de operação, o consumo de 
+energia, o custo por byte armazenado e a volatilidade. Essas 
+características permitem definir uma hierarquia de memória
+
+Nessa pirâmide, observa-se que memórias mais rápidas, como os 
+registradores da CPU e os caches, são menores (têm menor capacidade de 
+armazenamento), mais caras e consomem mais energia que memórias mais 
+lentas, como a memória principal (RAM) e os discos. Além disso, as 
+memórias mais rápidas são voláteis, ou seja, perdem seu conteúdo ao 
+ficarem sem energia, quando o computador é desligado. Memórias que 
+preservam seu conteúdo mesmo quando não tiverem energia, como as 
+unidades Flash e os discos rígidos, são denominadas memórias 
+não-voláteis
+
+Outra característica importante das memórias é a rapidez de seu 
+funcionamento, que pode ser traduzida em duas grandezas: o tempo de 
+acesso (ou latência) e a taxa de transferência. O tempo de acesso 
+caracteriza o tempo necessário para iniciar uma transferência de dados 
+de/para um determinado meio de armazenamento. Por sua vez, a taxa de 
+transferência indica quantos bytes por segundo podem ser lidos/
+escritos naquele meio, uma vez iniciada a transferência de dados
+
+A camada superior consiste em registradores internos à CPU. Eles são 
+feitos do mesmo material que a CPU e são, desse modo, tão rápidos 
+quanto ela. Em consequência, não há um atraso ao acessá-los. A 
+capacidade de armazenamento disponível neles é tipicamente 32 × 32 
+bits em uma CPU de 32 bits e 64 × 64 bits em uma CPU de 64 bits. Menos 
+de 1 KB em ambos os casos. Os programas devem gerenciar os próprios 
+registradores (isto é, decidir o que manter neles) no software
+
+Em seguida, vem a memória cache, que é controlada principalmente pelo 
+hardware. A memória principal é dividida em linhas de cache, 
+tipicamente 64 bytes, com endereços 0 a 63 na linha de cache 0, 64 a 
+127 na linha de cache 1 e assim por diante. As linhas de cache mais 
+utilizadas são mantidas em uma cache de alta velocidade localizada 
+dentro ou muito próximo da CPU. Quando o programa precisa ler uma 
+palavra de memória, o hardware de cache confere se a linha requisitada 
+está na cache. Se ela estiver presente na cache (cache hit), a 
+requisição é atendida e nenhuma requisição de memória é feita para a 
+memória principal sobre o barramento. Cache hits costumam levar em 
+torno de dois ciclos de CPU. Se a linha requisitada estiver ausente da 
+cache (cache miss), uma requisição adicional é feita à memória, com 
+uma penalidade de tempo substancial. A memória da cache é limitada em 
+tamanho por causa do alto custo. Algumas máquinas têm dois ou três 
+níveis de cache, cada um mais lento e maior do que o antecedente
+
+O conceito de caching exerce um papel importante em muitas áreas da 
+ciência de computadores, não apenas na colocação de linhas de RAM na 
+cache. Sempre que um recurso pode ser dividido em partes, algumas das 
+quais são usadas com muito mais frequência que as outras, o caching é 
+muitas vezes utilizado para melhorar o desempenho. Sistemas 
+operacionais o utilizam seguidamente. Por exemplo, a maioria dos 
+sistemas operacionais mantém (partes de) arquivos muito usados na 
+memória principal para evitar ter de buscá-los do disco de modo 
+repetido
+
+Em sistemas de cache, surgem várias perguntas importantes, como:
+
+Quando adicionar um novo item à cache?
+Em qual linha de cache o novo item será colocado?
+Qual item deve ser removido da cache para liberar espaço?
+Onde colocar o item removido na memória principal?
+
+Essas questões nem sempre são relevantes em todas as situações. Por 
+exemplo, no caso de caches de memória principal na CPU, novos itens 
+geralmente são adicionados sempre que ocorre uma ausência na cache 
+(cache miss). A linha de cache onde o novo item será inserido é 
+calculada com base nos bits do endereço de memória. Por exemplo, se 
+houver 4.096 linhas de cache de 64 bytes em um sistema com endereços 
+de 32 bits, os bits de 6 a 17 podem identificar a linha de cache, 
+enquanto os bits de 0 a 5 determinam os bytes dentro dessa linha.
+
+Se for necessário reescrever um dado modificado na memória principal, 
+o local exato é definido pelo endereço do dado.
+
+As caches são tão úteis que as CPUs modernas possuem duas delas. O 
+primeiro nível, chamado de cache L1, fica dentro da CPU e é usado para 
+alimentar instruções ao mecanismo de execução. Normalmente, há duas 
+caches L1: uma para instruções e outra para dados frequentemente 
+usados, com capacidade de cerca de 16 KB cada.
+
+Além disso, há uma segunda camada chamada de cache L2, que pode 
+armazenar alguns megabytes de dados acessados recentemente. A 
+diferença entre as caches L1 e L2 está na velocidade: o acesso à cache 
+L1 é imediato, enquanto o acesso à cache L2 pode ter um atraso de um 
+ou dois ciclos de relógio.
+
+Nos chips de múltiplos núcleos, os projetistas escolhem entre duas 
+abordagens para a cache L2. Em alguns chips, como os da Intel, há uma 
+única cache L2 compartilhada entre todos os núcleos. Essa abordagem 
+requer um controlador de cache mais complexo. Já em outros chips, como 
+os da AMD, cada núcleo possui sua própria cache L2, o que simplifica o 
+controle de acesso, mas dificulta a consistência dos dados entre 
+caches. Ambas as estratégias têm vantagens e desvantagens.
+
+Nos chips de múltiplos núcleos, os projetistas precisam decidir como 
+organizar as caches. Uma abordagem é usar uma única cache L2 
+compartilhada por todos os núcleos, como é feito nos chips da Intel. 
+Outra abordagem, adotada pela AMD, é dar a cada núcleo sua própria 
+cache L2. Ambas as estratégias têm vantagens e desvantagens. A cache 
+compartilhada da Intel exige um controlador mais complexo, enquanto a 
+abordagem da AMD dificulta manter os dados consistentes entre as 
+caches.
+
+A memória principal, que aparece logo após as caches na hierarquia, é 
+o componente central do sistema de memória e é chamada de RAM (Random 
+Access Memory — memória de acesso aleatório). No passado, era 
+conhecida como "memória de núcleo" porque usava pequenos núcleos de 
+ferrite magnetizáveis nas décadas de 1950 e 1960. Hoje, a memória RAM 
+é muito maior, com capacidades que variam de centenas de megabytes a 
+vários gigabytes. Sempre que a CPU não encontra os dados na cache, ela 
+recorre à memória principal para acessá-los.
+
+Além da RAM, muitos computadores possuem um tipo de memória não 
+volátil que mantém seus dados mesmo sem energia elétrica. Um exemplo é 
+a ROM (Read Only Memory — memória somente de leitura), que é 
+programada na fábrica e não pode ser alterada. Ela é usada para 
+armazenar informações essenciais, como o programa de inicialização do 
+computador (bootstrap loader).
+
+Outros tipos de memória não volátil incluem a EEPROM (Electrically 
+Erasable PROM) e a memória flash. Ambas podem ser apagadas e 
+regravadas, diferentemente da ROM tradicional. No entanto, a gravação 
+nesses tipos de memória é mais lenta do que na RAM. Por isso, elas 
+geralmente armazenam programas que precisam ser corrigidos 
+ocasionalmente, como firmwares.
+
+A memória flash é amplamente usada em dispositivos portáteis, como 
+câmeras digitais e reprodutores de música, atuando como meio de 
+armazenamento. Ela é mais rápida que os discos rígidos, mas mais lenta 
+que a RAM. Entretanto, a memória flash possui uma limitação: ela se 
+desgasta com o uso repetido de apagamento e gravação.
+
+Outro tipo de memória importante é a CMOS, que é volátil. Essa memória 
+é usada para armazenar informações como a hora, data e configurações 
+do sistema, incluindo o disco de inicialização. A CMOS é alimentada 
+por uma pequena bateria, permitindo que os dados sejam mantidos mesmo 
+quando o computador está desligado. Essa bateria dura anos, mas, 
+quando começa a falhar, o computador pode "esquecer" configurações 
+importantes, como qual disco rígido usar para carregar o sistema 
+operacional.
+
