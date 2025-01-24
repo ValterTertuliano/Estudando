@@ -78,7 +78,7 @@ Retorna o resto de uma divisão inteira. Pode ser entendido, também,
 como o que sobra depois de realizar uma divisão inteira.
 
 Dado dois números 'a' (dividendo) e 'b' (divisor), o módulo (𝑎 % 𝑏)
- retorna o valor 'r', que é o resto da divisão inteira.
+retorna o valor 'r', que é o resto da divisão inteira.
 
 Fórmula do módulo:
 
@@ -92,4 +92,70 @@ Regras importantes:
 O sinal do resto segue o sinal do divisor (b).
 O valor absoluto do resto é sempre menor que o valor absoluto do 
 divisor (∣𝑟∣ < ∣𝑏∣.)
+
+Operadores Relacionais
+
+O que são? 
+
+- São usados para comparar dois valores do mesmo tipo, como números ou 
+letras.
+
+Valores possíveis: Podem comparar constantes, variáveis ou resultados 
+de contas (expressões aritméticas).
+
+Resultado: Sempre dão um valor lógico, ou seja, verdadeiro ou falso.
+
+Principais símbolos:
+=: Igual a.
+>: Maior que.
+<: Menor que.
+
+Outros exemplos: 
+maior ou igual (>=), 
+menor ou igual (<=), 
+diferente (<> ou !=).
+
+Exemplos práticos:
+3 = 3 → verdadeiro.
+5 > 4 → verdadeiro.
+X < Y → depende dos valores de X e Y.
+
+Hierarquia: Eles têm prioridade maior que operadores lógicos, mas 
+menor que operadores matemáticos.
+
+Operadores Lógicos
+
+O que são? Usados para combinar mais de uma condição lógica 
+(verdadeira ou falsa) em uma única comparação.
+
+Operadores básicos:
+
+não (negação): Inverte o valor lógico (verdadeiro vira falso, e 
+vice-versa).
+
+e (conjunção): Só dá verdadeiro se todas as condições forem 
+verdadeiras.
+
+ou (disjunção): Dá verdadeiro se pelo menos uma condição for 
+verdadeira.
+
+Exemplos práticos:
+
+(nota >= 7) e (frequencia >= 75) → Aprovado se nota e frequência forem 
+suficientes.
+
+(cor = "azul") ou (cor = "cinza") → Verdadeiro se a cor for azul ou 
+cinza.
+
+Precedência:
+
+Primeiro, resolve não.
+Depois, resolve e.
+Por último, resolve ou.
+
+Combinação com relacionais: É possível combinar operadores lógicos e 
+relacionais para criar condições mais complexas.
+
+Flexibilidade: Usados para criar regras e condições detalhadas em 
+programas de forma eficiente.
 
