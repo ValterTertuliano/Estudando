@@ -1,10 +1,9 @@
 import os
 
 # Caminho raiz das pastas contendo os PDFs a serem vistoriados
-CAMINHO = "C:\\Users"
+CAMINHO = "C:\\"
 
-
-# Função para localizar PDFs dentro de uma pasta raiz
+# Função para contar PDFs dentro de uma pasta raiz
 def contar_pdfs(caminho: str) -> int :
     """
     Localiza todos os pdfs encontrados em um caminho especifico
@@ -13,7 +12,7 @@ def contar_pdfs(caminho: str) -> int :
     caminho: Caminho da Pasta onde vai ser a busca
 
     Retorna:
-    Total de Pdfs localizados
+    contador = Total de Pdfs localizados
     """
 
     contador = 0 # numerar total de pdfs
