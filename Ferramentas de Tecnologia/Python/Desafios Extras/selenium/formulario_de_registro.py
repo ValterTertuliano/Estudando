@@ -80,28 +80,19 @@ caixa_pais.click()
 
 # - 2 obtenha lista de opções
 lista_paises = navegador.find_element(By.CLASS_NAME, 'ui-autocomplete')
-navegador.implicitly_wait(3) # espera rapida para carregar lista
 
 # - 3 marque o idioma
 selecionar_idioma = lista_paises.find_element(By.CSS_SELECTOR, "#basicBootstrapForm > div:nth-child(7) > div > multi-select > div:nth-child(2) > ul > li:nth-child(35) > a")
 selecionar_idioma.click()
 
 # Procurar Habilidades
-
-# - 1  opção com select - ID do select
-obter_habilidades = navegador.find_element(By.ID,'Skills')
-
-# iniciando a classe Select
-habilidade = Select(obter_habilidades)
-
-# selecionar categoria de habilidade
-habilidade.select_by_value("Python")
+obter_habilidades = navegador.find_element(By.ID,'Skills') # buscar ID
+habilidade = Select(obter_habilidades) # iniciar classe Select
+habilidade.select_by_value("Python") # selecionar  habilidade
 
 # Procurar Pais
 obter_pais = navegador.find_element(By.ID, "country")
-navegador.implicitly_wait(1)
 escolher_pais = Select(obter_pais)
-navegador.implicitly_wait(1)
 escolher_pais.select_by_index(9)
 
 # Procurar ano
