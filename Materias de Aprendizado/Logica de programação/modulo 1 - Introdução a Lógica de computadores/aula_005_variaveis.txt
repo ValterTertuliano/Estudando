@@ -85,7 +85,7 @@ sequenciais, de decisão e de repetição.
 As expressões que são escritas em estruturas de programação envolvem 
 a utilização de dados. 
 
-em um computador são números binários, isto é, sequências de Os e 1s, 
+Em um computador são números binários, isto é, sequências de Os e 1s, 
 e são armazenados em sua memória. Não é prático trabalhar diretamente 
 com essa representação, e, então, convencionou-se que os dados 
 manipulados por um programa são categorizados em tipos de dados, que 
@@ -124,7 +124,7 @@ objetos; os objetos (que podem ser substituídos) seriam os dados e as
 gavetas, as variáveis.
 
 Visto que na memória (armário) existem inúmeras variáveis (gavetas), 
-precisamos diferenciá-las, o que é feito por meio de identifi cadores 
+precisamos diferenciá-las, o que é feito por meio de identificadores 
 (etiquetas ou rótulos). Cada variável (gaveta), no entanto, pode 
 guardar apenas um dado (objeto) de cada vez, sendo sempre de mesmo 
 tipo primitivo (material).
@@ -151,7 +151,7 @@ Já o identificador X é o nome de um local de memória
 que só pode conter valores do tipo inteiro, qualquer um deles
 
 Não devemos permitir que mais de uma variável (gaveta) possua o mesmo 
-identificador (etiqueta), já que fi caríamos sem saber que variável 
+identificador (etiqueta), já que ficaríamos sem saber que variável 
 utilizar (que gaveta abrir). Só podemos guardar dados (objetos) em 
 variáveis (gavetas) do mesmo material (tipo primitivo), ou seja, uma 
 variável do tipo primitivo inteiro só pode armazenar números inteiros, 
