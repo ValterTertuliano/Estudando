@@ -8,7 +8,7 @@ resultado.
 
 import java.util.Scanner;
 
-public class Main {
+public class desafio_7 {
 	public static void main(String[] args) {
 		
 		Scanner scanner = new Scanner(System.in);
