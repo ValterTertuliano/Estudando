@@ -1,0 +1,374 @@
+Resumo e entendimento do livro - Algoritmos - teoria e prática - 
+Thomas H. Cormen,  Charles E. Leiserson etc.
+
+Capitulo 3
+------------------------------------------------------------------
+
+-----   -- Notação Assintótica
+
+As notações que usamos para falar sobre o tempo de execução de um 
+algoritmo são definidas em funções que trabalham com números naturais, 
+como {0, 1, 2, ...}. Essas notações ajudam a descrever o tempo de 
+execução no pior caso (T(n)), que geralmente é usado para tamanhos de 
+entrada inteiros. Porém, às vezes, podemos estender ou restringir 
+essas notações de algumas formas. Por exemplo, podemos aplicar a 
+notação para números reais ou até mesmo para apenas um grupo 
+específico de números naturais.
+
+No entanto, é importante entender bem o significado de cada notação 
+para que, quando decidirmos fazer essas mudanças, elas sejam feitas 
+corretamente e não causem confusão. Esta seção vai explicar as 
+notações principais e também mostrar algumas formas comuns de usá-las 
+de maneira flexível.
+
+Notação Assintótica, Funções e Tempos de Execução
+
+A notação assintótica é usada principalmente para descrever o tempo de 
+execução dos algoritmos. Por exemplo, quando dizemos que o tempo de 
+execução no pior caso da ordenação por inserção é Θ(n²), estamos 
+simplificando a descrição do tempo necessário para executar o 
+algoritmo.
+
+Para ser mais preciso, o tempo de execução da ordenação por inserção 
+pode ser expresso como uma função: an² + bn + c, onde a, b e c são 
+constantes. Quando dizemos que o tempo de execução é Θ(n²), estamos 
+ignorando alguns detalhes dessa função, mas ainda assim expressando a 
+ideia de que, para entradas grandes, o tempo de execução é dominado 
+por n².
+
+Embora muitas vezes usemos a notação assintótica para descrever o 
+tempo de execução de algoritmos, ela também pode ser aplicada a outras 
+funções, como aquelas que descrevem o uso de espaço ou outros aspectos 
+de um algoritmo. A notação assintótica pode até ser usada para funções 
+que não têm nada a ver com algoritmos.
+
+Quando usamos a notação assintótica para descrever o tempo de execução 
+de um algoritmo, é importante entender qual tipo de tempo estamos nos 
+referindo. Às vezes, queremos saber o tempo de execução no pior caso, 
+mas muitas vezes, estamos interessados no tempo de execução em 
+qualquer situação, para qualquer entrada. Ou seja, queremos entender o 
+comportamento do algoritmo para todas as entradas possíveis, não 
+apenas no pior cenário. As notações assintóticas ajudam a descrever os 
+tempos de execução de forma geral, independentemente da entrada 
+específica.
+
+-----   -- Notação Θ
+
+A notação Θ é usada para descrever como o tempo de execução de um 
+algoritmo cresce conforme o tamanho da entrada aumenta. Ela representa 
+um conjunto de funções que, para valores grandes de n, ficam dentro de 
+uma faixa entre duas funções multiplicadas por constantes. Ou seja, a 
+função f(n) pode ser "encaixada" entre duas outras funções baseadas em 
+g(n), multiplicadas por constantes c1 e c2.
+
+Embora se use o termo "igualdade", o que estamos dizendo na verdade é 
+que f(n) pertence ao conjunto Θ(g(n)), ou seja, f(n) se comporta de 
+forma semelhante a g(n) quando n é grande. Essa maneira de expressar o 
+conceito pode parecer estranha à primeira vista, mas ela ajuda a 
+simplificar a descrição.
+
+Para todos os valores de n a partir de n0, a função f(n) estará entre 
+c1g(n) e c2g(n). Em outras palavras, para todo n ≥ n0, a função f(n) 
+se comporta como g(n) multiplicada por um fator constante. Isso 
+significa que g(n) é um limite assintótico restrito para f(n).
+
+A definição de Θ(g(n)) exige que a função f(n), que pertence a Θ(g
+(n)), seja não negativa quando n for suficientemente grande. Ou seja, f
+(n) deve ser positiva para valores grandes de n. Isso implica que a 
+função g(n) também precisa ser não negativa para que o conjunto Θ(g
+(n)) tenha sentido, caso contrário, o conjunto ficaria vazio. 
+Portanto, sempre consideramos que as funções dentro da notação Θ são 
+não negativas para valores grandes de n, e isso também se aplica a 
+outras notações assintóticas.
+
+Inicialmente, a ideia sobre a notação Θ é simples: ignoramos os termos 
+menos importantes e desconsideramos o coeficiente do termo de maior 
+ordem. Agora, vamos explicar isso com mais detalhes usando a definição 
+formal. Por exemplo, para mostrar que 1/2n² − 3n = Θ(n²), precisamos 
+encontrar constantes positivas c1, c2 e n0 que satisfaçam uma condição 
+para todo n ≥ n0. Se dividirmos a expressão por n², obtemos c1 ≤ 1/2 - 
+3/n ≤ c2.
+
+A desigualdade à direita pode ser válida para qualquer valor de n ≥ 1, 
+se escolhermos qualquer constante c2 ≥ 1/2. Da mesma forma, a 
+desigualdade à esquerda pode ser válida para n ≥ 7, se escolhermos c1 
+≤ 1/14. Com essas escolhas, podemos mostrar que 1/2n² − 3n = Θ(n²). 
+Existem outras opções para as constantes, mas o importante é que elas 
+sempre existirão. Além disso, essas constantes dependem da função 
+específica, então uma função diferente em Θ(n²) exigiria constantes 
+diferentes.
+
+Também podemos usar a definição formal para provar que 6n³ ≠ Θ(n²). 
+Para isso, suponhamos que existam constantes c2 e n0 de modo que 6n³ 
+seja sempre menor ou igual a c2n² para n ≥ n0. Dividindo ambos os 
+lados por n², obtemos n ≤ c2/6, o que não pode ser verdade para 
+valores grandes de n, já que c2 é uma constante.
+
+Agora, de forma mais intuitiva, podemos dizer que os termos de menor 
+ordem de uma função que cresce de forma positiva podem ser ignorados 
+ao analisar os limites assintóticos, pois esses termos são muito 
+pequenos quando n é grande. Quando n cresce, até uma pequena parte do 
+termo de maior ordem é suficiente para dominar os outros termos. Por 
+isso, podemos escolher c1 um pouco menor que o coeficiente do termo de 
+maior ordem e c2 um pouco maior. Isso garante que as desigualdades da 
+notação Θ sejam satisfeitas. Além disso, o coeficiente do termo de 
+maior ordem pode ser ignorado, já que ele só afeta c1 e c2 por um 
+fator constante.
+
+Por exemplo, se tivermos uma função quadrática f(n) = an² + bn + c, 
+onde a, b e c são constantes e a > 0, podemos desconsiderar os termos 
+menores e o valor constante, e a função se torna f(n) = Θ(n²). Para 
+provar isso formalmente, podemos escolher as constantes c1 = a/4, c2 = 
+7a/4 e n0 = 2 ⋅ max(|b|/a, √|c|/a).
+
+Você pode verificar que a expressão 0 ≤ c1n² ≤ an² + bn + c ≤ c2n² é 
+verdadeira para todo n maior ou igual a n0. Isso mostra que a função 
+an² + bn + c se comporta de maneira semelhante a n² quando n é grande, 
+o que é o que fazemos com a notação Θ.
+
+De forma geral, para qualquer polinômio, onde ai são constantes e ad > 
+0 (ou seja, o grau mais alto do polinômio não é zero), podemos afirmar 
+que p(n) = Θ(nd). Isso significa que a função p(n) se comporta de 
+maneira semelhante a n elevado ao grau d quando n é grande.
+
+Além disso, uma constante (como o número 5 ou 100) é um polinômio de 
+grau 0. Por isso, qualquer função constante pode ser representada como 
+Θ(n⁰) ou, de maneira mais simples, Θ(1). A notação Θ(1) é usada para 
+indicar que estamos lidando com uma constante, embora tenha um pequeno 
+"erro", pois não fica claro qual variável está indo para o infinito. 
+Mesmo assim, frequentemente usamos Θ(1) para representar uma constante 
+ou uma função constante em relação a uma variável.
+
+A notação O é usada para descrever um limite superior para uma função. 
+Enquanto a notação Θ define limites tanto superiores quanto 
+inferiores, a notação O se concentra apenas no limite superior. Isso 
+significa que O(g(n)) representa um conjunto de funções que crescem, 
+no pior caso, de forma similar à função g(n), mas com uma constante 
+multiplicativa. Em outras palavras, a função f(n) estará sempre abaixo 
+de c * g(n) para valores grandes de n, onde c é uma constante.
+
+A notação O é útil para descrever um limite superior para o 
+crescimento de uma função, sem se preocupar com os detalhes exatos de 
+seu comportamento para n grandes para todo valor de n maior ou igual a 
+n0, a função f(n) estará abaixo de c * g(n).
+
+Escrevemos f(n) = O(g(n)) para indicar que a função f(n) está no 
+conjunto O(g(n)), ou seja, ela tem um limite superior dado por g(n) 
+multiplicado por uma constante. Vale lembrar que se f(n) está em Θ(g
+(n)), então f(n) também está em O(g(n)), porque a notação Θ é mais 
+forte do que O. Em termos de teoria dos conjuntos, podemos escrever Θ(g
+(n)) ⊆ O(g(n)), o que significa que todo elemento de Θ(g(n)) também 
+pertence a O(g(n)).
+
+Por exemplo, mostramos que uma função quadrática como an² + bn + c, 
+onde a > 0, pertence a Θ(n²), o que implica que também pertence a O
+(n²). Surpreendentemente, isso significa que qualquer função linear, 
+como an + b (onde a > 0), também pertence a O(n²). Isso pode ser 
+verificado facilmente ao fazer c = a + |b| e n0 = max(1, −b/a).
+
+Você pode achar estranho que, por exemplo, n = O(n²), mas isso 
+acontece porque, em algumas fontes, a notação O é usada informalmente 
+para descrever limites assintóticos justos, ou seja, limites que 
+seriam descritos com a notação Θ. Porém, neste livro, quando 
+escrevemos f(n) = O(g(n)), estamos simplesmente dizendo que existe um 
+múltiplo constante de g(n) que serve como limite superior para f(n), 
+sem especificar com precisão esse comportamento. A diferença entre 
+limites superiores e limites "justos" é algo comum na literatura sobre 
+algoritmos.
+
+Ao usar a notação O, podemos frequentemente descrever o tempo de 
+execução de um algoritmo apenas observando sua estrutura. Por exemplo, 
+no caso do algoritmo de ordenação por inserção (Capítulo 2), a 
+estrutura de dois loops aninhados nos dá um limite superior O(n²) para 
+o pior caso. Cada iteração do loop interno tem um custo máximo de O(1) 
+(constante), e o número de pares possíveis de valores para os índices 
+i e j é no máximo n². Isso nos leva a concluir que o tempo de execução 
+do pior caso é O(n²).
+
+Quando usamos a notação O para descrever o tempo de execução do pior 
+caso de um algoritmo, estamos estabelecendo um limite superior para o 
+tempo de execução desse algoritmo, independentemente da entrada 
+específica. Assim, o limite O(n²) para o pior caso da ordenação por 
+inserção se aplica a qualquer entrada de tamanho n. No entanto, o 
+limite Θ(n²) para o pior caso da ordenação por inserção não se aplica 
+a todas as entradas, já que, por exemplo, quando a entrada já está 
+ordenada, o tempo de execução é Θ(n).
+
+É importante notar que é um pequeno "erro" dizer que o tempo de 
+execução da ordenação por inserção é O(n²), pois o tempo real de 
+execução depende da entrada específica. Quando dizemos que "o tempo de 
+execução é O(n²)", estamos afirmando que existe uma função f(n) tal 
+que, para qualquer valor de n, independentemente da entrada, o tempo 
+de execução estará abaixo de f(n), que é O(n²). Em outras palavras, 
+estamos dizendo que o tempo de execução no pior caso é O(n²).
+
+A notação Ω é usada para descrever um limite inferior para o 
+crescimento de uma função. Enquanto a notação O fornece um limite 
+superior (ou seja, um valor máximo que a função não vai ultrapassar 
+para valores grandes de n), a notação Ω nos dá um limite inferior (ou 
+seja, um valor mínimo que a função vai atingir para valores grandes de 
+n).
+
+Se temos uma função g(n), a notação Ω(g(n)) (lê-se "ômega de g de n") 
+representa o conjunto de funções f(n) que, para valores grandes de n, 
+estão sempre acima de g(n) ou, no mínimo, no mesmo nível de g(n). Em 
+outras palavras, a função f(n) nunca será menor que g(n) multiplicada 
+por uma constante, para valores grandes de n.
+
+Assim, quando dizemos que f(n) é Ω(g(n)), estamos afirmando que f(n) 
+tem um crescimento que, a partir de um certo ponto (n0), nunca será 
+inferior ao crescimento de g(n). Esse tipo de limite é importante 
+porque nos ajuda a entender que, mesmo que a função f(n) tenha algum 
+tipo de variação ou flutuação, ela não vai crescer mais devagar que g
+(n) para valores grandes de n.
+
+De forma simples, a notação Ω ajuda a definir um "mínimo" para o 
+crescimento de uma função, garantindo que a função não vai cair abaixo 
+de um determinado valor, mesmo quando n fica muito grande.
+
+Quando falamos que duas funções f(n) e g(n) são iguais dentro da 
+notação Θ, queremos dizer que f(n) é limitada tanto por um valor 
+superior quanto por um valor inferior, em termos de g(n). Ou seja, f
+(n) não vai crescer mais rápido do que uma constante vezes g(n) 
+(limite superior), nem mais devagar do que uma constante vezes g(n) 
+(limite inferior). Então, para que f(n) seja igual a Θ(g(n)), é 
+necessário que f(n) também seja O(g(n)) (limite superior) e Ω(g(n)) 
+(limite inferior). Isso é o que a definição nos diz.
+
+Por exemplo, se mostramos que uma função quadrática como an² + bn + c 
+é Θ(n²), isso implica que essa função também é O(n²) (limite superior) 
+e Ω(n²) (limite inferior), já que ela está entre essas duas limitações.
+
+Quando falamos sobre o tempo de execução de um algoritmo, se dizemos 
+que ele é Ω(g(n)), estamos dizendo que, para qualquer entrada de 
+tamanho n, o tempo de execução será no mínimo uma constante vezes g
+(n), para valores grandes de n. Ou seja, isso define um limite 
+inferior para o tempo de execução do melhor caso do algoritmo. Por 
+exemplo, para a ordenação por inserção, sabemos que o melhor caso é Ω
+(n), o que significa que o tempo de execução nunca será menor que uma 
+constante vezes n.
+
+Além disso, a notação assintótica ajuda a descrever o tempo de 
+execução de um algoritmo de forma mais simples. Por exemplo, para a 
+ordenação por inserção, podemos dizer que o tempo de execução está 
+entre Ω(n) e O(n²), ou seja, o tempo vai variar entre um limite 
+inferior linear (Ω(n)) e um limite superior quadrático (O(n²)).
+
+Agora, quando usamos a notação assintótica em fórmulas matemáticas, 
+como “n = O(n²)”, isso significa que n está dentro do conjunto das 
+funções que crescem no máximo tão rápido quanto n². Quando escrevemos 
+algo como 2n² + 3n + 1 = 2n² + Θ(n), isso significa que a função 2n² + 
+3n + 1 é aproximadamente igual a 2n² mais alguma função que cresce no 
+mesmo ritmo que n. A ideia aqui é simplificar as expressões, ignorando 
+os detalhes menores que não afetam tanto o crescimento assintótico.
+
+A notação assintótica pode ser útil para evitar detalhes 
+desnecessários ao descrever o comportamento de funções. Por exemplo, 
+ao falar sobre o tempo de execução do pior caso da ordenação por 
+intercalação, não precisamos especificar todos os termos pequenos, 
+apenas expressamos o comportamento assintótico de forma simplificada.
+
+Finalmente, quando a notação assintótica aparece em equações ou 
+desigualdades, como “2n² + Θ(n) = Θ(n²)”, isso significa que, 
+independentemente da escolha da função no lado esquerdo, podemos 
+encontrar uma função no lado direito que a torna verdadeira. Ou seja, 
+a notação assintótica do lado direito descreve um nível mais simples 
+de detalhes comparado ao lado esquerdo. Isso ajuda a compreender o 
+comportamento geral da função sem se preocupar com termos pequenos ou 
+variações específicas.
+
+-----   -- Notação O
+
+A notação O é usada para indicar um limite superior de uma função. 
+Isso significa que a função f(n) não cresce mais rápido do que uma 
+certa função g(n), multiplicada por uma constante. Porém, esse limite 
+pode ou não ser "justo". Um exemplo de limite justo seria 2n² = O(n²), 
+já que ambos crescem de forma proporcional. Mas, se usamos 2n = O(n²), 
+a relação não é "justa", pois 2n cresce bem mais devagar que n².
+
+A notação o é usada quando o limite superior não é "justo", ou seja, a 
+função f(n) cresce muito mais devagar que g(n) à medida que n aumenta. 
+Em termos formais, dizemos que f(n) = o(g(n)) se, para toda constante 
+c > 0, existe um valor de n suficientemente grande em que f(n) será 
+menor que c vezes g(n). Ou seja, f(n) vai se tornar insignificante em 
+comparação com g(n) quando n ficar grande.
+
+Por exemplo, temos que 2n = o(n²), pois 2n cresce muito mais devagar 
+que n². Já 2n² ≠ o(n²), pois ambas as funções crescem de forma proporcional.
+
+-----   Notação ω
+
+A notação ω é o oposto da notação o, assim como a notação Ω é o oposto 
+da notação O. Usamos ω para indicar que uma função f(n) cresce mais 
+rápido que g(n), mas de maneira "não justa" (ou seja, sem ser 
+assintoticamente precisa). A definição de f(n) = ω(g(n)) é que, à 
+medida que n aumenta, f(n) vai ser muito maior do que g(n), para 
+qualquer constante c > 0.
+
+Em termos formais, f(n) está em ω(g(n)) se, para qualquer constante c 
+> 0, existe um valor n0 tal que para todo n ≥ n0, a função f(n) será 
+maior que c vezes g(n). Por exemplo, n²/2 = ω(n), pois n²/2 cresce 
+muito mais rápido que n. No entanto, n²/2 ≠ ω(n²), pois ambas as 
+funções crescem de maneira semelhante.
+
+Em resumo, a notação ω indica que f(n) cresce mais rápido que g(n) 
+quando n fica grande, mas sem ser um limite assintótico exato.
+
+-----   -- Comparação de Funções
+
+Quando lidamos com funções assintóticas, muitas das propriedades que 
+usamos para comparar números reais também se aplicam. Vamos ver 
+algumas dessas propriedades e como elas funcionam com funções 
+assintóticas.
+
+1. Propriedades Relacionais:
+
+Transitividade: Se f(n) é assintoticamente igual a g(n) e g(n) é 
+assintoticamente igual a h(n), então f(n) também é assintoticamente 
+igual a h(n). O mesmo vale para outras comparações como O, Ω, o, etc.
+Exemplo: Se f(n) = Θ(g(n)) e g(n) = Θ(h(n)), então f(n) = Θ(h(n)).
+
+Reflexividade: Qualquer função é comparável a si mesma.
+Exemplo: f(n) = Θ(f(n)), f(n) = O(f(n)), e f(n) = Ω(f(n)) são todas 
+verdadeiras.
+
+Simetria: A comparação assintótica é simétrica, ou seja, se f(n) é 
+comparável a g(n) de uma forma, então g(n) também será comparável a f
+(n) da mesma forma.
+Exemplo: Se f(n) = Θ(g(n)), então g(n) = Θ(f(n)).
+
+Simetria de transposição: Aqui, temos uma relação mais específica para as notações O e o. Se f(n) é O(g(n)), então g(n) é Ω(f(n)).
+Exemplo: f(n) = O(g(n)) é o mesmo que g(n) = Ω(f(n)).
+
+2. Analogias com Números Reais:
+
+A comparação entre funções assintóticas pode ser comparada à 
+comparação entre números reais. As notações assintóticas têm analogias 
+que são semelhantes aos sinais de desigualdade entre números:
+
+f(n) = O(g(n)) é como a ≤ b
+f(n) = Ω(g(n)) é como a ≥ b
+f(n) = Θ(g(n)) é como a = b
+f(n) = o(g(n)) é como a < b
+f(n) = ω(g(n)) é como a > b
+
+Dizemos que f(n) é assintoticamente menor que g(n) se f(n) = o(g(n)), 
+e que f(n) é assintoticamente maior que g(n) se f(n) = ω(g(n)).
+
+3. Tricotomia:
+
+No caso dos números reais, existe a tricotomia, que afirma que para 
+qualquer par de números reais a e b, exatamente uma das seguintes 
+relações deve ser verdadeira: a < b, a = b ou a > b.
+
+Porém, esse tipo de comparação não se aplica a todas as funções 
+assintóticas. Isso significa que nem todas as funções podem ser 
+comparadas entre si usando as notações assintóticas. Por exemplo, as 
+funções n e n^(1 + sen n) não são comparáveis, pois o expoente de n^(1 
++ sen n) oscila entre 0 e 2, assumindo diferentes valores ao longo do 
+tempo.
+
+Isso nos lembra que, embora possamos comparar muitas funções, nem 
+sempre é possível fazer uma comparação direta entre elas usando 
+notações assintóticas.
+
