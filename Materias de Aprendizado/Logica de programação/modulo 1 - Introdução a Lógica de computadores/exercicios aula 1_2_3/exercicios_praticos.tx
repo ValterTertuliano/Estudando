@@ -128,7 +128,9 @@ inicio
     fim se
 fim
 
-10. Imagine que você precisa calcular o preço total de uma lista de compras. Crie um algoritmo para isso, considerando que os preços são inseridos um a um.
+10. Imagine que você precisa calcular o preço total de uma lista de 
+compras. Crie um algoritmo para isso, considerando que os preços são 
+inseridos um a um.
 
 inicio
     variavel real preco_total <- 0, preco_compra
@@ -151,29 +153,3 @@ inicio
         escrever ("A lista de compras até o momento está em: ", preco_total)
     fim enquanto
 fim
-
-        **Parte 3: Representação de Algoritmos**
-
-11. Converta o algoritmo de calcular a média final (exercício 6) para um fluxograma.
-
-12. Elabore um pseudocódigo para verificar se uma senha digitada pelo usuário é válida (exemplo: a senha correta é "1234").
-
-13. Crie um fluxograma que descreva o processo de ligar uma lâmpada com um interruptor.
-
-14. Escreva um pseudocódigo para um caixa eletrônico que aceita saques somente em múltiplos de R$ 10.
-
-15. Converta o algoritmo de verificar número par ou ímpar (exercício 7) em um fluxograma.
-
-        **Parte 4: Aplicações Práticas**
-
-16. Desenvolva um algoritmo em pseudocódigo para calcular o saldo final de uma conta bancária, considerando depósitos e saques.
-
-17. Crie um fluxograma para representar o processo de fazer login em um sistema, considerando validação de usuário e senha.
-
-18. Escreva um pseudocódigo para um programa que verifica se um ano é bissexto.
-
-19. Faça um fluxograma para uma máquina que vende refrigerantes e devolve troco.
-
-20. Desenvolva um algoritmo que recebe três notas e calcula a média ponderada, considerando pesos diferentes para cada nota.
-
-Esses exercícios abrangem conceitos de lógica, algoritmos e representação para promover prática e entendimento progressivos. Se precisar de explicações ou exemplos detalhados, é só pedir!

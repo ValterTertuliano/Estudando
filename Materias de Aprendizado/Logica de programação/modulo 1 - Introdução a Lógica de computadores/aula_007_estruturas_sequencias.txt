@@ -1,0 +1,130 @@
+---------------------------------
+FONTES
+---------------------------------
+
+        ----- livro 1 de referencia -----
+
+AUTOR: Edecio Fernando Lepsen
+LIVRO: Lógica de programação e algoritmos com JavaScript 
+"Editora": novatec
+---------------------------------
+
+        ----- livro 2 de referencia -----
+
+AUTOR: André Luiz Villar Forbellone
+LIVRO: Lógica de programação: : a construção de algoritmos e 
+estruturas de dados
+"Editora": Pearson Education
+---------------------------------
+
+Estruturas Sequenciais: Entendendo o Conceito
+
+As estruturas sequenciais são um dos três tipos fundamentais de 
+estruturas de programação, ao lado das estruturas condicionais e 
+estruturas de repetição. Elas representam a forma mais simples de 
+organizar um programa, seguindo uma ordem linear de execução, sem 
+desvios ou repetições.
+
+ O que é uma estrutura sequencial?
+
+A estrutura sequencial caracteriza-se pela execução passo a passo de 
+comandos, seguindo uma ordem lógica predefinida. O código é 
+interpretado de cima para baixo e da esquerda para a direita, na exata 
+sequência em que foi escrito.
+
+            Principais Características:
+
+    Execução Linear
+Cada comando é executado na ordem em que aparece, sem desvios ou 
+saltos. Não há necessidade de avaliar condições ou repetir blocos de 
+código.
+
+    Simplicidade
+Por ser a estrutura mais básica, é fácil de entender e implementar.
+Ideal para iniciantes que estão aprendendo a lógica de programação.
+
+    Tipos de Comandos Utilizados
+Uma estrutura sequencial pode incluir:
+Atribuição de valores a variáveis.
+Cálculos matemáticos.
+Leitura de dados de entrada (teclado, arquivo, etc.).
+Exibição de resultados na tela.
+
+    Fluxo de Execução
+O fluxo é direto e previsível, sem desvios ou loops.
+Em um fluxograma, a sequência de passos segue um caminho reto, sem 
+bifurcações.
+
+    Exemplos Práticos
+
+Exemplo 1: Cálculo da área de um retângulo
+
+Imagine que queremos calcular a área de um retângulo. O algoritmo 
+segue uma estrutura sequencial:
+
+Ler a base do retângulo.
+Ler a altura do retângulo.
+Calcular a área multiplicando base × altura.
+Exibir o resultado na tela.
+
+Em pseudocódigo, isso ficaria assim:
+
+Início
+    Escreva "Digite a base do retângulo:"
+    Leia base
+    Escreva "Digite a altura do retângulo:"
+    Leia altura
+    area ← base * altura
+    Escreva "A área do retângulo é:", area
+Fim
+
+Exemplo 2: Troca de uma lâmpada
+
+Esse processo segue uma estrutura sequencial bem clara:
+Pegar a lâmpada nova.
+Desligar o interruptor.
+Retirar a lâmpada queimada.
+Colocar a lâmpada nova.
+Ligar o interruptor para testar.
+
+Não há decisões a serem tomadas ou ações repetidas. Tudo acontece em 
+sequência.
+
+Representação Visual: Fluxogramas e Pseudocódigo
+
+Antes de transformar um algoritmo em código, é comum representá-lo de 
+forma visual ou descritiva:
+Pseudocódigo: Escrevemos os passos do programa em uma linguagem mais 
+próxima da humana, como no exemplo do retângulo.
+
+Fluxogramas: Diagramas que mostram cada etapa do processo, utilizando 
+símbolos padronizados. Em uma estrutura sequencial, o fluxograma segue 
+um caminho reto, começando com "Início" e terminando com "Fim".
+
+Boas Práticas
+
+Indentação: Organize o código com espaços para facilitar a leitura. 
+Isso ajuda a visualizar os blocos de código de forma clara.
+
+Comentários: Use comentários explicativos para descrever partes 
+importantes do código.
+
+Divisão de tarefas: Mesmo em estruturas simples, é bom dividir o 
+código em pequenas partes para facilitar a manutenção.
+
+Em quais linguagens a estrutura sequencial está presente?
+
+Essa estrutura existe em praticamente todas as linguagens de 
+programação, incluindo:
+
+Python: Código é executado linha por linha.
+
+C/C++: Programas seguem uma ordem sequencial a menos que haja desvios 
+explícitos.
+
+Java, JavaScript, PHP: Também seguem a lógica sequencial, com recursos 
+adicionais para controle de fluxo.
+
+Pascal: Tradicionalmente usado no ensino de algoritmos, utiliza 
+estruturas sequenciais de forma clara.
+
