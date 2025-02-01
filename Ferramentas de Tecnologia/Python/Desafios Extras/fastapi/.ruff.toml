@@ -1,0 +1,4 @@
+line-length = 79
+extend-exclude = ["migrations"]
+preview = true
+select = ["F841", "I", "F", "E", "W", "PL", "PT"]
