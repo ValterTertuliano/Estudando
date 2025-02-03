@@ -16,21 +16,18 @@ Including another URLconf
 """
 
 from django.contrib import admin
-from django.urls import path
-from django.http import HttpResponse
-from home import views
-from blog import views as blog_views
+from django.urls import path, include
 
 # HTTP Request <-> HTTP Response
 # MVT (MVC)
 
 # http://meudominio.com.br/
-# http://127.0.0.1:8000/blog 
-# http://127.0.0.1:8000/blog/algo 
-# http://127.0.0.1:8000/blog/algo/outroalgo 
-# http://127.0.0.1:8000/blog/algo/outroalgo/etc 
+# http://127.0.0.1:8000/blog
+# http://127.0.0.1:8000/blog/algo
+# http://127.0.0.1:8000/blog/algo/outroalgo
+# http://127.0.0.1:8000/blog/algo/outroalgo/etc
 urlpatterns = [
+    path("", include("home.urls")),  # a HOME deve ter a endpoint vazia
+    path("blog/", include("blog.urls")),
     path("admin/", admin.site.urls),
-    path("blog/curiosidade/", blog_views.blogapp),
-    path("", views.homeapp),  # a HOME deve ter a endpoint vazia
 ]
