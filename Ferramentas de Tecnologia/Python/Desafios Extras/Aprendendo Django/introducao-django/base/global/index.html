@@ -1,17 +1,19 @@
-{% extends "global/index.html" %}
-{% block texto %}Herança, depois de 3 dias acho que entendi
-Base com plugin django html entendendo o block{% endblock texto %}
-
-{% comment %} <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina inicial - com render</title>
+    <title>Document</title>
 </head>
 <body>
+
     <h1>Esse é o html da home
         "Pagina inicial - mudei para pasta homeapp - url aninhada - mudando http para render para renderizar html"
     </h1>
+    <h1>
+        Esse é um exemplo de template global
+        dentro da pasta base 
+    </h1>
+    <h2>{% block texto %}Base com plugin django html entendendo o block{% endblock texto %}</h2>
 </body>
-</html> {% endcomment %}
+</html>
