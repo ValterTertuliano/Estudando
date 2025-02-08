@@ -1,4 +1,7 @@
 {% extends "global/index.html" %}
 
 {% block texto %}Herança, depois de 3 dias acho que entendi
+
+{{ texto_contexto|linebreaks }}
+
 Base com plugin django html entendendo o block{% endblock texto %}

@@ -9,4 +9,10 @@ def home(request):
         "Pagina inicial - mudei para pasta homeapp - url aninhada - mudando http para render para renderizar html",
         "home.html",
     )
-    return render(request, "homeapp/home.html")
+    return render(
+        request,
+        "homeapp/home.html",
+        {
+            "texto_contexto": "\n isso é um context dentro do render uma ideia para receber dados"
+        },
+    )
