@@ -1,0 +1,11 @@
+Seguindo o treinamento de engenharia de IA da microsoft
+junto com alguns livros para apoio didatico
+
+Link do treinamento oficial:
+https://learn.microsoft.com/pt-br/training/modules/prepare-to-develop-ai-solutions-azure/2-define-artificial-intelligence
+
+Livros de Apoio:
+Russell, Stuart J. (Stuart Jonathan), 1962-Inteligência artificial / Stuart Russell, Peter Norvig; tradução Regina Célia Simille. – Rio
+
+Ruy Flávio de Oliveira
+Inteligência Artificial

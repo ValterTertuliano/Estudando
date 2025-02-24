@@ -1,0 +1,131 @@
+Definindo Inteligencia Artificial
+
+A IA (inteligência artificial) é cada vez mais predominante nos aplicativos de software que usamos todos os dias; incluindo assistentes 
+digitais em nossas casas e celulares, tecnologia automotiva nos veículos que nos enviamos para trabalhar e aplicativos de produtividade 
+inteligente que nos ajudam a fazer nossos trabalhos quando chegamos lá.
+
+Então, o que realmente significa inteligência artificial?
+
+Há muitas definições, algumas técnicas, outras filosóficas mas, em termos gerais, tendemos a pensar na IA como um software que exibe uma ou 
+mais capacidades parecidas com as de humanos.
+
+Um dos conceitos mais fascinantes para a ciência é o de  inteligência. Denominamos nossa espécie Homo sapiens — homem sábio — porque nossa 
+inteligência é tão importante para nós. Durante milhares de anos, procuramos entender como pensamos, isto é, como um mero punhado de matéria 
+pode perceber, compreender, prever e manipular um mundo muito maior e mais complicado que ela própria.
+
+O campo da inteligência artificial, ou IA, vai ainda mais além: ele tenta não apenas compreender, mas também construir entidades inteligentes. 
+A IA é um dos campos mais recentes em ciências e engenharia. O trabalho começou logo após a Segunda Guerra Mundial, e o próprio nome foi 
+cunhado em 1956
+
+Recentemente, com a evolução dos sistemas computacionais digitais introduzidos a partir do século XX, os estudos da inteligência passaram a 
+questionar se os computadores podem, de alguma forma, exibir comportamento que possamos classificar como “inteligentes”. 
+
+Definição e Fundamentos de Inteligência Artificial
+
+Há muitas definições acerca do que é inteligência artificial, e parece não haver consenso entre os vários autores que estudam o assunto. Isso 
+porque há muitas maneiras de se definir o que é inteligência sob o ponto de vista humano, e os pesquisadores desse campo de estudo também 
+apresentam várias definições (LIMA, PINHEIRO, SANTOS, 2014).
+
+Uma definição de inteligência artificial mais geral e que nos aproxima de um entendimento intuitivo sobre o assunto é a que nos oferecem Lima, Pinheiro e Santos (2014), que afirmam que a I.A. é o conjunto de ações que, se fossem realizadas por um ser humano, seriam consideradas inteligentes. É uma definição que nos chama a comparar as ações dos computadores com as nossas próprias para 
+definirmos se estamos diante de um comportamento inteligente ou não. Em que pese ser uma definição útil, não é de todo precisa, uma 
+vez que há algumas ações que o computador consegue realizar que não traduzem adequadamente um comportamento inteligente:
+
+• Um computador é muito mais rápido que o ser humano para fazer cálculos matemáticos, mas essa rapidez é mecânica, e mesmo pessoas com severas 
+deficiências mentais em alguns casos exibem essa capacidade, como Jourdain (1997) nos mostra nos casos de savantismo (síndrome do 
+idiota-prodígio).
+
+• Um computador consegue guardar e recobrar grandes quantidades de dados — ordens de grandeza mais que um ser humano — mas isso também não é 
+sinal claro de inteligência (JOURDAIN, 1997).
+
+Rosa (2011) apresenta uma variação mais proveitosa dessa definição incompleta quando afirma que inteligência artificial é a capacidade de os 
+computadores realizarem tarefas que os seres humanos inerentemente realizam melhor até o momento. Em outras palavras: quando um computador 
+consegue fazer uma tarefa que até então apenas os seres humanos (e aqui nos referimos a seres humanos comuns, sem deficiências ou habilidades
+especiais) conseguiam fazer, este computador exibe traços de inteligência, e por ser uma entidade fabricada — construída por seres humanos em 
+vez de ter surgido espontaneamente na natureza — é artificial. 
+
+Russell e Norvig (2013) afirmam que a inteligência artificial é a capacidade dos sistemas cibernéticos (formados por computadores, softwares, 
+sensores e atuadores) de imitar funções cognitivas dos seres humanos, funções estas que podemos resumir na resolução de problemas por meio do 
+aprendizado apoiado na percepção. É importante analisarmos os três termos chave da definição anterior:
+
+• Resolução de Problemas – Este termo é o de compreensão mais comum, e pode ser entendido como a capacidade de realizar tarefas julgadas 
+corretas por algum critério de avaliação. No caso de um problema matemático qualquer, por exemplo, a resolução pode ser compreendida como a 
+resposta correta ao problema, atingida por meio das regras matemáticas envolvidas no assunto em questão. Um computador consegue, com algoritmos 
+e técnicas de programação, resolver problemas. A maior parte das resoluções possíveis ocorre por meio da execução mecânica de procedimentos, o 
+que não denota inteligência. Isso significa que este primeiro termo chave não é o item principal desta definição, uma vez que até uma 
+calculadora feita com engrenagens — a exemplo da Pascalina de Blaise Pascal, criada em 1649 (CHAPMAN, 1942) — consegue resolver problemas. A 
+resolução de problemas, em se tratando de inteligência artificial, é necessária, mas não é suficiente.
+
+• Aprendizado – No caso da inteligência artificial o aprendizado é a característica dos algoritmos que têm a capacidade de melhorar seu 
+desempenho por meio da experiência (RUSSELL; NORVIG, 2013). O aprendizado de máquina, como é chamado (do inglês machine learning), consiste em 
+um algoritmo ajustar seus parâmetros internos com dados oriundos de execuções anteriores, atingindo melhores resultados a cada execução.
+
+• Percepção – Para nós, seres humanos, percepção é uma definição que se refere a dois tipos de fenômenos: 
+No âmbito físico é a capacidade de coletar dados acerca do ambiente a nossa volta, por meio de nossos cinco sensores naturais (a temperatura de 
+um objeto ou sua cor, por exemplo); 
+No âmbito mental, é a capacidade de deduzir as situações que ocorrem a nossa volta com a análise das informações que chegam até nós (se uma 
+pessoa está triste ou feliz com base em seu semblante, sua postura, suas palavras e sua entonação, por exemplo). 
+
+No caso dos sistemas cibernéticos, a percepção é baseada em sensores que coletam objetivamente dados acerca do problema em questão. 
+Russell e Norvig (2013)  argumentam que esta percepção, no caso dos sistemas cibernéticos, vai desde a leitura de dados por um software 
+(leitura lógica de dados, no caso, armazenados em arquivos), até sensores físicos, isto é, que interagem com o ambiente, como no caso de 
+acelerômetros (medidores de aceleração direcional), sensores de som, termômetros, medidores de intensidade luminosa e afins.
+
+Funções de uma I.A
+
+Percepção visual – a capacidade de usar recursos de pesquisa visual computacional para aceitar, interpretar e processar a entrada de imagens, 
+transmissões de vídeo e câmeras ao vivo.
+
+Análise de texto e conversa – A capacidade de usar o NLP (processamento de linguagem natural) não apenas para "ler", mas também gerar respostas 
+realistas e extrair significado semântico do texto.
+
+Fala – a capacidade de reconhecer a fala como entrada e sintetizar a saída falada. A combinação de recursos de fala junto com a capacidade de 
+aplicar a análise de NLP de texto permite uma forma de interação entre computação humana, que se tornou conhecida como IA de conversa, na qual 
+os usuários podem interagir com agentes de IA (geralmente chamados de bots) da mesma maneira que faria com outro humano.
+
+Tomada de decisão – a capacidade de usar a experiência passada e as correlações aprendidas para avaliar situações e tomar as ações apropriadas. 
+Por exemplo, reconhecer anomalias em leituras de sensor e tomar medidas automatizadas para evitar falhas ou danos ao sistema.
+
+Entender os termos relacionados à IA
+
+Há vários termos relacionados que as pessoas usam ao falar sobre inteligência artificial, portanto, é útil ter definições claras para cada um 
+deles.
+
+Ciência de dados
+
+A ciência de dados é um campo interdisciplinar que se concentra no processamento e análise de dados; aplicando técnicas estatísticas para 
+descobrir e visualizar relações e padrões nos dados e definindo modelos experimentais de que ajudam a explorar esses padrões.
+
+Por exemplo, um cientista de dados pode coletar amostras de dados sobre a população de uma espécie ameaçada de extinção em uma área geográfica 
+e combiná-la com dados sobre níveis de industrialização e demográficos econômicos na mesma área. Os dados podem ser analisados, usando técnicas 
+estatísticas para extrapolar a partir dos exemplos para entender as tendências e as relações entre atividades humanas e vida selvagem e testar 
+as mesmas usando modelos que mostram o provável impacto da atividade humana na população de animais selvagens. Ao fazer isso, os cientistas de 
+dados podem ajudar a determinar as políticas ideais que equilibram a necessidade de bem-estar econômico para a população humana, com a 
+necessidade de conservação da vida selvagem ameaçada de extinção.
+
+Aprendizado de máquina
+
+Os cientistas de dados geralmente trabalham com modelos de machine learning. O aprendizado de máquina lida com o treinamento e a validação de 
+modelos preditivos. Normalmente, um cientista de dados prepara os dados e, em seguida, usa-os para treinar um modelo com base em um algoritmo 
+que explora as relações entre os recursos nos dados para prever valores para rótulosdesconhecidos.
+
+Por exemplo, um cientista de dados pode usar os dados coletados para treinar um modelo que prevê o crescimento anual ou o declínio da população 
+de uma espécie com base em fatores como o número de locais de aninhamento observados, a área de terra designada como protegida, a população 
+humana na área local, o volume diário de tráfego em estradas locais e assim por diante. Esse modelo de previsão pode ser usado como uma 
+ferramenta para avaliar planos de hospedagem, infraestrutura e desenvolvimento industrial na área local e avaliar o provável impacto na vida 
+selvagem local.
+
+Inteligência artificial
+
+A IA (inteligência artificial) descreve o software que emula uma ou mais características da inteligência humana. O aprendizado de máquina é uma 
+abordagem proeminente usada para criar software de IA. O conhecimento da ciência de dados pode dar suporte a uma compreensão da inteligência 
+artificial.
+
+Por exemplo, equilibrar a necessidade de conservação da vida selvagem em relação ao desenvolvimento econômico requer um monitoramento preciso 
+da população de espécies ameaçadas que estão sendo protegidas. Talvez não seja possível contar com especialistas humanos que possam identificar 
+positivamente o animal em questão ou para monitorar uma grande área em um período de tempo suficiente para obter uma contagem precisa. Na 
+verdade, a presença de observadores humanos pode intimidar animais e impedir sua detecção. Nesse caso, um modelo de previsão poderia ser 
+treinado para analisar dados de imagem tirados por câmeras ativadas por movimento em locais remotos e prever se uma fotografia contém um 
+avistamento do animal. O modelo poderia então ser usado em um aplicativo de software que responde à identificação automatizada de animais para 
+rastrear avistamentos de animais em uma grande área geográfica, identificando áreas com populações de animais densas que podem ser candidatos 
+para o status de protegidos.
+
